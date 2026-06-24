@@ -1,0 +1,30 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.production
+
+# macOS-generated files
+.DS_Store
+
+# jetbrains setting folder
+.idea/
+
+# brand design source material (~869MB of .ai/.psd/PDF reference).
+# The assets actually used by the site are copied into public/assets.
+brand_guidelines/
+Openfront_Brand_Guidelines.pdf
+
+# local headless-chrome scrape/screenshot scratch
+.claude/skills/run-openfront/node_modules/

@@ -1,0 +1,329 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+
+const topics = [
+  { name: "Settings", href: "/Settings", icon: "⚙️" },
+  { name: "Combat", href: "/Combat", icon: "⚔️" },
+  { name: "Gold", href: "/Gold", icon: "🪙" },
+  { name: "Bots", href: "/Bots", icon: "🤖" },
+  { name: "Nations", href: "/Nations", icon: "🌍" },
+  { name: "Buildings", href: "/Buildings", icon: "🏛️" },
+  { name: "Port", href: "/Port", icon: "⚓" },
+  { name: "Atom Bomb", href: "/Atom_Bomb", icon: "☢️" },
+  { name: "Warship", href: "/Warship", icon: "🚢" },
+  { name: "Transport Ship", href: "/Transport_Ship", icon: "🚤" },
+  { name: "Train", href: "/Train", icon: "🚂" },
+  { name: "OpenFront", href: "/OpenFront", icon: "▶️" },
+];
+
+const updates = [
+  {
+    version: "v0.30",
+    date: "March 12 2026",
+    notes: [
+      "🌟 More public lobbies at once!",
+      "🗺️ New Maps",
+      "⚔️ Public game modifiers",
+      "🎨 Better colors & a new grid",
+      "🧠 Nations are smarter & difficulties are more balanced",
+    ],
+  },
+  {
+    version: "v0.29",
+    date: "January 19 2026",
+    notes: [
+      "🌟 New Main Menu",
+      "🗺️ New Maps",
+      "⚔️ New nuke features",
+      "🧠 Nation (AI) Improvements",
+      "🎨 UI/UX Improvements",
+    ],
+  },
+  {
+    version: "v0.28",
+    date: "December 18 2025",
+    notes: [
+      "🎄 Christmas Features",
+      "☢️ MIRV now scales in price",
+      "🗺️ New maps",
+      "🎨 More useful UI for SAMs",
+    ],
+  },
+];
+
+const links = [
+  { name: "Game's Website", href: "https://openfront.io/", icon: "🌐" },
+  { name: "Official Discord", href: "https://discord.com/invite/jRpxXvG42t", icon: "💬" },
+  { name: "Development GitHub", href: "https://github.com/openfrontio/OpenFrontIO/", icon: "🐙" },
+  { name: "Wishlist on Steam", href: "https://store.steampowered.com/app/3560670/OpenFront/", icon: "🎮" },
+  { name: "YouTube", href: "https://www.youtube.com/@openfrontio", icon: "▶️" },
+  { name: "Wiki Project Discord", href: "https://discord.com/invite/DF4ttuWSWS", icon: "📚" },
+];
+
+---
+
+<Layout>
+  <SiteHeader />
+
+  <!-- ===== Hero ===== -->
+  <section class="relative overflow-hidden border-b border-white/10">
+    <img
+      src="/assets/hero-bg.webp"
+      alt=""
+      aria-hidden="true"
+      class="absolute inset-0 h-full w-full object-cover opacity-60"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/85 to-navy"
+    >
+    </div>
+    <div class="hex-grid absolute inset-0 opacity-[0.15]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 sm:py-28">
+      <div
+        class="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-glow/30 bg-cyan-glow/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-cyan-glow"
+      >
+        <span class="relative flex h-2 w-2">
+          <span
+            class="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-glow opacity-75"
+          ></span>
+          <span class="relative inline-flex h-2 w-2 rounded-full bg-cyan-glow"></span>
+        </span>
+        Community Wiki — Latest: v0.30.11
+      </div>
+
+      <img
+        src="/assets/logo-white.png"
+        alt="OpenFront"
+        class="mx-auto mb-4 w-[min(560px,82vw)] drop-shadow-[0_0_40px_rgba(0,132,209,0.45)]"
+      />
+      <h1
+        class="font-display text-3xl font-bold tracking-wide text-white sm:text-4xl"
+      >
+        Wiki Project
+      </h1>
+      <p class="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-dawn sm:text-lg">
+        Welcome to the <span class="font-semibold text-aquarius">OpenFront Wiki</span> —
+        the community knowledge base for the open-source, browser-based RTS
+        developed by <span class="text-white">Evanpelle</span>. Anyone is welcome
+        to contribute.
+      </p>
+      <p class="mx-auto mt-2 max-w-2xl text-sm text-dawn/70">
+        The content &amp; style of the wiki is subject to change as we are still
+        getting everything put together!
+      </p>
+
+      <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+        <a
+          href="https://openfront.io/"
+          class="rounded-lg bg-malibu px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-malibu/30 transition-all hover:-translate-y-0.5 hover:bg-aquarius hover:shadow-malibu/50"
+        >
+          🌐 Play OpenFront
+        </a>
+        <a
+          href="#explore"
+          class="rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:border-cyan-glow/40 hover:bg-white/10"
+        >
+          📖 Explore the Wiki
+        </a>
+        <a
+          href="https://discord.com/invite/jRpxXvG42t"
+          class="rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white backdrop-blur transition-all hover:-translate-y-0.5 hover:border-cyan-glow/40 hover:bg-white/10"
+        >
+          💬 Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="mx-auto max-w-7xl px-4 py-14 sm:px-6">
+    <!-- ===== Explore topics ===== -->
+    <section id="explore" class="scroll-mt-20">
+      <div class="mb-7 flex items-end justify-between gap-4">
+        <div>
+          <h2 class="font-display text-2xl font-bold tracking-wide text-white sm:text-3xl">
+            Explore the Wiki
+          </h2>
+          <p class="mt-1 text-sm text-dawn/70">
+            Jump into game mechanics, units and strategy.
+          </p>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6"
+      >
+        {
+          topics.map((t) => (
+            <a
+              href={t.href}
+              class="group relative flex flex-col items-center gap-2 overflow-hidden rounded-xl border border-white/10 bg-navy-700/60 p-5 text-center transition-all hover:-translate-y-1 hover:border-malibu/60 hover:bg-navy-600/80 hover:shadow-lg hover:shadow-malibu/20"
+            >
+              <div
+                aria-hidden="true"
+                class="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-cyan-glow/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+              />
+              <span class="text-3xl transition-transform group-hover:scale-110">
+                {t.icon}
+              </span>
+              <span class="text-sm font-semibold text-white">{t.name}</span>
+            </a>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- ===== Updates + sidebar ===== -->
+    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      <!-- Updates -->
+      <section class="lg:col-span-2">
+        <div class="mb-6 flex items-center gap-3">
+          <h2 class="font-display text-2xl font-bold tracking-wide text-white">
+            Major Game Updates
+          </h2>
+          <span
+            class="rounded-full border border-malibu/40 bg-malibu/10 px-3 py-1 text-xs font-semibold text-aquarius"
+          >
+            Latest 0.30.11
+          </span>
+        </div>
+
+        <ol class="relative space-y-5 border-l border-white/10 pl-6">
+          {
+            updates.map((u) => (
+              <li class="relative">
+                <span
+                  aria-hidden="true"
+                  class="absolute -left-[31px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full border-2 border-malibu bg-navy"
+                >
+                  <span class="h-1.5 w-1.5 rounded-full bg-cyan-glow" />
+                </span>
+                <article
+                  class="rounded-xl border border-white/10 bg-navy-700/50 p-5 transition-colors hover:border-white/20"
+                >
+                  <div class="flex flex-wrap items-baseline justify-between gap-2">
+                    <span class="font-display text-xl font-bold text-white">
+                      {u.version}
+                    </span>
+                    <time class="text-xs font-medium uppercase tracking-wider text-dawn/60">
+                      {u.date}
+                    </time>
+                  </div>
+                  <ul class="mt-3 space-y-1.5 text-sm text-dawn">
+                    {u.notes.map((n) => (
+                      <li class="flex gap-2">
+                        <span>{n}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="space-y-6">
+        <!-- Featured guide -->
+        <section
+          class="overflow-hidden rounded-xl border border-white/10 bg-navy-700/50"
+        >
+          <div
+            class="relative flex h-32 items-center justify-center overflow-hidden border-b border-white/10 bg-gradient-to-br from-malibu/30 to-navy-600"
+          >
+            <div class="hex-grid absolute inset-0 opacity-20"></div>
+            <span class="relative font-display text-3xl font-bold tracking-widest text-white/90">
+              BEGINNER
+            </span>
+          </div>
+          <div class="p-5">
+            <p
+              class="text-xs font-semibold uppercase tracking-widest text-cyan-glow"
+            >
+              Featured Guide
+            </p>
+            <h3 class="mt-1 text-lg font-bold text-white">Beginner Guide</h3>
+            <p class="mt-1 text-sm text-dawn/80">
+              Learn the basics of how to play.
+            </p>
+            <a
+              href="/Beginner_Guide"
+              class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-aquarius hover:text-white"
+            >
+              Read the guide →
+            </a>
+          </div>
+        </section>
+
+        <!-- Links -->
+        <section class="rounded-xl border border-white/10 bg-navy-700/50 p-5">
+          <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">
+            Links
+          </p>
+          <ul class="mt-3 space-y-2">
+            {
+              links.map((l) => (
+                <li>
+                  <a
+                    href={l.href}
+                    class="group flex items-center gap-3 rounded-lg border border-white/5 bg-navy-600/40 px-3 py-2.5 text-sm font-medium text-dawn transition-all hover:border-malibu/50 hover:bg-navy-600 hover:text-white"
+                  >
+                    <span class="text-base">{l.icon}</span>
+                    <span class="flex-1">{l.name}</span>
+                    <span class="text-dawn/40 transition-transform group-hover:translate-x-0.5 group-hover:text-aquarius">
+                      ↗
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+    <!-- ===== Featured video ===== -->
+    <section class="mt-14">
+      <h2 class="mb-6 font-display text-2xl font-bold tracking-wide text-white">
+        Featured Video
+      </h2>
+      <div
+        class="grid items-center gap-6 overflow-hidden rounded-2xl border border-white/10 bg-navy-700/50 p-5 sm:grid-cols-2 sm:p-6"
+      >
+        <div
+          class="relative aspect-video overflow-hidden rounded-xl border border-white/10"
+        >
+          <iframe
+            class="absolute inset-0 h-full w-full"
+            src="https://www.youtube-nocookie.com/embed/HiCbHMqDOVE"
+            title="OpenFront v30 just dropped!"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">
+            Watch
+          </p>
+          <h3 class="mt-1 font-display text-2xl font-bold text-white">
+            OpenFront v30 just dropped!
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-dawn/80">
+            New maps, public game modifiers, smarter nations and a fresh look —
+            see everything that landed in the latest release.
+          </p>
+          <a
+            href="https://www.youtube.com/@openfrontio"
+            class="mt-4 inline-flex items-center gap-2 rounded-lg bg-malibu px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-malibu/30 transition-all hover:-translate-y-0.5 hover:bg-aquarius"
+          >
+            ▶️ More on YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</Layout>

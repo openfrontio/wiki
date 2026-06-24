@@ -1,0 +1,37 @@
+---
+const nav = [
+  { name: "Home", href: "/" },
+  { name: "All Pages", href: "/all" },
+  { name: "Discord", href: "https://discord.com/invite/jRpxXvG42t" },
+  { name: "GitHub", href: "https://github.com/openfrontio/OpenFrontIO/" },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-navy/85 backdrop-blur-xl">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+    <a href="/" class="flex items-center gap-3">
+      <img src="/assets/icon-round.png" alt="OpenFront" class="h-9 w-9" />
+      <span class="font-display text-lg font-bold tracking-wide text-white">
+        OpenFront <span class="text-aquarius">Wiki</span>
+      </span>
+    </a>
+    <div class="flex items-center gap-1">
+      {
+        nav.map((l) => (
+          <a
+            href={l.href}
+            class="hidden rounded-md px-3 py-2 text-sm font-medium text-dawn transition-colors hover:bg-white/5 hover:text-white sm:block"
+          >
+            {l.name}
+          </a>
+        ))
+      }
+      <a
+        href="https://openfront.io/"
+        class="ml-1 rounded-md bg-malibu px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-malibu/30 transition-all hover:bg-aquarius hover:shadow-malibu/50"
+      >
+        Play Now
+      </a>
+    </div>
+  </nav>
+</header>

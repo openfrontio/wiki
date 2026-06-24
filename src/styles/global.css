@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+/* Custom OpenFront brand display font (Wicked Sick Ltd). Limited glyph set —
+   any missing characters fall back per-glyph to Inter. */
+@font-face {
+  font-family: "OpenFront";
+  src: url("/fonts/OpenFront.ttf") format("truetype");
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@theme {
+  /* Primary brand — Openfront.io */
+  --color-malibu: #0084d1;
+  --color-aquarius: #3fa9f5;
+  --color-dawn: #cccccc;
+
+  /* Background & decorative */
+  --color-navy: #0a1628;
+  --color-navy-700: #0e1d35;
+  --color-navy-600: #122444;
+  --color-cyan-glow: #00c8ff;
+  --color-territory: #f97316;
+  --color-masters: #ffd700;
+
+  --font-display: "OpenFront", "Inter", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-navy);
+  color: var(--color-dawn);
+  font-family: var(--font-sans);
+}
+
+/* Faint hexagonal grid motif — referenced in brand art direction. */
+.hex-grid {
+  background-image: url("/assets/hex-pattern.svg");
+  background-size: 96px 55px;
+}
+
+/* Thin tactical scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-malibu) transparent;
+}
+
+/* ===================================================================
+   Wiki article content — themed MediaWiki (Citizen) output
+   =================================================================== */
+.wiki-content {
+  color: var(--color-dawn);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.wiki-content > *:first-child { margin-top: 0; }
+.wiki-content p { margin: 0.9rem 0; }
+.wiki-content a {
+  color: var(--color-aquarius);
+  text-decoration: none;
+}
+.wiki-content a:hover { color: #fff; text-decoration: underline; }
+.wiki-content a.external::after { content: " ↗"; font-size: 0.8em; opacity: 0.6; }
+.wiki-deadlink { color: #f9731699; }
+
+/* headings */
+.wiki-content h1,
+.wiki-content h2,
+.wiki-content h3,
+.wiki-content h4 {
+  font-family: var(--font-display), var(--font-sans);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  scroll-margin-top: 5rem;
+}
+.wiki-content .mw-heading { margin: 2rem 0 0.75rem; }
+.wiki-content h1 { font-size: 1.9rem; }
+.wiki-content h2 {
+  font-size: 1.55rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+}
+.wiki-content h3 { font-size: 1.2rem; color: var(--color-aquarius); }
+.wiki-content h4 { font-size: 1.05rem; }
+
+/* lists */
+.wiki-content ul,
+.wiki-content ol { margin: 0.8rem 0; padding-left: 1.5rem; }
+.wiki-content ul { list-style: disc; }
+.wiki-content ol { list-style: decimal; }
+.wiki-content li { margin: 0.3rem 0; }
+.wiki-content li::marker { color: var(--color-malibu); }
+
+/* tables */
+.wiki-content table.wikitable,
+.wiki-content .citizen-overflow-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.92rem;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  border: 1px solid rgb(255 255 255 / 0.1);
+}
+.wiki-content table.wikitable th,
+.wiki-content table.wikitable td { border: 1px solid rgb(255 255 255 / 0.08); padding: 0.55rem 0.8rem; }
+.wiki-content table.wikitable th { background: var(--color-navy-600); color: #fff; text-align: left; }
+.wiki-content table.wikitable tr:nth-child(even) td { background: rgb(255 255 255 / 0.02); }
+.wiki-content .citizen-overflow-wrapper { overflow-x: auto; }
+
+/* images & figures */
+.wiki-content img { max-width: 100%; height: auto; border-radius: 0.4rem; }
+.wiki-content figure,
+.wiki-content .thumb {
+  margin: 1.2rem 0;
+  padding: 0.5rem;
+  background: var(--color-navy-700);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.7rem;
+  width: fit-content;
+  max-width: 100%;
+}
+.wiki-content figure.mw-default-size,
+.wiki-content .tright,
+.wiki-content .floatright { float: right; margin-left: 1.4rem; }
+.wiki-content .tleft, .wiki-content .floatleft { float: left; margin-right: 1.4rem; }
+.wiki-content figcaption,
+.wiki-content .thumbcaption {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--color-dawn);
+  opacity: 0.75;
+  line-height: 1.4;
+}
+
+/* galleries */
+.wiki-content .gallery { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.2rem 0; list-style: none; padding: 0; }
+.wiki-content .gallerybox {
+  background: var(--color-navy-700);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  width: auto !important;
+}
+.wiki-content .gallerytext { font-size: 0.8rem; opacity: 0.8; text-align: center; }
+.wiki-content .gallerytext p { margin: 0.4rem 0 0; }
+
+/* notices: hatnotes, stubs */
+.wiki-content .hatnote {
+  font-style: italic;
+  color: var(--color-dawn);
+  opacity: 0.8;
+  border-left: 3px solid var(--color-malibu);
+  padding: 0.3rem 0 0.3rem 0.9rem;
+  margin: 0.8rem 0;
+}
+.wiki-content .asbox,
+.wiki-content table.metadata {
+  background: var(--color-navy-700);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+.wiki-content .asbox td { border: 0 !important; }
+
+/* misc */
+.wiki-content b, .wiki-content strong { color: #fff; }
+.wiki-content hr { border: 0; border-top: 1px solid rgb(255 255 255 / 0.1); margin: 1.5rem 0; }
+.wiki-content code,
+.wiki-content pre {
+  background: var(--color-navy-600);
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.88em;
+}
+.wiki-content pre { padding: 0.8rem 1rem; overflow-x: auto; }
+.wiki-content blockquote {
+  border-left: 3px solid var(--color-malibu);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+}
+.wiki-content .scrollable-math { overflow-x: auto; max-width: 100%; }
+.wiki-content .mwe-math-element { color: #fff; }

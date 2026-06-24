@@ -1,0 +1,84 @@
+---
+const wikiLinks = [
+  { name: "Home", href: "/" },
+  { name: "All Pages", href: "/all" },
+  { name: "Beginner Guide", href: "/Beginner_Guide" },
+  { name: "Links Masterpost", href: "/Links_Masterpost" },
+];
+const gameLinks = [
+  { name: "Play", href: "https://openfront.io/" },
+  { name: "GitHub", href: "https://github.com/openfrontio/OpenFrontIO/" },
+  { name: "Steam", href: "https://store.steampowered.com/app/3560670/OpenFront/" },
+  { name: "YouTube", href: "https://www.youtube.com/@openfrontio" },
+];
+---
+
+<footer class="relative mt-10 overflow-hidden border-t border-white/10 bg-navy-700/40">
+  <div class="hex-grid absolute inset-0 opacity-[0.06]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 py-12 sm:px-6">
+    <div class="flex flex-col justify-between gap-8 md:flex-row">
+      <div class="max-w-sm">
+        <div class="flex items-center gap-3">
+          <img src="/assets/icon-round.png" alt="OpenFront" class="h-10 w-10" />
+          <span class="font-display text-xl font-bold tracking-wide text-white">
+            OpenFront Wiki
+          </span>
+        </div>
+        <p class="mt-3 text-sm text-dawn/70">
+          The community wiki for OpenFront, created by Evanpelle. Content is
+          available under
+          <a
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-aquarius hover:text-white">CC BY-SA 4.0</a
+          > unless otherwise noted.
+        </p>
+        <a
+          href="https://discord.com/invite/DF4ttuWSWS"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-aquarius hover:text-white"
+        >
+          💬 Join the OpenFront Wiki Project Discord
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-8 sm:gap-14">
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-white">Wiki</h4>
+          <ul class="mt-3 space-y-2 text-sm text-dawn/70">
+            {
+              wikiLinks.map((l) => (
+                <li>
+                  <a href={l.href} class="hover:text-white">
+                    {l.name}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-white">Game</h4>
+          <ul class="mt-3 space-y-2 text-sm text-dawn/70">
+            {
+              gameLinks.map((l) => (
+                <li>
+                  <a href={l.href} target="_blank" rel="noopener noreferrer" class="hover:text-white">
+                    {l.name}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div
+      class="mt-10 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-dawn/50 sm:flex-row"
+    >
+      <p>© 2026 OpenFront Wiki Project. Not affiliated with the brand owners.</p>
+      <p>Built with Astro &amp; Tailwind CSS.</p>
+    </div>
+  </div>
+</footer>
