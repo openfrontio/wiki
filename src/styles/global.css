@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom OpenFront brand display font (Wicked Sick Ltd). Limited glyph set —
+/* Custom OpenFront brand display font. Limited glyph set —
    any missing characters fall back per-glyph to Inter. */
 @font-face {
   font-family: "OpenFront";

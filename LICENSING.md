@@ -18,17 +18,16 @@ You are free to reuse the code per the MIT terms.
 ## 2. OpenFront brand assets — proprietary, all rights reserved
 
 The OpenFront brand assets are **NOT** covered by the MIT license. They remain
-the property of OpenFront Inc. / Wicked Sick Ltd and may not be copied, redistributed,
-modified, or used in any other project without written permission. This includes:
+the property of OpenFront Inc. and may not be copied, redistributed, modified, or
+used in any other project without written permission. This includes:
 
 - `public/assets/logo-white.png`, `public/assets/logo-blue.png`
 - `public/assets/icon-round.png`, `public/assets/icon-square.png`
 - `public/assets/hero-bg.webp`, `public/assets/hero-bg.jpg` (signature background)
 - `public/favicon.svg`, `public/favicon.png`
-- `public/fonts/OpenFront.ttf` — the custom brand display font. This font is the
-  intellectual property of **Wicked Sick Ltd** and is licensed exclusively for use
-  on OpenFront brand materials. It must **not** be redistributed, resold, or used
-  on any other project without written permission.
+- `public/fonts/OpenFront.ttf` — the custom OpenFront brand display font. It is
+  licensed exclusively for use on OpenFront brand materials and must **not** be
+  redistributed, resold, or used on any other project without written permission.
 
 The full brand design pack (`brand_guidelines/`, the brand guidelines PDF) is not
 included in this repository (it is git-ignored) and is likewise proprietary.
