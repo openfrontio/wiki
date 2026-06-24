@@ -48,3 +48,11 @@ The colours, fonts and imagery follow `Openfront_Brand_Guidelines.pdf`. The full
 design source pack lives in `brand_guidelines/` (git-ignored — large `.ai`/`.psd`
 files); only the assets the site actually uses are checked in under
 `public/assets`.
+
+## Licensing
+
+This repo mixes three licenses — see [LICENSING.md](./LICENSING.md):
+
+- **Source code** — [MIT](./LICENSE)
+- **OpenFront brand assets** (logos, font, background) — proprietary, all rights reserved
+- **Wiki content & media** (`src/data/pages.json`, `public/images`) — CC BY-SA 4.0

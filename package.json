@@ -2,6 +2,7 @@
   "name": "openfront-wiki",
   "type": "module",
   "version": "0.1.0",
+  "license": "SEE LICENSE IN LICENSING.md",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
