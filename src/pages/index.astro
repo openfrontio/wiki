@@ -93,7 +93,7 @@ const links = [
           ></span>
           <span class="relative inline-flex h-2 w-2 rounded-full bg-cyan-glow"></span>
         </span>
-        Community Wiki — Latest: v0.30.11
+        Community Wiki — Latest: <span id="hero-latest">{updates[0].version}</span>
       </div>
 
       <img
@@ -378,6 +378,9 @@ const links = [
       if (!list || !releases.length) return;
 
       badge.textContent = "Latest " + releases[0].tag_name.replace(/^v/, "");
+
+      const hero = document.getElementById("hero-latest");
+      if (hero) hero.textContent = releases[0].tag_name;
 
       list.innerHTML = releases
         .map((r) => {
