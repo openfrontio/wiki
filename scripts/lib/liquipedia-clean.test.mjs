@@ -69,3 +69,10 @@ test("cleanHtml strips script/style/edit chrome", () => {
   assert.doesNotMatch(out, /<script|mw-editsection/);
   assert.match(out, /keep/);
 });
+
+test("cleanHtml converts /lab red links (class=new) to plain text", () => {
+  const out = cleanHtml('<a href="/lab/Openfront/MissingPage" class="new">Missing</a>', { slugMap: {}, icons: {} });
+  assert.doesNotMatch(out, /<a /);
+  assert.match(out, /wiki-deadlink/);
+  assert.match(out, /Missing/);
+});
