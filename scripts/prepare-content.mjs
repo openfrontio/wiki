@@ -17,7 +17,13 @@ const PUBLIC_IMG = path.join(root, "public", "images");
 fs.mkdirSync(DATA_DIR, { recursive: true });
 fs.mkdirSync(PUBLIC_IMG, { recursive: true });
 
-const DROP = new Set(["TestPage"]); // obvious junk
+const DROP = new Set([
+  "TestPage",
+  // off-topic imported content (not OpenFront); also the only external-image hotlinks
+  "List_of_heads_of_state_of_India",
+  "List_of_heads_of_state_of_India_1857",
+  "Timurid_Empire_Flag_SVG",
+]);
 
 const raw = JSON.parse(fs.readFileSync(path.join(CRAWL, "pages.json"), "utf8"));
 const knownSlugs = new Set(raw.map((p) => p.slug));
@@ -90,6 +96,15 @@ function clean(html) {
 
   // unwrap citizen section wrappers but keep their content
   $("section.citizen-section").each((_, el) => $(el).replaceWith($(el).contents()));
+
+  // drop external image hotlinks (privacy/perf; we host our own images) -> alt text
+  $("img").each((_, el) => {
+    const $el = $(el);
+    if (/^https?:\/\//i.test($el.attr("src") || "")) {
+      const alt = $el.attr("alt");
+      $el.replaceWith(alt ? `<span class="liq-noimg">${alt}</span>` : "");
+    }
+  });
 
   return $.html().trim();
 }
@@ -190,9 +205,10 @@ const referencedImgs = new Set();
 for (const p of pages)
   for (const m of p.html.matchAll(/src="\/images\/([^"]+)"/g)) referencedImgs.add(decodeURIComponent(m[1]));
 let prunedImgs = 0;
-for (const f of fs.readdirSync(PUBLIC_IMG)) {
-  if (!referencedImgs.has(f)) {
-    fs.rmSync(path.join(PUBLIC_IMG, f));
+for (const f of fs.readdirSync(PUBLIC_IMG, { withFileTypes: true })) {
+  if (f.isDirectory()) continue; // e.g. images/liquipedia/, managed by prepare-liquipedia.mjs
+  if (!referencedImgs.has(f.name)) {
+    fs.rmSync(path.join(PUBLIC_IMG, f.name));
     prunedImgs++;
   }
 }
