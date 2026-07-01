@@ -102,8 +102,9 @@ Cleaning rules:
   and `.flag`, themed for dark mode. Self-host a **minimal FontAwesome subset**
   (only the icons Liquipedia actually uses) for `fas fa-*`; strip unused ones.
 - **Hub page:** the existing `OpenFront_Masters` page gains an auto-generated
-  index (grouped Tournaments / Teams / Players) of the mirrored pages. Add
-  "OpenFront Masters" to `SiteHeader`/`SiteFooter` nav.
+  index of the mirrored pages — grouped Tournaments (split **OFM Official** vs
+  **Community**) / Teams / Players. Add "OpenFront Masters" to
+  `SiteHeader`/`SiteFooter` nav.
 
 ## Data model
 
@@ -123,13 +124,20 @@ Cleaning rules:
 
 ### Slug & category scheme
 
-- Slug = title with `Openfront/` (and `Openfront/OFM/`, `Openfront/Clans/`)
-  prefixes stripped, spaces → `_`. Example: `Openfront/OFM/2025 World Cup` →
-  `OFM_2025_World_Cup` (keep the `OFM` marker to disambiguate the official-org
-  tournaments from community ones and avoid collisions). Collisions with existing
-  slugs are detected and suffixed.
-- Categories: `OpenFront Masters` always, plus one of `Tournaments` / `Teams` /
-  `Players` inferred from the page (bracket/infobox type, or portal grouping).
+Every Masters page uses the **same slug convention and the same `[slug].astro`
+rendering as the rest of the wiki** (`Title_With_Underscores`, identical article
+layout). The *only* differentiation is marking official-org vs. community
+tournaments — the format itself stays uniform.
+
+- **Slug:** title with the `Openfront/` / `Openfront/Clans/` prefixes stripped,
+  spaces → `_`. **Official OpenFront Masters tournaments keep an `OFM_` prefix**
+  (`Openfront/OFM/2025 World Cup` → `OFM_2025_World_Cup`); community-run
+  tournaments do not (`Openfront/2026 World Cup` → `2026_World_Cup`). Same
+  formatting either way. Collisions with existing slugs are detected and suffixed.
+- **Categories** (same structure for every page): `OpenFront Masters` always, plus
+  a subtype `Tournaments` / `Teams` / `Players`. Tournaments additionally carry
+  **`OFM Official`** or **`Community`** so the two are distinguishable in browse
+  and on the hub, without altering page format.
 
 ## Licensing
 
