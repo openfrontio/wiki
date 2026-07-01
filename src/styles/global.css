@@ -190,3 +190,53 @@ body {
 }
 .wiki-content .scrollable-math { overflow-x: auto; max-width: 100%; }
 .wiki-content .mwe-math-element { color: #fff; }
+
+/* --- Liquipedia (OpenFront Masters) content --- */
+.wiki-content .infobox,
+.wiki-content .panel-box {
+  display: block;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.5rem;
+  background: rgb(15 23 42 / 0.6);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+.wiki-content .infobox { max-width: 22rem; }
+.wiki-content .panel-box-heading,
+.wiki-content .infobox-header {
+  font-weight: 600;
+  color: var(--color-aquarius, #7dd3fc);
+  margin-bottom: 0.5rem;
+}
+.wiki-content .wikitable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+.wiki-content .wikitable th,
+.wiki-content .wikitable td {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+.wiki-content .wikitable th { background: rgb(255 255 255 / 0.05); }
+/* brackets: fall back to a readable stacked layout */
+.wiki-content .bracket,
+.wiki-content .brkts-bracket {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  overflow-x: auto;
+}
+.wiki-content .bracket-game,
+.wiki-content .brkts-match {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.6rem;
+  min-width: 12rem;
+}
+.wiki-content .flag img,
+.wiki-content .flag svg { height: 0.9em; display: inline; vertical-align: baseline; }
+.wiki-content .liq-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.35em; }
+.wiki-content .liq-noimg { color: var(--color-dawn, #94a3b8); font-style: italic; }
