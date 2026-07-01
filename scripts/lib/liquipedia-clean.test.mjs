@@ -91,6 +91,15 @@ test("cleanHtml strips infobox edit/help [e][h] buttons", () => {
   assert.match(out, /Name/);
 });
 
+test("cleanHtml wraps general-collapsible sections in closed <details>", () => {
+  const out = cleanHtml('<div class="csstable-widget collapsed general-collapsible prizepooltable">rows</div>', { slugMap: {}, icons: {} });
+  assert.match(out, /<details class="liq-collapse"><summary>Prize pool<\/summary>/);
+  assert.doesNotMatch(out, /<details[^>]*open/); // closed by default
+  // nested collapsibles: only the outer is wrapped
+  const nested = cleanHtml('<div class="general-collapsible"><div class="general-collapsible brkts">x</div></div>', { slugMap: {}, icons: {} });
+  assert.equal((nested.match(/<details/g) || []).length, 1);
+});
+
 test("cleanHtml converts /lab red links (class=new) to plain text", () => {
   const out = cleanHtml('<a href="/lab/Openfront/MissingPage" class="new">Missing</a>', { slugMap: {}, icons: {} });
   assert.doesNotMatch(out, /<a /);

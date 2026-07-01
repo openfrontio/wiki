@@ -196,4 +196,38 @@ const isStub = (page.cats || []).some((c) => /stub/i.test(c));
       (li as HTMLElement).style.display = t.includes(q) ? "" : "none";
     });
   });
+
+  // Liquipedia toggle-areas (group/bracket view switchers): Liquipedia shows one
+  // view and switches via JS; without it every view stacks. Re-implement the
+  // switch so only the active view shows and the pills work. No-op on pages
+  // without toggle-areas.
+  const SCOPE = '[data-toggle-area]:not([data-toggle-area=""])';
+  document.querySelectorAll(SCOPE).forEach((area) => {
+    const n = area.getAttribute("data-toggle-area");
+    const own = (sel: string) =>
+      Array.from(area.querySelectorAll(sel)).filter((el) => el.closest(SCOPE) === area);
+    const contents = own("[data-toggle-area-content]") as HTMLElement[];
+    const pills = own(`[data-toggle-area-btn="${n}"]`) as HTMLElement[];
+    if (contents.length < 2 && pills.length < 2) return; // nothing to switch
+    const active = pills.find((p) => p.classList.contains("switch-pill-option-active"));
+    let val = active?.getAttribute("data-switch-value") ?? "1";
+    const apply = () => {
+      contents.forEach((c) => {
+        c.style.display = c.getAttribute("data-toggle-area-content") === val ? "" : "none";
+      });
+      pills.forEach((p) =>
+        p.classList.toggle(
+          "switch-pill-option-active",
+          p.getAttribute("data-switch-value") === val,
+        ),
+      );
+    };
+    pills.forEach((p) =>
+      p.addEventListener("click", () => {
+        val = p.getAttribute("data-switch-value") ?? val;
+        apply();
+      }),
+    );
+    apply();
+  });
 </script>

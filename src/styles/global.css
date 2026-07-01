@@ -433,7 +433,38 @@ body {
 .wiki-content .block-player .name { font-weight: 600; color: #fff; overflow: hidden; text-overflow: ellipsis; }
 .wiki-content .inline-player { color: var(--color-aquarius); }
 
-/* collapsibles & misc chrome (JS toggling isn't wired up — keep inert, tidy) */
+/* native <details> collapse for Liquipedia's default-collapsed sections
+   (prize pools, match lists) so tournament pages aren't fully expanded */
+.wiki-content details.liq-collapse {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  margin: 1.2rem 0;
+  overflow: hidden;
+  background: rgb(255 255 255 / 0.02);
+}
+.wiki-content details.liq-collapse > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.55rem 0.9rem;
+  background: var(--color-navy-600);
+  font-family: var(--font-display), var(--font-sans);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.wiki-content details.liq-collapse > summary::-webkit-details-marker { display: none; }
+.wiki-content details.liq-collapse > summary::before {
+  content: "▸";
+  color: var(--color-aquarius);
+  transition: transform 0.15s;
+}
+.wiki-content details.liq-collapse[open] > summary::before { transform: rotate(90deg); }
+.wiki-content details.liq-collapse > *:not(summary) { margin: 0.7rem 0.9rem 0.9rem; }
+
+/* collapsibles & misc chrome — switch pills are now interactive (see [slug].astro) */
 .wiki-content .toggle-area {
   border: 1px solid rgb(255 255 255 / 0.08);
   border-radius: 0.5rem;
@@ -441,6 +472,7 @@ body {
   padding: 0.6rem 0.8rem;
   margin: 0.8rem 0;
 }
+.wiki-content .switch-pill-option { cursor: pointer; }
 .wiki-content .switch-pill { display: inline-flex; border: 1px solid rgb(255 255 255 / 0.12); border-radius: 999px; overflow: hidden; margin-bottom: 0.6rem; }
 .wiki-content .switch-pill-option { padding: 0.25rem 0.75rem; font-size: 0.78rem; font-weight: 600; color: var(--color-dawn); }
 .wiki-content .switch-pill-option-active { background: var(--color-malibu); color: #fff; }

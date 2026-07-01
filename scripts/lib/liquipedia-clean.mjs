@@ -128,5 +128,23 @@ export function cleanHtml(html, { slugMap, icons }) {
     }
   });
 
+  // Wrap Liquipedia's default-collapsed sections in native <details> (closed by
+  // default, no JS needed to expand) so long tournament pages aren't fully
+  // expanded on load. Only the outermost of any nested pair is wrapped.
+  $(".general-collapsible").each((_, el) => {
+    const $el = $(el);
+    if ($el.parents(".general-collapsible").length) return; // nested -> skip
+    $el.wrap('<details class="liq-collapse"></details>');
+    $el.parent().prepend(`<summary>${collapseLabel($el.attr("class") || "")}</summary>`);
+  });
+
   return $.html().trim();
+}
+
+function collapseLabel(cls) {
+  if (/prizepool/.test(cls)) return "Prize pool";
+  if (/matchlist|brkts|bracket/.test(cls)) return "Matches";
+  if (/participant/.test(cls)) return "Participants";
+  if (/group-table|standings/.test(cls)) return "Standings";
+  return "Details";
 }
