@@ -6,6 +6,9 @@ export function deriveSlug(rawSlug) {
   const ofm = s.startsWith("OFM/");
   s = s.replace(/^OFM\//, "").replace(/^Clans\//, "");
   s = s.replace(/\//g, "_"); // any remaining subpage slashes
+  // strip characters illegal in a static route / Windows dir name (e.g. a stray
+  // "Template:" namespace colon), so every slug is a valid build path
+  s = s.replace(/[<>:"\\|?*]/g, "_");
   return ofm ? "OFM_" + s : s;
 }
 
@@ -41,7 +44,8 @@ export function buildSlugMap(rawPages) {
 // Host country flags (*_hd.png) + the game's own PNG/SVG UI assets; skip
 // team/event logos and player photos. Populate the override sets in Task 8 for
 // any straggler that slips past the heuristics.
-const DENY_LIST = new Set([]); // exact filenames to always skip
+// exact filenames to always skip (team/event logos that slip past the heuristics)
+const DENY_LIST = new Set(["Delta_Force_icon_allmode.png", "LUX_2026_allmode.png"]);
 const ALLOW_LIST = new Set([]); // exact filenames to always host
 const FLAG = /_hd\.png$/i;
 const LOGO_OR_PHOTO = /(logo|filler|event|avatar|profile|poster|banner|squad|photo)/i;

@@ -19,6 +19,11 @@ test("deriveSlug strips Openfront prefixes, marks OFM", () => {
   assert.equal(deriveSlug("Openfront/Antares"), "Antares");
 });
 
+test("deriveSlug sanitizes path-illegal characters", () => {
+  assert.doesNotMatch(deriveSlug("Openfront/BAGNO:_King_of_the_Hill"), /[<>:"\\|?*]/);
+  assert.equal(deriveSlug("Openfront/BAGNO:_King_of_the_Hill"), "BAGNO__King_of_the_Hill");
+});
+
 test("deriveCats classifies from Liquipedia categories, tags OFM vs community", () => {
   assert.deepEqual(deriveCats("Openfront/OFM/2025_World_Cup", ["Tournaments", "S-Tier Tournaments"]),
     ["OpenFront Masters", "Tournaments", "OFM Official"]);

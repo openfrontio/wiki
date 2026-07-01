@@ -36,7 +36,10 @@ for (const p of raw)
       if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(OUT_IMG, im.safe)); imgN++; }
     }
 
-const liqPages = raw.map((p) => {
+const liqPages = raw
+  // skip namespace pages (Template:/User:/… under Openfront/) — not real content
+  .filter((p) => !/:/.test(p.slug.replace(/^Openfront\//, "")))
+  .map((p) => {
   const html = cleanHtml(p.html, { slugMap, icons: ICONS });
   return {
     slug: deriveSlug(p.slug),
