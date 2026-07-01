@@ -3,6 +3,7 @@
 //   [--only "Openfront/Antares,Openfront/2026 World Cup"] [--force]
 import fs from "fs";
 import path from "path";
+import { isHostableImage } from "./lib/liquipedia-clean.mjs";
 
 const CACHE = process.argv[2];
 if (!CACHE) {
@@ -44,9 +45,6 @@ async function api(params, isParse) {
   if (!r.ok) throw new Error(`API ${r.status} for ${params}`);
   return r.json();
 }
-
-const FREE = /cc[- ]by([- ]sa)?|cc0|public domain|creative commons/i;
-const isFree = (lic) => !!lic && FREE.test(lic) && !/no license|non[- ]free|fair use|all rights/i.test(lic);
 
 // 1. Enumerate Openfront/* content pages
 let titles = [];
@@ -99,23 +97,23 @@ for (const title of titles) {
   });
 }
 
-// 3. Resolve image URLs + licenses (batched query, 2s apart)
-const meta = {}; // name -> {url, license}
+// 3. Resolve image download URLs (batched query, 2s apart). Liquipedia exposes
+//    no usable license metadata, so we only need the URL here; hostability is
+//    decided by filename via isHostableImage.
+const meta = {}; // name -> url
 const all = [...fileNames];
 for (let i = 0; i < all.length; i += 20) {
   const batch = all.slice(i, i + 20).map((n) => "File:" + n).map(encodeURIComponent).join("|");
-  const r = await api(`action=query&titles=${batch}&prop=imageinfo&iiprop=url|extmetadata`, false);
+  const r = await api(`action=query&titles=${batch}&prop=imageinfo&iiprop=url`, false);
   for (const p of Object.values(r.query?.pages ?? {})) {
     const ii = p.imageinfo?.[0];
     if (!ii) continue;
     const name = p.title.replace(/^File:/, "").replace(/ /g, "_");
-    const license =
-      ii.extmetadata?.LicenseShortName?.["*"] || ii.extmetadata?.License?.["*"] || "";
-    meta[name] = { url: ii.url, license };
+    meta[name] = ii.url;
   }
 }
 
-// 4. Download free images
+// 4. Download hostable images (flags + game assets); logos/photos are skipped.
 async function download(url, dest) {
   const r = await fetch(url, { headers: { "User-Agent": UA } });
   if (!r.ok) return false;
@@ -125,19 +123,19 @@ async function download(url, dest) {
 for (const p of pages) {
   p.liqImages = [];
   for (const name of p._imgs) {
-    const m = meta[name];
-    const free = m ? isFree(m.license) : false;
-    if (free && m) {
+    const url = meta[name];
+    const host = isHostableImage(name);
+    if (host && url) {
       const safe = name.replace(/[^a-zA-Z0-9._-]/g, "_");
-      if (!fs.existsSync(path.join(IMG, safe))) await download(m.url, path.join(IMG, safe));
-      p.liqImages.push({ name, safe, url: m.url, license: m.license, free: true });
+      if (!fs.existsSync(path.join(IMG, safe))) await download(url, path.join(IMG, safe));
+      p.liqImages.push({ name, safe, url, host: true });
     } else {
-      p.liqImages.push({ name, url: m?.url, license: m?.license || "unknown", free: false });
+      p.liqImages.push({ name, url, host: false });
     }
   }
   delete p._imgs;
 }
 
 fs.writeFileSync(path.join(CACHE, "liquipedia.json"), JSON.stringify(pages, null, 2));
-const freeCount = pages.reduce((n, p) => n + p.liqImages.filter((i) => i.free).length, 0);
-console.log(`wrote ${pages.length} pages; images: ${freeCount} free / ${all.length} total`);
+const hostCount = pages.reduce((n, p) => n + p.liqImages.filter((i) => i.host).length, 0);
+console.log(`wrote ${pages.length} pages; images: ${hostCount} hostable / ${all.length} total`);
