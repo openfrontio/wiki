@@ -25,3 +25,8 @@ test("pageDescription falls back to body text when there is no <p>", () => {
   const d = pageDescription("<ul><li>Alpha bravo charlie delta echo foxtrot golf.</li></ul>");
   assert.match(d, /Alpha bravo/);
 });
+
+test("pageDescription keeps inline de-linked/dropped-image text (no mid-sentence gaps)", () => {
+  const d = pageDescription('<p>The empire of <span class="wiki-deadlink">Timur</span> conquered vast territory across the region.</p>');
+  assert.match(d, /empire of Timur conquered/);
+});

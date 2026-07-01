@@ -16,12 +16,13 @@ const raw = JSON.parse(fs.readFileSync(path.join(CACHE, "liquipedia.json"), "utf
 
 // icon-coverage guard: warn on FontAwesome classes we don't map (they'd be
 // stripped and render as nothing). fa-xs/fa-fw/fa-lg are size/util modifiers.
-const MODIFIERS = new Set(["fa-xs", "fa-sm", "fa-lg", "fa-fw", "fa-2x", "fa-3x", "fa-spin", "fa-pulse"]);
+// FontAwesome size/style/animation utility classes are not icons themselves
+const MODIFIER = /^fa-(xs|sm|lg|\d+x|fw|spin|pulse|solid|regular|brands|light|thin|duotone|inverse|stack|flip|rotate|border|pull|beat|fade|bounce|shake|sr-only)/;
 const usedIcons = new Set();
 for (const p of raw)
   for (const m of (p.html || "").matchAll(/\bfa-[a-z0-9-]+/g)) usedIcons.add(m[0]);
 const mappedIcons = new Set(Object.keys(ICONS));
-const unmapped = [...usedIcons].filter((c) => !mappedIcons.has(c) && !MODIFIERS.has(c));
+const unmapped = [...usedIcons].filter((c) => !mappedIcons.has(c) && !MODIFIER.test(c));
 if (unmapped.length)
   console.warn(
     `WARN ${unmapped.length} unmapped fa- icon(s) (will render blank): ${unmapped.join(", ")}\n` +
