@@ -191,52 +191,277 @@ body {
 .wiki-content .scrollable-math { overflow-x: auto; max-width: 100%; }
 .wiki-content .mwe-math-element { color: #fff; }
 
-/* --- Liquipedia (OpenFront Masters) content --- */
+/* ===================================================================
+   Liquipedia (OpenFront Masters) widgets — themed to the site's card /
+   table / border language. All colors are @theme tokens or rgba over
+   white/black; every selector scoped under .wiki-content.
+   =================================================================== */
+
+/* 0. Paired light/dark assets. Liquipedia ships every shield/logo twice
+   (lightmode + darkmode) for a theme toggle this static site doesn't run,
+   so both paint — doubling row height. This site is permanently dark:
+   keep darkmode, drop lightmode. (Highest-impact fix.) */
+.wiki-content .team-template-lightmode,
+.wiki-content .logo-lightmode { display: none; }
+.wiki-content .team-template-image-icon { display: inline-block; vertical-align: middle; }
+.wiki-content .team-template-image-icon img,
+.wiki-content .logo img {
+  height: 1.3em;
+  width: auto;
+  vertical-align: middle;
+  border-radius: 0.2rem;
+}
+
+/* infobox / panel-box / template-box -> site card idiom (like figure/.asbox) */
 .wiki-content .infobox,
-.wiki-content .panel-box {
+.wiki-content .panel-box,
+.wiki-content .template-box {
   display: block;
+  background: var(--color-navy-700);
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 0.5rem;
-  background: rgb(15 23 42 / 0.6);
+  border-radius: 0.6rem;
   padding: 0.75rem 1rem;
   margin: 1rem 0;
 }
 .wiki-content .infobox { max-width: 22rem; }
-.wiki-content .panel-box-heading,
-.wiki-content .infobox-header {
-  font-weight: 600;
-  color: var(--color-aquarius, #7dd3fc);
-  margin-bottom: 0.5rem;
+.wiki-content .infobox-header,
+.wiki-content .panel-box-heading {
+  font-family: var(--font-display), var(--font-sans);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #fff;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+  padding: 0 0.25rem 0.4rem;
+  margin: -0.25rem -0.25rem 0.6rem;
 }
-.wiki-content .wikitable {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.875rem;
+.wiki-content .infobox-header-2 {
+  font-size: 0.95rem;
+  color: var(--color-aquarius);
+  border-bottom: none;
+  margin-top: 0.6rem;
 }
-.wiki-content .wikitable th,
-.wiki-content .wikitable td {
+
+/* wikitable-bordered — variant class alongside `wikitable` (base handled by
+   table.wikitable above); just firm up the outer edge for embedded tables */
+.wiki-content table.wikitable-bordered { border-color: rgb(255 255 255 / 0.15); }
+
+/* group-table — group-stage standings (grid; container carries inline cols) */
+.wiki-content .group-table {
   border: 1px solid rgb(255 255 255 / 0.1);
-  padding: 0.4rem 0.6rem;
-  text-align: left;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
 }
-.wiki-content .wikitable th { background: rgb(255 255 255 / 0.05); }
-/* brackets: fall back to a readable stacked layout */
-.wiki-content .bracket,
+.wiki-content .group-table-header { background: var(--color-navy-600); padding: 0.5rem 0.8rem; }
+.wiki-content .group-table-title {
+  font-family: var(--font-display), var(--font-sans);
+  color: #fff;
+  font-weight: 700;
+}
+.wiki-content .group-table-results { display: grid; }
+.wiki-content .group-table-result-row {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+.wiki-content .group-table-result-row:nth-child(even) { background: rgb(255 255 255 / 0.02); }
+.wiki-content .group-table-cell { padding: 0.5rem 0.7rem; display: flex; align-items: center; }
+.wiki-content .group-table-rank { color: var(--color-aquarius); font-weight: 700; justify-content: center; }
+
+/* csstable-widget — CSS-grid tables (prizepool / placements) */
+.wiki-content .csstable-widget {
+  display: grid;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+.wiki-content .csstable-widget-row {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+}
+.wiki-content .csstable-widget-row:first-child { border-top: none; }
+.wiki-content .csstable-widget-row.prizepooltable-header { background: var(--color-navy-600); color: #fff; }
+.wiki-content .csstable-widget-row:not(.prizepooltable-header):nth-child(even) { background: rgb(255 255 255 / 0.02); }
+.wiki-content .csstable-widget-cell { padding: 0.5rem 0.8rem; display: flex; align-items: center; }
+.wiki-content .prizepooltable-place { color: var(--color-masters); font-weight: 700; gap: 0.35rem; }
+.wiki-content .csstable-widget-row.background-color-first-place { background: rgb(255 215 0 / 0.1); }
+.wiki-content .csstable-widget-row.background-color-second-place { background: rgb(255 255 255 / 0.06); }
+.wiki-content .csstable-widget-row.background-color-third-place { background: rgb(255 255 255 / 0.04); }
+
+/* panel-table — battle-royale / clan-wars standings (JS-driven; flex rows) */
+.wiki-content .panel-table__cell {
+  padding: 0.5rem 0.7rem;
+  border-top: 1px solid rgb(255 255 255 / 0.08);
+  display: flex;
+  align-items: center;
+}
+.wiki-content .row--header .panel-table__cell {
+  background: var(--color-navy-600);
+  color: #fff;
+  font-weight: 700;
+  border-top: none;
+}
+.wiki-content .panel-table__cell-grouped { display: flex; align-items: center; gap: 0.4rem; }
+
+/* participantTable — participant grid on tournament pages */
+.wiki-content .participantTable { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.2rem 0; }
+.wiki-content .participantTable-entry {
+  background: var(--color-navy-700);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.7rem;
+}
+.wiki-content .participantTable-title {
+  font-family: var(--font-display), var(--font-sans);
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+.wiki-content .participantTable-tbd { opacity: 0.6; font-style: italic; }
+
+/* brackets — lay rounds out horizontally with internal scroll (reusing
+   Liquipedia's own inline --match-width vars) instead of wrapping into a
+   very tall vertical stack. Readable-not-pixel-perfect. */
+.wiki-content .brkts-bracket-wrapper { overflow-x: auto; overflow-y: hidden; margin: 1rem 0; padding-bottom: 0.5rem; }
 .wiki-content .brkts-bracket {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  overflow-x: auto;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--round-horizontal-margin, 1.25rem);
+  width: max-content;
+  min-width: 100%;
 }
-.wiki-content .bracket-game,
-.wiki-content .brkts-match {
+.wiki-content .brkts-bracket > div { display: flex; flex-direction: column; gap: 0.6rem; }
+.wiki-content .brkts-round-header {
+  font-family: var(--font-display), var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-aquarius);
+  text-align: center;
+  padding: 0.25rem 0.4rem;
+}
+.wiki-content .brkts-header-option { display: none; }
+.wiki-content .brkts-match,
+.wiki-content .bracket-game {
+  width: var(--match-width, 200px);
   border: 1px solid rgb(255 255 255 / 0.1);
-  border-radius: 0.375rem;
-  padding: 0.4rem 0.6rem;
-  min-width: 12rem;
+  border-radius: 0.5rem;
+  background: var(--color-navy-700);
+  padding: 0.3rem;
+  overflow: hidden;
 }
+.wiki-content .brkts-opponent-hover:hover { background: rgb(255 255 255 / 0.06); }
+.wiki-content .brkts-matchlist { display: flex; flex-direction: column; gap: 0.5rem; margin: 1rem 0; }
+.wiki-content .brkts-matchlist-match {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.5rem;
+  background: var(--color-navy-700);
+  overflow: hidden;
+}
+.wiki-content .brkts-matchlist-cell { display: flex; align-items: center; padding: 0.4rem 0.7rem; font-size: 0.88rem; }
+.wiki-content .brkts-matchlist-opponent { justify-content: space-between; gap: 0.5rem; border-bottom: 1px solid rgb(255 255 255 / 0.06); }
+.wiki-content .brkts-matchlist-opponent:last-of-type { border-bottom: 0; }
+.wiki-content .brkts-matchlist-cell-content { display: flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.wiki-content .brkts-matchlist-cell-content .name { overflow: hidden; text-overflow: ellipsis; }
+.wiki-content .brkts-matchlist-slot-winner {
+  background: rgb(255 215 0 / 0.06);
+  border-left: 2px solid var(--color-masters);
+  font-weight: 700;
+  color: #fff;
+}
+.wiki-content .brkts-matchlist-score { font-weight: 700; color: var(--color-dawn); min-width: var(--score-width, 22px); text-align: center; flex: 0 0 auto; }
+.wiki-content .brkts-matchlist-slot-winner .brkts-matchlist-score { color: var(--color-masters); }
+.wiki-content .brkts-popup-spaced { display: flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; }
+
+/* team & match cards */
+.wiki-content .teamcard {
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  background: var(--color-navy-700);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.wiki-content .teamcard-inner { margin-top: 0.5rem; }
+.wiki-content .teamcard .wikitable { margin: 0; font-size: 0.85rem; }
+.wiki-content .match-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 0.6rem;
+  background: var(--color-navy-700);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+.wiki-content .match-info-header-opponent { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; min-width: 0; }
+.wiki-content .match-info-header-opponent-right { flex-direction: row-reverse; text-align: right; }
+.wiki-content .match-info-header-winner { color: var(--color-masters); font-weight: 700; }
+.wiki-content .match-info-header-winner .name { color: #fff; }
+.wiki-content [class*="match-info-header-scoreholder"] {
+  font-family: var(--font-display), var(--font-sans);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  flex: 0 0 auto;
+  padding: 0 0.5rem;
+}
+.wiki-content .generic-label { display: inline-block; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: rgb(255 255 255 / 0.15); }
+.wiki-content .generic-label[data-label-type="result-win"] { background: var(--color-aquarius); }
+.wiki-content .generic-label[data-label-type="result-loss"] { background: var(--color-territory); }
+
+/* player / team name blocks */
+.wiki-content .block-team,
+.wiki-content .block-player { display: inline-flex; align-items: center; gap: 0.4rem; min-width: 0; }
+.wiki-content .block-team.flipped { flex-direction: row-reverse; }
+.wiki-content .block-players-wrapper { display: flex; flex-direction: column; gap: 0.3rem; }
+.wiki-content .block-player .flag img,
+.wiki-content .block-team .flag img { height: 0.85em; width: auto; border-radius: 0.1rem; vertical-align: middle; }
+.wiki-content .block-team .name,
+.wiki-content .block-player .name { font-weight: 600; color: #fff; overflow: hidden; text-overflow: ellipsis; }
+.wiki-content .inline-player { color: var(--color-aquarius); }
+
+/* collapsibles & misc chrome (JS toggling isn't wired up — keep inert, tidy) */
+.wiki-content .toggle-area {
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: 0.5rem;
+  background: rgb(255 255 255 / 0.02);
+  padding: 0.6rem 0.8rem;
+  margin: 0.8rem 0;
+}
+.wiki-content .switch-pill { display: inline-flex; border: 1px solid rgb(255 255 255 / 0.12); border-radius: 999px; overflow: hidden; margin-bottom: 0.6rem; }
+.wiki-content .switch-pill-option { padding: 0.25rem 0.75rem; font-size: 0.78rem; font-weight: 600; color: var(--color-dawn); }
+.wiki-content .switch-pill-option-active { background: var(--color-malibu); color: #fff; }
+.wiki-content .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.78rem;
+  color: var(--color-dawn);
+  background: rgb(255 255 255 / 0.03);
+}
+.wiki-content .btn-secondary { color: var(--color-aquarius); }
+.wiki-content .tabs-scroll-arrow { display: none; }
+.wiki-content .bg-up { background: rgb(255 255 255 / 0.02); }
+.wiki-content .bg-down { background: rgb(0 0 0 / 0.15); }
+
+/* flags & inline icons */
 .wiki-content .flag img,
 .wiki-content .flag svg { height: 0.9em; display: inline; vertical-align: baseline; }
-.wiki-content .liq-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.35em; }
-.wiki-content .liq-noimg { color: var(--color-dawn, #94a3b8); font-style: italic; }
+.wiki-content .liq-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.35em; color: var(--color-dawn); opacity: 0.9; }
+.wiki-content .liq-noimg { color: var(--color-dawn); font-style: italic; }
