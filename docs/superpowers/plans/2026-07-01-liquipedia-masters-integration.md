@@ -14,7 +14,7 @@
 - **Liquipedia ToS:** API endpoint `https://liquipedia.net/lab/api.php` only — no HTML page scraping. `User-Agent: OpenFrontWiki/1.0 (https://openfront.wiki; lewis@outpostgroup.io)` on every request. Rate limit: `action=parse` ≤ 1 request / 30s; every other request ≤ 1 request / 2s. Cache raw responses; never refetch unless `--force`.
 - **Attribution (exact copy):** every mirrored page shows — `This page uses material from Liquipedia, licensed under CC BY-SA 3.0.` with "Liquipedia" linking to the page's `sourceUrl` and "CC BY-SA 3.0" linking to `https://creativecommons.org/licenses/by-sa/3.0/`.
 - **Slug convention:** `Title_With_Underscores`. Official OFM tournaments (`Openfront/OFM/*`) get an `OFM_` slug prefix; community tournaments do not. Categories always include `OpenFront Masters`; tournaments also get `OFM Official` or `Community`; plus a subtype `Tournaments`/`Teams`/`Players`.
-- **Images:** only re-host images whose Liquipedia `extmetadata` license is free (CC-BY, CC-BY-SA, CC0, Public domain). Non-free images are dropped to their `alt` text.
+- **Images:** Liquipedia exposes no machine-readable license (verified), so hostability is decided by the shared `isHostableImage(name)` filename allow-list (Task 2): country flags (`*_hd.png`) and the game's own PNG/SVG UI assets are hosted; team/event logos and photos (jpg/webp, or names containing `logo`/`filler`/`event`/`photo`/`avatar`/`banner`/`squad`) drop to `alt` text. `DENY_LIST`/`ALLOW_LIST` exact-name sets override.
 - **Verification before commit:** any change affecting the rendered site is `npm run build` + screenshot-verified per `CLAUDE.md` before committing.
 - **New page fields:** `source: "liquipedia"` and `sourceUrl: "<url>"` on mirrored pages only; game/legacy pages omit them.
 
@@ -42,7 +42,8 @@ Fetch output cache lives outside the repo (scratchpad / a `--cache` dir); only `
 - Create: `scripts/liquipedia-fetch.mjs`
 
 **Interfaces:**
-- Produces: a snapshot directory `<cacheDir>/` containing `raw/<slug>.json` (cached parse responses), `images/<name>` (downloaded free images), and `liquipedia.json` — an array of `{ slug: string, title: string, sourceUrl: string, html: string, cats: string[], liqImages: Array<{ name: string, url: string, license: string, free: boolean }> }`. `slug` here is the raw page title with spaces→`_` (e.g. `Openfront/OFM/2025_World_Cup`); the final site slug is derived later in Task 2.
+- Consumes: `isHostableImage` from Task 2's `scripts/lib/liquipedia-clean.mjs` (build Task 2 first).
+- Produces: a snapshot directory `<cacheDir>/` containing `raw/<slug>.json` (cached parse responses), `images/<name>` (downloaded hostable images), and `liquipedia.json` — an array of `{ slug: string, title: string, sourceUrl: string, html: string, cats: string[], liqImages: Array<{ name: string, safe?: string, url: string, host: boolean }> }`. `slug` here is the raw page title with spaces→`_` (e.g. `Openfront/OFM/2025_World_Cup`); the final site slug is derived later in Task 2.
 - CLI: `node scripts/liquipedia-fetch.mjs <cacheDir> [--limit N] [--only "Title,Title"] [--force]`.
 
 - [ ] **Step 1: Write the fetcher**
@@ -55,6 +56,7 @@ Create `scripts/liquipedia-fetch.mjs`:
 //   [--only "Openfront/Antares,Openfront/2026 World Cup"] [--force]
 import fs from "fs";
 import path from "path";
+import { isHostableImage } from "./lib/liquipedia-clean.mjs";
 
 const CACHE = process.argv[2];
 if (!CACHE) {
@@ -96,9 +98,6 @@ async function api(params, isParse) {
   if (!r.ok) throw new Error(`API ${r.status} for ${params}`);
   return r.json();
 }
-
-const FREE = /cc[- ]by([- ]sa)?|cc0|public domain|creative commons/i;
-const isFree = (lic) => !!lic && FREE.test(lic) && !/no license|non[- ]free|fair use|all rights/i.test(lic);
 
 // 1. Enumerate Openfront/* content pages
 let titles = [];
@@ -151,23 +150,23 @@ for (const title of titles) {
   });
 }
 
-// 3. Resolve image URLs + licenses (batched query, 2s apart)
-const meta = {}; // name -> {url, license}
+// 3. Resolve image download URLs (batched query, 2s apart). Liquipedia exposes
+//    no usable license metadata, so we only need the URL here; hostability is
+//    decided by filename via isHostableImage.
+const meta = {}; // name -> url
 const all = [...fileNames];
 for (let i = 0; i < all.length; i += 20) {
   const batch = all.slice(i, i + 20).map((n) => "File:" + n).map(encodeURIComponent).join("|");
-  const r = await api(`action=query&titles=${batch}&prop=imageinfo&iiprop=url|extmetadata`, false);
+  const r = await api(`action=query&titles=${batch}&prop=imageinfo&iiprop=url`, false);
   for (const p of Object.values(r.query?.pages ?? {})) {
     const ii = p.imageinfo?.[0];
     if (!ii) continue;
     const name = p.title.replace(/^File:/, "").replace(/ /g, "_");
-    const license =
-      ii.extmetadata?.LicenseShortName?.["*"] || ii.extmetadata?.License?.["*"] || "";
-    meta[name] = { url: ii.url, license };
+    meta[name] = ii.url;
   }
 }
 
-// 4. Download free images
+// 4. Download hostable images (flags + game assets); logos/photos are skipped.
 async function download(url, dest) {
   const r = await fetch(url, { headers: { "User-Agent": UA } });
   if (!r.ok) return false;
@@ -177,22 +176,22 @@ async function download(url, dest) {
 for (const p of pages) {
   p.liqImages = [];
   for (const name of p._imgs) {
-    const m = meta[name];
-    const free = m ? isFree(m.license) : false;
-    if (free && m) {
+    const url = meta[name];
+    const host = isHostableImage(name);
+    if (host && url) {
       const safe = name.replace(/[^a-zA-Z0-9._-]/g, "_");
-      if (!fs.existsSync(path.join(IMG, safe))) await download(m.url, path.join(IMG, safe));
-      p.liqImages.push({ name, safe, url: m.url, license: m.license, free: true });
+      if (!fs.existsSync(path.join(IMG, safe))) await download(url, path.join(IMG, safe));
+      p.liqImages.push({ name, safe, url, host: true });
     } else {
-      p.liqImages.push({ name, url: m?.url, license: m?.license || "unknown", free: false });
+      p.liqImages.push({ name, url, host: false });
     }
   }
   delete p._imgs;
 }
 
 fs.writeFileSync(path.join(CACHE, "liquipedia.json"), JSON.stringify(pages, null, 2));
-const freeCount = pages.reduce((n, p) => n + p.liqImages.filter((i) => i.free).length, 0);
-console.log(`wrote ${pages.length} pages; images: ${freeCount} free / ${all.length} total`);
+const hostCount = pages.reduce((n, p) => n + p.liqImages.filter((i) => i.host).length, 0);
+console.log(`wrote ${pages.length} pages; images: ${hostCount} hostable / ${all.length} total`);
 ```
 
 - [ ] **Step 2: Validate on a 3-page subset (one tournament, one team, one player)**
@@ -226,7 +225,8 @@ git commit -m "Add ToS-compliant Liquipedia Lab fetcher"
   - `deriveSlug(rawSlug: string): string` — `Openfront/OFM/2025_World_Cup` → `OFM_2025_World_Cup`; `Openfront/2026_World_Cup` → `2026_World_Cup`; `Openfront/Clans/United_Nations` → `United_Nations`; `Openfront/Antares` → `Antares`.
   - `deriveCats(rawSlug: string, html: string): string[]` — always includes `"OpenFront Masters"`; adds `"Tournaments"`+(`"OFM Official"`|`"Community"`) / `"Teams"` / `"Players"`.
   - `buildSlugMap(rawPages: Array): Record<string,string>` — maps each raw title (spaces→`_`) to its derived site slug, for link rewriting.
-  - `cleanHtml(html: string, opts: { slugMap, freeImages: Set<string>, icons }): string` — strip chrome, rewrite links + images, drop non-free images, map icons.
+  - `isHostableImage(name: string): boolean` — filename allow-list (flags + game assets in; logos/photos out). Shared with the fetcher (Task 1).
+  - `cleanHtml(html: string, opts: { slugMap, icons }): string` — strip chrome, rewrite links, keep `isHostableImage` images (rewrite `src`) and drop the rest to `alt` text, map icons.
 
 - [ ] **Step 1: Write failing tests**
 
@@ -235,7 +235,17 @@ Create `scripts/lib/liquipedia-clean.test.mjs`:
 ```js
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { deriveSlug, deriveCats, buildSlugMap, cleanHtml } from "./liquipedia-clean.mjs";
+import { deriveSlug, deriveCats, buildSlugMap, cleanHtml, isHostableImage } from "./liquipedia-clean.mjs";
+
+test("isHostableImage: flags and game assets in, logos/photos out", () => {
+  assert.equal(isHostableImage("Us_hd.png"), true); // country flag
+  assert.equal(isHostableImage("World_hd.png"), true);
+  assert.equal(isHostableImage("Gold.png"), true); // game UI asset
+  assert.equal(isHostableImage("Halved_Shield_default_lightmode.png"), true);
+  assert.equal(isHostableImage("Logo_filler_event.png"), false); // event logo
+  assert.equal(isHostableImage("Hulkiora.jpg"), false); // player photo
+  assert.equal(isHostableImage("Team_banner.png"), false); // banner
+});
 
 test("deriveSlug strips Openfront prefixes, marks OFM", () => {
   assert.equal(deriveSlug("Openfront/OFM/2025_World_Cup"), "OFM_2025_World_Cup");
@@ -264,34 +274,33 @@ test("buildSlugMap maps raw titles to site slugs", () => {
 test("cleanHtml rewrites internal links to local slugs", () => {
   const map = { "Openfront/Antares": "Antares" };
   const out = cleanHtml('<a href="/lab/Openfront/Antares" title="x">Antares</a>', {
-    slugMap: map, freeImages: new Set(), icons: {},
+    slugMap: map, icons: {},
   });
   assert.match(out, /href="\/Antares"/);
 });
 
 test("cleanHtml sends unknown/liquipedia links external", () => {
-  const out = cleanHtml('<a href="/lab/Dota_2">Dota</a>', { slugMap: {}, freeImages: new Set(), icons: {} });
+  const out = cleanHtml('<a href="/lab/Dota_2">Dota</a>', { slugMap: {}, icons: {} });
   assert.match(out, /target="_blank"/);
   assert.match(out, /href="https:\/\/liquipedia\.net\/lab\/Dota_2"/);
 });
 
-test("cleanHtml drops non-free images to alt text, keeps free ones", () => {
-  const free = new Set(["Flag.png"]);
-  const keep = cleanHtml('<img src="/lab/commons/images/Flag.png" alt="flag">', { slugMap: {}, freeImages: free, icons: {} });
-  assert.match(keep, /src="\/images\/liquipedia\/Flag\.png"/);
-  const drop = cleanHtml('<img src="/x/Logo.png" alt="Team logo">', { slugMap: {}, freeImages: new Set(), icons: {} });
+test("cleanHtml keeps hostable images, drops others to alt text", () => {
+  const keep = cleanHtml('<img src="/lab/commons/images/Us_hd.png" alt="flag">', { slugMap: {}, icons: {} });
+  assert.match(keep, /src="\/images\/liquipedia\/Us_hd\.png"/);
+  const drop = cleanHtml('<img src="/x/Logo_filler_event.png" alt="Team logo">', { slugMap: {}, icons: {} });
   assert.doesNotMatch(drop, /<img/);
   assert.match(drop, /Team logo/);
 });
 
 test("cleanHtml replaces fa icons with inline svg", () => {
   const icons = { "fa-book": '<svg data-i="book"></svg>' };
-  const out = cleanHtml('<span class="fas fa-book" aria-hidden="true"></span>', { slugMap: {}, freeImages: new Set(), icons });
+  const out = cleanHtml('<span class="fas fa-book" aria-hidden="true"></span>', { slugMap: {}, icons });
   assert.match(out, /data-i="book"/);
 });
 
 test("cleanHtml strips script/style/edit chrome", () => {
-  const out = cleanHtml('<script>x</script><span class="mw-editsection">e</span><p>keep</p>', { slugMap: {}, freeImages: new Set(), icons: {} });
+  const out = cleanHtml('<script>x</script><span class="mw-editsection">e</span><p>keep</p>', { slugMap: {}, icons: {} });
   assert.doesNotMatch(out, /<script|mw-editsection/);
   assert.match(out, /keep/);
 });
@@ -344,7 +353,25 @@ export function buildSlugMap(rawPages) {
   return m;
 }
 
-export function cleanHtml(html, { slugMap, freeImages, icons }) {
+// Liquipedia exposes no machine-readable image license, so decide by filename.
+// Host country flags (*_hd.png) + the game's own PNG/SVG UI assets; skip
+// team/event logos and player photos. Populate the override sets in Task 8 for
+// any straggler that slips past the heuristics.
+const DENY_LIST = new Set([]); // exact filenames to always skip
+const ALLOW_LIST = new Set([]); // exact filenames to always host
+const FLAG = /_hd\.png$/i;
+const LOGO_OR_PHOTO = /(logo|filler|event|avatar|profile|poster|banner|squad|photo)/i;
+const PHOTO_EXT = /\.(jpe?g|webp|gif)$/i;
+export function isHostableImage(name) {
+  if (ALLOW_LIST.has(name)) return true;
+  if (DENY_LIST.has(name)) return false;
+  if (FLAG.test(name)) return true; // country flags: PD/low-risk
+  if (LOGO_OR_PHOTO.test(name)) return false; // team/event logos
+  if (PHOTO_EXT.test(name)) return false; // photos are typically jpg/webp
+  return /\.(png|svg)$/i.test(name); // remaining PNG/SVG = game UI assets
+}
+
+export function cleanHtml(html, { slugMap, icons }) {
   const $ = cheerio.load(html, null, false);
 
   $(["script", "style", "link", "meta", ".mw-editsection", ".mw-empty-elt",
@@ -384,25 +411,22 @@ export function cleanHtml(html, { slugMap, freeImages, icons }) {
     }
   });
 
-  // images: keep only free ones, rewrite src; drop others to alt text
+  // images: keep hostable ones (rewrite src), drop the rest to alt text
   $("img").each((_, el) => {
     const $el = $(el);
     const src = $el.attr("src") || "";
     const name = decodeURIComponent(src.split("/").pop() || "").replace(/ /g, "_");
-    if (freeImages.has(name)) {
+    if (isHostableImage(name)) {
       const safe = name.replace(/[^a-zA-Z0-9._-]/g, "_");
       $el.attr("src", "/images/liquipedia/" + safe);
       $el.removeAttr("srcset").removeAttr("loading");
     } else {
-      $el.replaceWith(document_text($, $el.attr("alt")));
+      const alt = $el.attr("alt");
+      $el.replaceWith(alt ? `<span class="liq-noimg">${alt}</span>` : "");
     }
   });
 
   return $.html().trim();
-}
-
-function document_text($, alt) {
-  return alt ? `<span class="liq-noimg">${alt}</span>` : "";
 }
 ```
 
@@ -464,19 +488,17 @@ function headings(html) {
   return out;
 }
 
-// copy free images
+// copy hostable images (fetcher already downloaded only these)
 let imgN = 0;
-const freeImages = new Set();
 for (const p of raw)
   for (const im of p.liqImages || [])
-    if (im.free) {
-      freeImages.add(im.name);
+    if (im.host && im.safe) {
       const src = path.join(CACHE, "images", im.safe);
       if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(OUT_IMG, im.safe)); imgN++; }
     }
 
 const liqPages = raw.map((p) => {
-  const html = cleanHtml(p.html, { slugMap, freeImages, icons: ICONS });
+  const html = cleanHtml(p.html, { slugMap, icons: ICONS });
   return {
     slug: deriveSlug(p.slug),
     title: p.title,
@@ -778,13 +800,14 @@ node scripts/liquipedia-fetch.mjs /tmp/liq
 
 Expected: ~35 pages fetched/cached; `wrote 35 pages; images: N free / M total`.
 
-- [ ] **Step 2: Refresh the icon map from the full cache**
+- [ ] **Step 2: Refresh the icon map and vet the image allow-list from the full cache**
 
 ```bash
-grep -oh 'fa-[a-z-]*' /tmp/liq/raw/*.json | sort -u
+grep -oh 'fa-[a-z-]*' <cacheDir>/raw/*.json | sort -u    # icon classes in use
+node -e 'const j=require("<cacheDir>/liquipedia.json");const m={};for(const p of j)for(const i of p.liqImages||[])m[i.name]=i.host;for(const [n,h] of Object.entries(m).sort())console.log(h?"HOST":"skip",n)'
 ```
 
-For any `fa-` class not already in `src/data/liquipedia-icons.js`, add an inline SVG (or accept it renders as nothing — never leave the raw `fas` class). Re-run `node --test scripts/lib/` if you touched the library.
+For any `fa-` class not already in `src/data/liquipedia-icons.js`, add an inline SVG (or accept it renders as nothing — never leave the raw `fas` class). Review the `HOST`/`skip` list: if a team/event logo is wrongly `HOST`ed, add its exact filename to `DENY_LIST` in `scripts/lib/liquipedia-clean.mjs`; if a legit game asset is wrongly `skip`ped, add it to `ALLOW_LIST`. Re-run `node --test scripts/lib/` if you touched the library, then re-run the fetch (`--force` only if URLs changed) and prepare so downloads/manifest match.
 
 - [ ] **Step 3: Merge**
 

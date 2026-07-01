@@ -85,10 +85,15 @@ Cleaning rules:
   any `liquipedia.net` links → external (`target=_blank`, `rel=noopener`),
   keeping the reader on Liquipedia for anything we don't host. Red links (`.new`)
   → plain text.
-- **Images:** rewrite kept images' `src` → `/images/liquipedia/<name>`. Images
-  whose license is **not** free (per Stage 1 metadata) are removed and replaced
-  with their `alt` text. Free licenses: CC-BY-SA*, CC-BY*, CC0/public domain,
-  "self".
+- **Images:** Liquipedia exposes **no machine-readable license** via its API
+  (verified: `extmetadata` carries only DateTime/ObjectName, no license
+  categories). Hostability is therefore decided by a **filename allow-list**,
+  `isHostableImage(name)`: country flags (`*_hd.png`) and the game's own PNG/SVG
+  UI assets (Gold, shields, unit/building icons — from the AGPL open-source game)
+  are hosted; team/event logos and player photos (jpg/webp, or names containing
+  `logo`/`filler`/`event`/`photo`/`avatar`/`banner`/`squad`) are dropped to their
+  `alt` text. `DENY_LIST`/`ALLOW_LIST` exact-name override sets handle stragglers.
+  Kept images' `src` → `/images/liquipedia/<name>`.
 - **Attribution:** set `source: "liquipedia"` and `sourceUrl` on each page object.
 
 ### Stage 3 — site integration
@@ -168,7 +173,9 @@ tournaments — the format itself stays uniform.
   namespaced routes).
 - **Fidelity:** best-effort readable (own lightweight CSS + FontAwesome subset;
   brackets as readable tables).
-- **Images:** omit non-free logos/photos (license-filtered); keep free media.
+- **Images:** Liquipedia has no license metadata; use a filename allow-list —
+  host country flags (`*_hd.png`) + the game's own UI assets; skip team/event
+  logos and player photos. (Revised from license-filtering after fetch recon.)
 - **Attribution:** prominent per-page Liquipedia CC-BY-SA 3.0 credit.
 
 ## Testing / verification
