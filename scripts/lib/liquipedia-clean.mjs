@@ -63,7 +63,8 @@ export function cleanHtml(html, { slugMap, icons }) {
   const $ = cheerio.load(html, null, false);
 
   $(["script", "style", "link", "meta", ".mw-editsection", ".mw-empty-elt",
-     ".noprint", "#toc", ".toctogglecheckbox"].join(",")).remove();
+     ".noprint", "#toc", ".toctogglecheckbox",
+     ".infobox-buttons", ".navigation-not-searchable"].join(",")).remove();
 
   // icons: <span class="fas fa-book"> -> inline svg
   $("span[class*='fa-']").each((_, el) => {

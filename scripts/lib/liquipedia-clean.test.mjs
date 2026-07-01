@@ -83,6 +83,12 @@ test("cleanHtml strips script/style/edit chrome", () => {
   assert.match(out, /keep/);
 });
 
+test("cleanHtml strips infobox edit/help [e][h] buttons", () => {
+  const out = cleanHtml('<span class="infobox-buttons navigation-not-searchable">[<a href="/x?action=edit">e</a>]</span><b>Name</b>', { slugMap: {}, icons: {} });
+  assert.doesNotMatch(out, /infobox-buttons|\[e\]|action=edit/);
+  assert.match(out, /Name/);
+});
+
 test("cleanHtml converts /lab red links (class=new) to plain text", () => {
   const out = cleanHtml('<a href="/lab/Openfront/MissingPage" class="new">Missing</a>', { slugMap: {}, icons: {} });
   assert.doesNotMatch(out, /<a /);
