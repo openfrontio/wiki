@@ -390,6 +390,10 @@ export function cleanHtml(html, { slugMap, icons }) {
     let href = $el.attr("href") || "";
     const lab = href.match(/^(?:https?:\/\/liquipedia\.net)?\/lab\/(.+)$/);
     if (lab) {
+      if ($el.hasClass("new")) { // red link -> plain text (do this before routing)
+        $el.replaceWith(`<span class="wiki-deadlink">${$el.html() ?? $el.text()}</span>`);
+        return;
+      }
       const rawTitle = decodeURIComponent(lab[1].split("#")[0]).replace(/ /g, "_");
       const local = slugMap[rawTitle];
       if (local) {
