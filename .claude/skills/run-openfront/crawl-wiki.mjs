@@ -18,9 +18,13 @@ if (fs.existsSync(libs)) {
 const OUT = process.argv[2] || "/tmp/wiki-crawl";
 const IMG = path.join(OUT, "images");
 fs.mkdirSync(IMG, { recursive: true });
-const BASE = "https://openfront.wiki";
+// The live editable MediaWiki. openfront.wiki now serves the static rebuild
+// (this repo), so it is no longer a valid crawl source.
+const BASE = "https://openfront.miraheze.org";
 
-const browser = await chromium.launch({ channel: "chromium", args: ["--no-sandbox"], env });
+// Use Playwright's bundled Chromium (works cross-platform after
+// `npx playwright install chromium`); no full "chromium" channel required.
+const browser = await chromium.launch({ headless: true, args: ["--no-sandbox"], env });
 const context = await browser.newContext({
   viewport: { width: 1400, height: 1200 },
   userAgent:
@@ -44,28 +48,61 @@ async function goto(url) {
   await page.waitForTimeout(600);
 }
 
-// 1. Discover all content-namespace pages.
-await goto(`${BASE}/Special:AllPages`);
-let titles = await page.evaluate(() => {
+// 1. Discover content pages via the MediaWiki API. Load a normal page first so
+//    the browser context solves Cloudflare and carries the clearance cookie
+//    into the API requests below.
+await goto(`${BASE}/wiki/Special:AllPages`);
+async function apiJson(params) {
+  const r = await context.request.get(`${BASE}/w/api.php?${params}&format=json`);
+  if (!r.ok()) return null;
+  try {
+    return await r.json();
+  } catch {
+    return null;
+  }
+}
+async function listAll(filterredir) {
   const out = [];
-  document.querySelectorAll("#mw-content-text a").forEach((a) => {
-    const href = a.getAttribute("href") || "";
-    const m = href.match(/^\/([^:?#]+)$/);
-    if (m && !a.classList.contains("new")) out.push(decodeURIComponent(m[1]));
-  });
+  for (let cont = "", i = 0; i < 30; i++) {
+    const r = await apiJson(
+      `action=query&list=allpages&apnamespace=0&apfilterredir=${filterredir}&aplimit=500${cont}`,
+    );
+    if (!r) {
+      console.error(`discovery: API request failed (${filterredir})`);
+      break;
+    }
+    for (const p of r.query?.allpages ?? []) out.push(p.title);
+    if (r.continue?.apcontinue) cont = `&apcontinue=${encodeURIComponent(r.continue.apcontinue)}`;
+    else break;
+  }
   return out;
-});
-// drop Main Page aliases (we ship a custom homepage) and dedupe
-titles = [...new Set(titles)].filter((t) => !/^Main[_ ]?[Pp]age$/.test(t));
+}
+
+// real articles (exclude redirect aliases so we don't duplicate content)
+let titles = [...new Set(await listAll("nonredirects"))].filter(
+  (t) => !/^Main[_ ]?[Pp]age$/.test(t),
+);
 console.log("discovered", titles.length, "pages:", titles.join(", "));
 
 const known = new Set(titles.map((t) => t.replace(/ /g, "_")));
+
+// Resolve redirect aliases -> their canonical target, so internal links that
+// point at an alias still route to a page we actually host.
+const redirectTo = {}; // slug(alias) -> slug(target)
+const redirectTitles = await listAll("redirects");
+for (let i = 0; i < redirectTitles.length; i += 50) {
+  const batch = redirectTitles.slice(i, i + 50).map(encodeURIComponent).join("|");
+  const r = await apiJson(`action=query&redirects&titles=${batch}`);
+  for (const rd of r?.query?.redirects ?? [])
+    redirectTo[rd.from.replace(/ /g, "_")] = rd.to.replace(/ /g, "_");
+}
+console.log("resolved", Object.keys(redirectTo).length, "redirect aliases");
 const imageUrls = new Set();
 
 const pages = [];
 for (const title of titles) {
   const slug = title.replace(/ /g, "_");
-  await goto(`${BASE}/${encodeURIComponent(title).replace(/%2F/g, "/")}`);
+  await goto(`${BASE}/wiki/${encodeURIComponent(title).replace(/%2F/g, "/")}`);
   const data = await page.evaluate(() => {
     const root = document.querySelector(".mw-parser-output");
     if (!root) return null;
@@ -134,18 +171,23 @@ function rewrite(html) {
     if (abs && imgMap[abs]) return `src="${imgMap[abs]}"`;
     return m;
   });
-  // internal anchors -> local routes (only if the target page exists)
+  // internal anchors -> local routes. Miraheze serves article reads at
+  // /wiki/<Title>; normalise to the short /<Title> form the rest of the
+  // pipeline (prepare-content.mjs + [slug].astro) expects.
   html = html.replace(/href="([^"]+)"/g, (m, href) => {
     let pathname = href;
     try {
       pathname = new URL(href, BASE).pathname;
     } catch {}
-    const internal = pathname.match(/^\/([^:?#]+)$/);
-    if (internal) {
-      const target = decodeURIComponent(internal[1]);
-      if (known.has(target)) return `href="/${target}"`;
+    const wiki = pathname.match(/^\/wiki\/([^?#]+)$/);
+    if (wiki) {
+      let slug = decodeURIComponent(wiki[1]).replace(/ /g, "_");
+      if (!known.has(slug) && redirectTo[slug]) slug = redirectTo[slug]; // alias -> canonical
+      // known article -> real route; namespace (File:/Template:/…) or unknown
+      // page -> relativise and let prepare-content.mjs unwrap/de-link it.
+      return `href="/${slug}"`;
     }
-    // red links / edit links / specials -> drop to plain (handled in template via .new)
+    // red links / edit links / specials (/w/index.php?…) -> leave for prepare
     return m;
   });
   return html;

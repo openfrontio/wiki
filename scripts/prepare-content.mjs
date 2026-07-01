@@ -62,18 +62,18 @@ function clean(html) {
       return;
     }
     // Main Page link -> site home
-    if (/^(?:https?:\/\/openfront\.wiki)?\/Main[_ ]?[Pp]age$/.test(href)) {
+    if (/^(?:https?:\/\/(?:openfront\.wiki|openfront\.miraheze\.org))?(?:\/wiki)?\/Main[_ ]?[Pp]age$/.test(href)) {
       $el.attr("href", "/");
       return;
     }
     // namespace pages we don't host (File:/Template:/Category:/…) -> unwrap,
     // keeping the inner content (e.g. the image a File: link wraps)
-    if (/^(?:https?:\/\/openfront\.wiki)?\/(File|Template|Category|Help|OpenFront|User|MediaWiki|Module|Talk|Project):/.test(href)) {
+    if (/^(?:https?:\/\/(?:openfront\.wiki|openfront\.miraheze\.org))?(?:\/wiki)?\/(File|Template|Category|Help|OpenFront|User|MediaWiki|Module|Talk|Project):/.test(href)) {
       $el.replaceWith($el.contents());
       return;
     }
     // normalise absolute wiki links to local routes when the page exists
-    const m = href.match(/^(?:https?:\/\/openfront\.wiki)?(\/[^:?#]+)$/);
+    const m = href.match(/^(?:https?:\/\/(?:openfront\.wiki|openfront\.miraheze\.org))?(?:\/wiki)?(\/[^:?#]+)$/);
     if (m) {
       const target = decodeURIComponent(m[1].slice(1)).replace(/ /g, "_");
       if (knownSlugs.has(target)) {
@@ -117,6 +117,22 @@ for (const p of raw) {
     html,
   });
 }
+// Merge durable legacy pages: substantive articles that once lived on the old
+// wiki but have no equivalent on the current source, so a crawl can't recover
+// them. Stored (pre-cleaned) in scripts/legacy-pages.json; upstream wins if a
+// slug ever reappears at the source.
+const LEGACY_JSON = path.join(root, "scripts", "legacy-pages.json");
+if (fs.existsSync(LEGACY_JSON)) {
+  const have = new Set(pages.map((p) => p.slug));
+  let merged = 0;
+  for (const lp of JSON.parse(fs.readFileSync(LEGACY_JSON, "utf8"))) {
+    if (have.has(lp.slug)) continue;
+    pages.push(lp);
+    merged++;
+  }
+  if (merged) console.log(`merged ${merged} legacy pages from scripts/legacy-pages.json`);
+}
+
 pages.sort((a, b) => a.title.localeCompare(b.title));
 
 // copy images
@@ -124,6 +140,15 @@ let imgN = 0;
 for (const f of fs.readdirSync(path.join(CRAWL, "images"))) {
   fs.copyFileSync(path.join(CRAWL, "images", f), path.join(PUBLIC_IMG, f));
   imgN++;
+}
+
+// copy durable images referenced only by the legacy pages above
+const LEGACY_IMG = path.join(root, "scripts", "legacy-images");
+if (fs.existsSync(LEGACY_IMG)) {
+  for (const f of fs.readdirSync(LEGACY_IMG)) {
+    fs.copyFileSync(path.join(LEGACY_IMG, f), path.join(PUBLIC_IMG, f));
+    imgN++;
+  }
 }
 
 fs.writeFileSync(path.join(DATA_DIR, "pages.json"), JSON.stringify(pages, null, 2));
