@@ -68,5 +68,19 @@ const liqPages = content.map((p) => {
 });
 
 const merged = [...existing, ...liqPages].sort((a, b) => a.title.localeCompare(b.title));
+
+// prune images no Liquipedia page references (keeps the dir in sync on refresh)
+const referencedImgs = new Set();
+for (const p of liqPages)
+  for (const m of p.html.matchAll(/src="\/images\/liquipedia\/([^"]+)"/g))
+    referencedImgs.add(decodeURIComponent(m[1]));
+let prunedImgs = 0;
+for (const f of fs.readdirSync(OUT_IMG)) {
+  if (!referencedImgs.has(f)) {
+    fs.rmSync(path.join(OUT_IMG, f));
+    prunedImgs++;
+  }
+}
+
 fs.writeFileSync(DATA, JSON.stringify(merged, null, 2));
-console.log(`merged ${liqPages.length} Masters pages, copied ${imgN} images; total ${merged.length}`);
+console.log(`merged ${liqPages.length} Masters pages, copied ${imgN} images, pruned ${prunedImgs}; total ${merged.length}`);
