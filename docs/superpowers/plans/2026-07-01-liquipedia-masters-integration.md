@@ -419,7 +419,11 @@ export function cleanHtml(html, { slugMap, icons }) {
   $("img").each((_, el) => {
     const $el = $(el);
     const src = $el.attr("src") || "";
-    const name = decodeURIComponent(src.split("/").pop() || "").replace(/ /g, "_");
+    // Liquipedia srcs point at MediaWiki thumbnails (e.g. 36px-World_hd.png);
+    // we host the base file, so strip the NNpx- prefix to match.
+    const name = decodeURIComponent(src.split("/").pop() || "")
+      .replace(/ /g, "_")
+      .replace(/^\d+px-/, "");
     if (isHostableImage(name)) {
       const safe = name.replace(/[^a-zA-Z0-9._-]/g, "_");
       $el.attr("src", "/images/liquipedia/" + safe);

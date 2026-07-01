@@ -58,6 +58,11 @@ test("cleanHtml keeps hostable images, drops others to alt text", () => {
   assert.match(drop, /Team logo/);
 });
 
+test("cleanHtml maps thumbnail src to hosted base file", () => {
+  const out = cleanHtml('<img src="/lab/commons/images/thumb/1/12/World_hd.png/36px-World_hd.png" alt="w">', { slugMap: {}, icons: {} });
+  assert.match(out, /src="\/images\/liquipedia\/World_hd\.png"/);
+});
+
 test("cleanHtml replaces fa icons with inline svg", () => {
   const icons = { "fa-book": '<svg data-i="book"></svg>' };
   const out = cleanHtml('<span class="fas fa-book" aria-hidden="true"></span>', { slugMap: {}, icons });
