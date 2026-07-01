@@ -114,8 +114,12 @@ for (let i = 0; i < all.length; i += 20) {
 }
 
 // 4. Download hostable images (flags + game assets); logos/photos are skipped.
+//    Throttle to the same ≤1/2s gate as other requests (ToS hygiene).
 async function download(url, dest) {
+  const wait = 2000 - (Date.now() - lastOther);
+  if (wait > 0) await sleep(wait);
   const r = await fetch(url, { headers: { "User-Agent": UA } });
+  lastOther = Date.now();
   if (!r.ok) return false;
   fs.writeFileSync(dest, Buffer.from(await r.arrayBuffer()));
   return true;

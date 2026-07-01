@@ -2,7 +2,7 @@
 //   node scripts/prepare-liquipedia.mjs <cacheDir>
 import fs from "fs";
 import path from "path";
-import { deriveSlug, deriveCats, buildSlugMap, cleanHtml } from "./lib/liquipedia-clean.mjs";
+import { deriveSlug, deriveCats, cleanHtml } from "./lib/liquipedia-clean.mjs";
 import { ICONS } from "../src/data/liquipedia-icons.js";
 
 const CACHE = process.argv[2];
@@ -13,8 +13,26 @@ const OUT_IMG = path.join(root, "public", "images", "liquipedia");
 fs.mkdirSync(OUT_IMG, { recursive: true });
 
 const raw = JSON.parse(fs.readFileSync(path.join(CACHE, "liquipedia.json"), "utf8"));
-const slugMap = buildSlugMap(raw);
 const cheerioMod = await import("cheerio");
+
+// content pages only (skip Template:/User:/… namespace pages under Openfront/)
+const content = raw.filter((p) => !/:/.test(p.slug.replace(/^Openfront\//, "")));
+
+// existing non-liquipedia pages — their slugs reserve the namespace
+const existing = JSON.parse(fs.readFileSync(DATA, "utf8")).filter((p) => p.source !== "liquipedia");
+
+// Assign each page a final unique slug (collision-guarded against existing pages
+// AND against each other, e.g. two "Antares" pages), and build the internal-link
+// map from those SAME final slugs so links and page slugs always agree.
+const used = new Set(existing.map((p) => p.slug));
+const slugMap = {}; // rawSlug -> final unique site slug
+for (const p of content) {
+  let s = deriveSlug(p.slug);
+  const base = s;
+  for (let n = 2; used.has(s); n++) s = `${base}_${n}`;
+  used.add(s);
+  slugMap[p.slug] = s;
+}
 
 function headings(html) {
   const $ = cheerioMod.load(html, null, false);
@@ -36,13 +54,10 @@ for (const p of raw)
       if (fs.existsSync(src)) { fs.copyFileSync(src, path.join(OUT_IMG, im.safe)); imgN++; }
     }
 
-const liqPages = raw
-  // skip namespace pages (Template:/User:/… under Openfront/) — not real content
-  .filter((p) => !/:/.test(p.slug.replace(/^Openfront\//, "")))
-  .map((p) => {
+const liqPages = content.map((p) => {
   const html = cleanHtml(p.html, { slugMap, icons: ICONS });
   return {
-    slug: deriveSlug(p.slug),
+    slug: slugMap[p.slug],
     title: p.title,
     cats: deriveCats(p.slug, p.cats),
     headings: headings(html),
@@ -52,13 +67,6 @@ const liqPages = raw
   };
 });
 
-// merge: replace any existing liquipedia-sourced pages, keep the rest
-const existing = JSON.parse(fs.readFileSync(DATA, "utf8")).filter((p) => p.source !== "liquipedia");
-const bySlug = new Set(existing.map((p) => p.slug));
-for (const lp of liqPages) {
-  while (bySlug.has(lp.slug)) lp.slug += "_M"; // collision guard vs game pages
-  bySlug.add(lp.slug);
-}
 const merged = [...existing, ...liqPages].sort((a, b) => a.title.localeCompare(b.title));
 fs.writeFileSync(DATA, JSON.stringify(merged, null, 2));
 console.log(`merged ${liqPages.length} Masters pages, copied ${imgN} images; total ${merged.length}`);

@@ -34,12 +34,6 @@ export function deriveCats(rawSlug, liqCats = []) {
   return cats;
 }
 
-export function buildSlugMap(rawPages) {
-  const m = {};
-  for (const p of rawPages) m[p.slug] = deriveSlug(p.slug);
-  return m;
-}
-
 // Liquipedia exposes no machine-readable image license, so decide by filename.
 // Host country flags (*_hd.png) + the game's own PNG/SVG UI assets; skip
 // team/event logos and player photos. Populate the override sets in Task 8 for
@@ -62,12 +56,23 @@ export function isHostableImage(name) {
 export function cleanHtml(html, { slugMap, icons }) {
   const $ = cheerio.load(html, null, false);
 
-  $(["script", "style", "link", "meta", ".mw-editsection", ".mw-empty-elt",
-     ".noprint", "#toc", ".toctogglecheckbox",
+  $(["script", "style", "link", "meta", "iframe", "object", "embed",
+     ".mw-editsection", ".mw-empty-elt", ".noprint", "#toc", ".toctogglecheckbox",
      ".infobox-buttons", ".navigation-not-searchable"].join(",")).remove();
 
-  // icons: <span class="fas fa-book"> -> inline svg
-  $("span[class*='fa-']").each((_, el) => {
+  // defense-in-depth: this HTML is injected via set:html, so strip inline event
+  // handlers and javascript: URIs even though the snapshot is a controlled source
+  $("*").each((_, el) => {
+    if (!el.attribs) return;
+    for (const a of Object.keys(el.attribs)) {
+      if (/^on/i.test(a)) $(el).removeAttr(a);
+      else if ((a === "href" || a === "src") && /^\s*javascript:/i.test(el.attribs[a]))
+        $(el).removeAttr(a);
+    }
+  });
+
+  // icons: <span class="fas fa-trophy"> or <i class="fas fa-chevron-left"> -> inline svg
+  $("span[class*='fa-'], i[class*='fa-']").each((_, el) => {
     const cls = ($(el).attr("class") || "").split(/\s+/).find((c) => icons[c]);
     if (cls) $(el).replaceWith(icons[cls]);
     else $(el).remove();

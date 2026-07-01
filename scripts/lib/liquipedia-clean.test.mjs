@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { deriveSlug, deriveCats, buildSlugMap, cleanHtml, isHostableImage } from "./liquipedia-clean.mjs";
+import { deriveSlug, deriveCats, cleanHtml, isHostableImage } from "./liquipedia-clean.mjs";
 
 test("isHostableImage: flags and game assets in, logos/photos out", () => {
   assert.equal(isHostableImage("Us_hd.png"), true); // country flag
@@ -38,12 +38,6 @@ test("deriveCats classifies from Liquipedia categories, tags OFM vs community", 
     ["OpenFront Masters", "Players"]);
 });
 
-test("buildSlugMap maps raw titles to site slugs", () => {
-  const m = buildSlugMap([{ slug: "Openfront/Antares" }, { slug: "Openfront/OFM/2025_World_Cup" }]);
-  assert.equal(m["Openfront/Antares"], "Antares");
-  assert.equal(m["Openfront/OFM/2025_World_Cup"], "OFM_2025_World_Cup");
-});
-
 test("cleanHtml rewrites internal links to local slugs", () => {
   const map = { "Openfront/Antares": "Antares" };
   const out = cleanHtml('<a href="/lab/Openfront/Antares" title="x">Antares</a>', {
@@ -71,10 +65,18 @@ test("cleanHtml maps thumbnail src to hosted base file", () => {
   assert.match(out, /src="\/images\/liquipedia\/World_hd\.png"/);
 });
 
-test("cleanHtml replaces fa icons with inline svg", () => {
-  const icons = { "fa-book": '<svg data-i="book"></svg>' };
-  const out = cleanHtml('<span class="fas fa-book" aria-hidden="true"></span>', { slugMap: {}, icons });
-  assert.match(out, /data-i="book"/);
+test("cleanHtml replaces fa icons on span AND i tags with inline svg", () => {
+  const icons = { "fa-book": '<svg data-i="book"></svg>', "fa-trophy": '<svg data-i="trophy"></svg>' };
+  const span = cleanHtml('<span class="fas fa-book" aria-hidden="true"></span>', { slugMap: {}, icons });
+  assert.match(span, /data-i="book"/);
+  const i = cleanHtml('<i class="fas fa-trophy"></i>', { slugMap: {}, icons });
+  assert.match(i, /data-i="trophy"/);
+  assert.doesNotMatch(i, /<i /);
+});
+
+test("cleanHtml strips inline event handlers and javascript: URIs", () => {
+  const out = cleanHtml('<a href="javascript:alert(1)" onclick="x()">t</a><img src="javascript:void" onerror="y()">', { slugMap: {}, icons: {} });
+  assert.doesNotMatch(out, /onclick|onerror|javascript:/i);
 });
 
 test("cleanHtml strips script/style/edit chrome", () => {
