@@ -61,20 +61,29 @@ relicense or move assets between these buckets.
 
 ## Content pipeline
 
-Article content is generated, not hand-authored: crawl with
-`.claude/skills/run-openfront/crawl-wiki.mjs`, then clean with
-`scripts/prepare-content.mjs` → `src/data/pages.json`. To refresh content, re-run
-those rather than editing the JSON by hand.
+Article content is generated, not hand-authored. Two pipelines feed
+`src/data/pages.json`:
+
+**Primary:** crawl with `.claude/skills/run-openfront/crawl-wiki.mjs`, then clean
+with `scripts/prepare-content.mjs` → `src/data/pages.json`. To refresh content,
+re-run those rather than editing the JSON by hand.
 
 The crawl source is the live MediaWiki at **`openfront.miraheze.org`** (via its
 API). `openfront.wiki` itself now serves *this* static rebuild, so it is not a
 valid source — don't point the crawler back at it.
 
-A few substantive pages once lived on the old wiki but have no equivalent on the
-current source, so a crawl can't recover them. They're preserved (pre-cleaned) in
-`scripts/legacy-pages.json` with any images in `scripts/legacy-images/`, and
-`prepare-content.mjs` merges them back in automatically (upstream wins if a slug
-ever reappears). Edit those files to add/remove a legacy page — not `pages.json`.
+**Secondary (Liquipedia):** `scripts/liquipedia-fetch.mjs` (API-only, rate-limited,
+cached — never scrape HTML; keep the custom User-Agent) → `scripts/prepare-liquipedia.mjs`
+→ `pages.json`. This pipeline is a manual-refresh snapshot that goes stale; images
+use a filename allow-list (`isHostableImage`). Re-run the scripts periodically to
+refresh — new pages may require tuning `deriveCats` heuristics.
+
+Legacy pages: A few substantive pages once lived on the old wiki but have no
+equivalent on the current source, so a crawl can't recover them. They're preserved
+(pre-cleaned) in `scripts/legacy-pages.json` with any images in
+`scripts/legacy-images/`, and `prepare-content.mjs` merges them back in
+automatically (upstream wins if a slug ever reappears). Edit those files to
+add/remove a legacy page — not `pages.json`.
 
 ## Dev commands
 

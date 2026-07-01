@@ -42,6 +42,15 @@ unless otherwise noted. This includes:
 - `src/data/pages.json` (article text and markup)
 - `public/images/**` (screenshots, diagrams, map thumbnails)
 
+### 3a. Liquipedia content — CC BY-SA 3.0
+
+Pages with `source: "liquipedia"` in `src/data/pages.json` and images under
+`public/images/liquipedia/` originate from Liquipedia and are licensed under
+[Creative Commons Attribution-ShareAlike 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+Attribution is provided per-page in the article metadata. Non-free images (team
+logos, event logos, player photos) are intentionally excluded from this
+repository.
+
 Reuse of this material must preserve attribution and the share-alike terms.
 
 ---
