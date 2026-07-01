@@ -105,6 +105,28 @@ function headings(html) {
   return out;
 }
 
+// Turn internal links to pages we don't host into plain text, so nothing 404s.
+// Runs once the full slug set (crawl + legacy) is known. Catches links the
+// per-page clean() can't judge in isolation, including broken root-relative
+// links authored in the source wiki (e.g. [/Timurid_Empire text] -> external
+// "text" links with a /path href).
+function delinkDead(html, ok) {
+  const $ = cheerio.load(html, null, false);
+  let changed = 0;
+  $("a[href]").each((_, el) => {
+    const $el = $(el);
+    const href = $el.attr("href") || "";
+    if (href.startsWith("/images/")) return; // never a navigable page
+    const m = href.match(/^\/([^/#?][^#?]*)$/); // root-relative /X, no query/hash
+    if (!m) return;
+    const target = decodeURIComponent(m[1]).replace(/\/$/, ""); // tolerate trailing slash
+    if (ok.has(target)) return; // real page -> keep the link
+    $el.replaceWith(`<span class="wiki-deadlink">${$el.html() ?? $el.text()}</span>`);
+    changed++;
+  });
+  return { html: $.html().trim(), changed };
+}
+
 const pages = [];
 for (const p of raw) {
   if (DROP.has(p.slug)) continue;
@@ -133,6 +155,17 @@ if (fs.existsSync(LEGACY_JSON)) {
   if (merged) console.log(`merged ${merged} legacy pages from scripts/legacy-pages.json`);
 }
 
+// De-link internal links that point at pages we don't host (now that the full
+// slug set is known), so the built site has no dead internal routes.
+const finalSlugs = new Set(pages.map((p) => p.slug));
+let deadFixed = 0;
+for (const p of pages) {
+  const r = delinkDead(p.html, finalSlugs);
+  p.html = r.html;
+  deadFixed += r.changed;
+}
+if (deadFixed) console.log(`de-linked ${deadFixed} dead internal links`);
+
 pages.sort((a, b) => a.title.localeCompare(b.title));
 
 // copy images
@@ -151,8 +184,21 @@ if (fs.existsSync(LEGACY_IMG)) {
   }
 }
 
+// prune images no page references (e.g. leftovers from a previous crawl) so
+// public/images stays in sync with the content manifest
+const referencedImgs = new Set();
+for (const p of pages)
+  for (const m of p.html.matchAll(/src="\/images\/([^"]+)"/g)) referencedImgs.add(decodeURIComponent(m[1]));
+let prunedImgs = 0;
+for (const f of fs.readdirSync(PUBLIC_IMG)) {
+  if (!referencedImgs.has(f)) {
+    fs.rmSync(path.join(PUBLIC_IMG, f));
+    prunedImgs++;
+  }
+}
+
 fs.writeFileSync(path.join(DATA_DIR, "pages.json"), JSON.stringify(pages, null, 2));
-console.log(`wrote ${pages.length} pages, copied ${imgN} images`);
+console.log(`wrote ${pages.length} pages, copied ${imgN} images, pruned ${prunedImgs}`);
 
 // quick category report
 const cats = {};
