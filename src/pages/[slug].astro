@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import pages from "../data/pages.json";
+import { pageDescription } from "../lib/meta.js";
 
 export function getStaticPaths() {
   return pages.map((page) => ({
@@ -12,6 +13,7 @@ export function getStaticPaths() {
 }
 
 const { page } = Astro.props;
+const metaDescription = pageDescription(page.html);
 
 // On the OpenFront Masters hub page, list the mirrored Masters pages by group.
 const isMastersHub = page.slug === "OpenFront_Masters";
@@ -39,7 +41,7 @@ const topicalCats = (page.cats || []).filter((c) => !MAINT.test(c));
 const isStub = (page.cats || []).some((c) => /stub/i.test(c));
 ---
 
-<Layout title={`${page.title} — OpenFront Wiki`}>
+<Layout title={`${page.title} — OpenFront Wiki`} description={metaDescription}>
   <SiteHeader />
 
   <div class="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[230px_minmax(0,1fr)] xl:grid-cols-[230px_minmax(0,1fr)_200px]">
