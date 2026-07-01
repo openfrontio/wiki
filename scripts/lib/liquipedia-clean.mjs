@@ -9,22 +9,24 @@ export function deriveSlug(rawSlug) {
   return ofm ? "OFM_" + s : s;
 }
 
-export function deriveCats(rawSlug, html) {
+// Classify a page from Liquipedia's own top-level categories (the reliable
+// signal: pages are categorised as Players / Teams / Tournaments on Liquipedia).
+// liqCats is the page's category list from the parse API. Falls back to the
+// slug shape only when no usable category is present.
+export function deriveCats(rawSlug, liqCats = []) {
   const cats = ["OpenFront Masters"];
-  const rest = rawSlug.replace(/^Openfront\//, "");
-  const isOFM = rest.startsWith("OFM/");
-  const isClan = rest.startsWith("Clans/");
-  // tournaments have a bracket or an infobox labelled with a date/prize; teams
-  // and players have team/player infoboxes. Use lightweight signals.
-  const looksTournament = /bracket|infobox-header[^>]*>[^<]*(Tournament|Cup|Major|Minor|Clan Wars|Olympics|League)/i.test(html)
-    || /(Cup|Major|Minor|Clan Wars|Olympics|Tournament|Qualifier|Game|Rumble|Assembly|Solstice|Clash)/i.test(rest);
-  const looksTeam = isClan || /Big Gigachads|Squad|Antares|Cynosure|Grain de Malice|Liberated Battle Unit|United Nations/i.test(rest);
-  if (looksTournament && !looksTeam) {
-    cats.push("Tournaments", isOFM ? "OFM Official" : "Community");
-  } else if (looksTeam) {
-    cats.push("Teams");
-  } else {
+  const isOFM = rawSlug.replace(/^Openfront\//, "").startsWith("OFM/");
+  const has = (re) => liqCats.some((c) => re.test(c));
+  if (has(/\bplayers?\b/i)) {
     cats.push("Players");
+  } else if (has(/\bteams?\b/i) || rawSlug.replace(/^Openfront\//, "").startsWith("Clans/")) {
+    cats.push("Teams");
+  } else if (has(/\btournaments?\b/i)) {
+    cats.push("Tournaments", isOFM ? "OFM Official" : "Community");
+  } else {
+    // no clear Liquipedia category: OFM subpages are tournaments, else player
+    cats.push(isOFM ? "Tournaments" : "Players");
+    if (isOFM) cats.push("OFM Official");
   }
   return cats;
 }

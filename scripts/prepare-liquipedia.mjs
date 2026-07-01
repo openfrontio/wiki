@@ -41,7 +41,7 @@ const liqPages = raw.map((p) => {
   return {
     slug: deriveSlug(p.slug),
     title: p.title,
-    cats: deriveCats(p.slug, p.html),
+    cats: deriveCats(p.slug, p.cats),
     headings: headings(html),
     html,
     source: "liquipedia",

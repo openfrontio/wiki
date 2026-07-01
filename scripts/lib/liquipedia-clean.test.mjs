@@ -19,14 +19,17 @@ test("deriveSlug strips Openfront prefixes, marks OFM", () => {
   assert.equal(deriveSlug("Openfront/Antares"), "Antares");
 });
 
-test("deriveCats classifies and tags OFM vs community", () => {
-  assert.deepEqual(deriveCats("Openfront/OFM/2025_World_Cup", '<div class="infobox">Tournament</div>'),
+test("deriveCats classifies from Liquipedia categories, tags OFM vs community", () => {
+  assert.deepEqual(deriveCats("Openfront/OFM/2025_World_Cup", ["Tournaments", "S-Tier Tournaments"]),
     ["OpenFront Masters", "Tournaments", "OFM Official"]);
-  assert.deepEqual(deriveCats("Openfront/2026_World_Cup", '<div class="infobox">Tournament</div>'),
+  assert.deepEqual(deriveCats("Openfront/2026_World_Cup", ["Tournaments", "Finished Tournaments"]),
     ["OpenFront Masters", "Tournaments", "Community"]);
-  assert.deepEqual(deriveCats("Openfront/Antares", '<div class="infobox-header">Team</div>'),
+  assert.deepEqual(deriveCats("Openfront/Antares", ["Teams"]),
     ["OpenFront Masters", "Teams"]);
-  assert.deepEqual(deriveCats("Openfront/Hulkiora", '<div class="infobox">Player</div>'),
+  assert.deepEqual(deriveCats("Openfront/Hulkiora", ["Players", "Active Players", "French Players"]),
+    ["OpenFront Masters", "Players"]);
+  // player whose page also references tournaments must still classify as Player
+  assert.deepEqual(deriveCats("Openfront/Biffeur", ["Players", "S-Tier Tournaments"]),
     ["OpenFront Masters", "Players"]);
 });
 

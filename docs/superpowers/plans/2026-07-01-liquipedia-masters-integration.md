@@ -223,7 +223,7 @@ git commit -m "Add ToS-compliant Liquipedia Lab fetcher"
 - Consumes: raw page objects from Task 1 (`{ slug, title, sourceUrl, html, cats, liqImages }`).
 - Produces:
   - `deriveSlug(rawSlug: string): string` — `Openfront/OFM/2025_World_Cup` → `OFM_2025_World_Cup`; `Openfront/2026_World_Cup` → `2026_World_Cup`; `Openfront/Clans/United_Nations` → `United_Nations`; `Openfront/Antares` → `Antares`.
-  - `deriveCats(rawSlug: string, html: string): string[]` — always includes `"OpenFront Masters"`; adds `"Tournaments"`+(`"OFM Official"`|`"Community"`) / `"Teams"` / `"Players"`.
+  - `deriveCats(rawSlug, liqCats)` — classify from the page’s Liquipedia categories (Players/Teams/Tournaments); OFM tournaments tagged `OFM Official`, else `Community` — always includes `"OpenFront Masters"`; adds `"Tournaments"`+(`"OFM Official"`|`"Community"`) / `"Teams"` / `"Players"`.
   - `buildSlugMap(rawPages: Array): Record<string,string>` — maps each raw title (spaces→`_`) to its derived site slug, for link rewriting.
   - `isHostableImage(name: string): boolean` — filename allow-list (flags + game assets in; logos/photos out). Shared with the fetcher (Task 1).
   - `cleanHtml(html: string, opts: { slugMap, icons }): string` — strip chrome, rewrite links, keep `isHostableImage` images (rewrite `src`) and drop the rest to `alt` text, map icons.
@@ -308,7 +308,7 @@ test("cleanHtml strips script/style/edit chrome", () => {
 
 - [ ] **Step 2: Run tests to verify they fail**
 
-Run: `node --test scripts/lib/`
+Run: `node --test scripts/lib/*.test.mjs`
 Expected: FAIL — `Cannot find module './liquipedia-clean.mjs'`.
 
 - [ ] **Step 3: Implement the library**
@@ -440,7 +440,7 @@ export function cleanHtml(html, { slugMap, icons }) {
 
 - [ ] **Step 4: Run tests to verify they pass**
 
-Run: `node --test scripts/lib/`
+Run: `node --test scripts/lib/*.test.mjs`
 Expected: PASS (8 tests). If `deriveCats` heuristics misclassify a real page in Task 5, refine the signals here and re-run.
 
 - [ ] **Step 5: Commit**
@@ -510,7 +510,7 @@ const liqPages = raw.map((p) => {
   return {
     slug: deriveSlug(p.slug),
     title: p.title,
-    cats: deriveCats(p.slug, p.html),
+    cats: deriveCats(p.slug, p.cats),
     headings: headings(html),
     html,
     source: "liquipedia",
@@ -815,7 +815,7 @@ grep -oh 'fa-[a-z-]*' <cacheDir>/raw/*.json | sort -u    # icon classes in use
 node -e 'const j=require("<cacheDir>/liquipedia.json");const m={};for(const p of j)for(const i of p.liqImages||[])m[i.name]=i.host;for(const [n,h] of Object.entries(m).sort())console.log(h?"HOST":"skip",n)'
 ```
 
-For any `fa-` class not already in `src/data/liquipedia-icons.js`, add an inline SVG (or accept it renders as nothing — never leave the raw `fas` class). Review the `HOST`/`skip` list: if a team/event logo is wrongly `HOST`ed, add its exact filename to `DENY_LIST` in `scripts/lib/liquipedia-clean.mjs`; if a legit game asset is wrongly `skip`ped, add it to `ALLOW_LIST`. Re-run `node --test scripts/lib/` if you touched the library, then re-run the fetch (`--force` only if URLs changed) and prepare so downloads/manifest match.
+For any `fa-` class not already in `src/data/liquipedia-icons.js`, add an inline SVG (or accept it renders as nothing — never leave the raw `fas` class). Review the `HOST`/`skip` list: if a team/event logo is wrongly `HOST`ed, add its exact filename to `DENY_LIST` in `scripts/lib/liquipedia-clean.mjs`; if a legit game asset is wrongly `skip`ped, add it to `ALLOW_LIST`. Re-run `node --test scripts/lib/*.test.mjs` if you touched the library, then re-run the fetch (`--force` only if URLs changed) and prepare so downloads/manifest match.
 
 - [ ] **Step 3: Merge**
 
