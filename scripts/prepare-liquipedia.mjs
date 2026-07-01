@@ -13,6 +13,21 @@ const OUT_IMG = path.join(root, "public", "images", "liquipedia");
 fs.mkdirSync(OUT_IMG, { recursive: true });
 
 const raw = JSON.parse(fs.readFileSync(path.join(CACHE, "liquipedia.json"), "utf8"));
+
+// icon-coverage guard: warn on FontAwesome classes we don't map (they'd be
+// stripped and render as nothing). fa-xs/fa-fw/fa-lg are size/util modifiers.
+const MODIFIERS = new Set(["fa-xs", "fa-sm", "fa-lg", "fa-fw", "fa-2x", "fa-3x", "fa-spin", "fa-pulse"]);
+const usedIcons = new Set();
+for (const p of raw)
+  for (const m of (p.html || "").matchAll(/\bfa-[a-z0-9-]+/g)) usedIcons.add(m[0]);
+const mappedIcons = new Set(Object.keys(ICONS));
+const unmapped = [...usedIcons].filter((c) => !mappedIcons.has(c) && !MODIFIERS.has(c));
+if (unmapped.length)
+  console.warn(
+    `WARN ${unmapped.length} unmapped fa- icon(s) (will render blank): ${unmapped.join(", ")}\n` +
+      `  add them to scripts/gen-liquipedia-icons.mjs and re-run it.`,
+  );
+
 const cheerioMod = await import("cheerio");
 
 // content pages only (skip Template:/User:/… namespace pages under Openfront/)
