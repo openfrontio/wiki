@@ -63,11 +63,13 @@ const mastersSub = [
   details[open] > .wiki-summary::before, details[open] > .wiki-subsummary::before { transform: rotate(90deg); }
   .wiki-count { margin-left: auto; font-size: 0.7rem; color: var(--color-dawn); opacity: 0.55; }
   .wiki-subsection { padding-left: 0.5rem; }
-  #wiki-results a { display: block; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; padding: 0.5rem 0.7rem; }
-  #wiki-results a:hover { background: rgb(255 255 255 / 0.04); }
-  .wiki-result-title { display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-aquarius); }
-  .wiki-result-excerpt { display: block; font-size: 0.78rem; color: var(--color-dawn); opacity: 0.8; line-height: 1.4; margin-top: 2px; }
-  .wiki-result-excerpt mark { background: rgb(255 215 0 / 0.18); color: #fff; padding: 0 2px; border-radius: 2px; }
+  /* result cards are injected at runtime by the search script, so they never
+     carry Astro's scoped attribute — these rules must be :global to apply */
+  :global(#wiki-results a) { display: block; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; padding: 0.5rem 0.7rem; margin-bottom: 0.4rem; }
+  :global(#wiki-results a:hover) { background: rgb(255 255 255 / 0.04); }
+  :global(#wiki-results .wiki-result-title) { display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-aquarius); }
+  :global(#wiki-results .wiki-result-excerpt) { display: block; font-size: 0.78rem; color: var(--color-dawn); opacity: 0.8; line-height: 1.4; margin-top: 2px; }
+  :global(#wiki-results .wiki-result-excerpt mark) { background: rgb(255 215 0 / 0.18); color: #fff; padding: 0 2px; border-radius: 2px; }
 </style>
 
 <script>
