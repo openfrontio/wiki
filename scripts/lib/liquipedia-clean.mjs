@@ -141,6 +141,20 @@ export function cleanHtml(html, { slugMap, icons }) {
   return $.html().trim();
 }
 
+// If the slug carries a 4-digit year the title contradicts, correct the title's
+// year to the slug's (fixes Liquipedia displaytitles like a 2026 page titled 2025).
+export function correctTitleYear(rawSlug, title) {
+  // rawSlug uses "_" between words, which is itself a word character, so a
+  // plain \b boundary fails to separate a year from an adjacent "_" (e.g.
+  // "2026_Winter_Major"); (?:^|[^0-9]) / (?:[^0-9]|$) treat any non-digit
+  // (including "_" and "/") as a valid boundary instead.
+  const slugYear = (rawSlug.match(/(?:^|[^0-9])(20\d{2})(?:[^0-9]|$)/) || [])[1];
+  if (!slugYear) return title;
+  const titleYear = (title.match(/\b(20\d{2})\b/) || [])[1];
+  if (titleYear && titleYear !== slugYear) return title.replace(titleYear, slugYear);
+  return title;
+}
+
 function collapseLabel(cls) {
   if (/prizepool/.test(cls)) return "Prize pool";
   if (/matchlist|brkts|bracket/.test(cls)) return "Matches";

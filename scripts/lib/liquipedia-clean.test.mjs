@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { deriveSlug, deriveCats, cleanHtml, isHostableImage } from "./liquipedia-clean.mjs";
+import { deriveSlug, deriveCats, cleanHtml, isHostableImage, correctTitleYear } from "./liquipedia-clean.mjs";
 
 test("isHostableImage: flags and game assets in, logos/photos out", () => {
   assert.equal(isHostableImage("Us_hd.png"), true); // country flag
@@ -105,4 +105,13 @@ test("cleanHtml converts /lab red links (class=new) to plain text", () => {
   assert.doesNotMatch(out, /<a /);
   assert.match(out, /wiki-deadlink/);
   assert.match(out, /Missing/);
+});
+
+test("correctTitleYear fixes a title year that disagrees with the slug", () => {
+  assert.equal(
+    correctTitleYear("Openfront/OFM/2026_Winter_Major", "Openfront Masters 2025 Winter Major"),
+    "Openfront Masters 2026 Winter Major",
+  );
+  assert.equal(correctTitleYear("Openfront/OFM/2025_World_Cup", "2025 World Cup"), "2025 World Cup");
+  assert.equal(correctTitleYear("Openfront/Antares", "Antares"), "Antares");
 });

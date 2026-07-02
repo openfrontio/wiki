@@ -2,7 +2,7 @@
 //   node scripts/prepare-liquipedia.mjs <cacheDir>
 import fs from "fs";
 import path from "path";
-import { deriveSlug, deriveCats, cleanHtml } from "./lib/liquipedia-clean.mjs";
+import { deriveSlug, deriveCats, cleanHtml, correctTitleYear } from "./lib/liquipedia-clean.mjs";
 import { ICONS } from "../src/data/liquipedia-icons.js";
 
 const CACHE = process.argv[2];
@@ -31,8 +31,12 @@ if (unmapped.length)
 
 const cheerioMod = await import("cheerio");
 
+// byte-identical duplicate of Openfront/Antares (drop so no twin sidebar entry)
+const DROP_LIQ = new Set(["Openfront/Clans/Antares"]);
 // content pages only (skip Template:/User:/… namespace pages under Openfront/)
-const content = raw.filter((p) => !/:/.test(p.slug.replace(/^Openfront\//, "")));
+const content = raw.filter(
+  (p) => !/:/.test(p.slug.replace(/^Openfront\//, "")) && !DROP_LIQ.has(p.slug),
+);
 
 // existing non-liquipedia pages — their slugs reserve the namespace
 const existing = JSON.parse(fs.readFileSync(DATA, "utf8")).filter((p) => p.source !== "liquipedia");
@@ -74,14 +78,38 @@ const liqPages = content.map((p) => {
   const html = cleanHtml(p.html, { slugMap, icons: ICONS });
   return {
     slug: slugMap[p.slug],
-    title: p.title,
+    title: correctTitleYear(p.slug, p.title),
     cats: deriveCats(p.slug, p.cats),
     headings: headings(html),
     html,
     source: "liquipedia",
     sourceUrl: p.sourceUrl,
+    rawSlug: p.slug,
   };
 });
+
+// Disambiguate genuinely-different pages that inherit their parent's Liquipedia
+// displaytitle (e.g. a tournament's "/Finals" subpage titled the same as the
+// tournament itself): append the deepest page's own path segment to the title,
+// leaving the shallowest (canonical/parent) page's title untouched.
+{
+  const byTitle = new Map();
+  for (const p of liqPages) {
+    if (!byTitle.has(p.title)) byTitle.set(p.title, []);
+    byTitle.get(p.title).push(p);
+  }
+  for (const group of byTitle.values()) {
+    if (group.length < 2) continue;
+    const depth = (p) => p.rawSlug.split("/").length;
+    const minDepth = Math.min(...group.map(depth));
+    for (const p of group) {
+      if (depth(p) === minDepth) continue; // canonical/parent page: leave title as-is
+      const seg = p.rawSlug.split("/").pop();
+      p.title = `${p.title} (${seg.replace(/_/g, " ")})`;
+    }
+  }
+}
+for (const p of liqPages) delete p.rawSlug;
 
 const merged = [...existing, ...liqPages].sort((a, b) => a.title.localeCompare(b.title));
 
