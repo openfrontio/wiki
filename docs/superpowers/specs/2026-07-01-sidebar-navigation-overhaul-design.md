@@ -24,16 +24,20 @@ domains, and shows confusing duplicate titles. This also delivers roadmap item #
 
 - No server/SSR (Pagefind is static: build-time index + client JS).
 - No redesign of the article body, header, or footer.
-- No re-categorising the game wiki (its source pages are mostly uncategorised —
-  that's why the game side is A–Z, not category-grouped).
+- No changes to the article *content* itself — categorisation is browse-only
+  metadata (a `section` used by the sidebar), not new on-page category chips.
 
 ## Design
 
 ### Layout (top → bottom)
 
 1. **Search box** — full-text search input at the top.
-2. **`GAME WIKI` section** (count) — collapsible; when open, an **A–Z list with
-   sticky letter dividers** (A, B, C…). Contains every non-Masters page.
+2. **`GAME WIKI` section** (count) — collapsible; when open, **topical sub-groups**
+   (each collapsible, count shown, A–Z within): **Maps**, **Units**, **Buildings**,
+   **Combat & mechanics**, **Economy**, **Game modes**, **Guides**, **Updates**,
+   **Meta & community**, and **Other** (fallback). Categories are assigned by a
+   curated map (see Categorisation below), not the sparse source categories.
+   Contains every non-Masters page.
 3. **`OPENFRONT MASTERS` section** (count) — collapsible; when open, three
    sub-groups, each collapsible: **Tournaments** (OFM-official listed first, then
    community), **Teams**, **Players**. Contains every `source: "liquipedia"` page.
@@ -59,6 +63,23 @@ domains, and shows confusing duplicate titles. This also delivers roadmap item #
 - Static: `pagefind --site dist` runs after `astro build`; the client loads the
   Pagefind JS module on first focus/keystroke (lazy), no server.
 
+### Game-page categorisation (curated, durable)
+
+The game wiki's source categories are too sparse to browse by (~16 of ~103 pages),
+so we assign our own topical category to each game page.
+
+- **One-time content scan (implementation step):** an agent reads each game page's
+  title + text and assigns exactly one category from the fixed taxonomy: `Maps`,
+  `Units`, `Buildings`, `Combat & mechanics`, `Economy`, `Game modes`, `Guides`,
+  `Updates`, `Meta & community`. The output is `scripts/game-categories.json`
+  (`{ "<slug>": "<Category>" }`), committed and human-editable.
+- **Pipeline assignment:** `prepare-content.mjs` reads that map and sets each game
+  page's `section` field from it. A slug absent from the map gets `section: "Other"`
+  and the script `console.warn`s the unmapped slugs (like the icon-coverage guard),
+  so future crawled pages surface for categorising rather than silently vanishing.
+- **Taxonomy is fixed** (the 9 categories above + `Other`); pages sort A–Z within a
+  category; empty categories are omitted from the sidebar.
+
 ### Data cleanup (removes the confusing twins)
 
 - **Mislabeled tournament years:** `OFM_2026_Winter_Major` is currently *titled*
@@ -79,8 +100,11 @@ domains, and shows confusing duplicate titles. This also delivers roadmap item #
   grouping logic (partition pages → game A–Z vs Masters sub-groups) and the markup.
   Replaces the inline sidebar currently in `src/pages/[slug].astro`.
 - **Create** `src/lib/sidebar.js` — pure grouping helpers: `groupGamePages(pages)`
-  → `[{letter, items}]`; `groupMastersPages(pages)` → `{tournaments, teams, players}`.
+  → `[{category, items}]` (fixed category order, A–Z within, empty categories
+  dropped); `groupMastersPages(pages)` → `{tournaments, teams, players}`.
   Unit-tested (`node:test`).
+- **Create** `scripts/game-categories.json` — curated `{ slug: Category }` map
+  (produced by the one-time content scan), merged by `prepare-content.mjs`.
 - **Modify** `src/pages/[slug].astro` (and `index.astro`/`all.astro` if they render a
   sidebar) — use `<BrowseSidebar>` instead of the inline list.
 - **Modify** `src/layouts/Layout.astro` — load Pagefind UI assets; keep `data-pagefind-*`
@@ -89,9 +113,12 @@ domains, and shows confusing duplicate titles. This also delivers roadmap item #
   persistence, and the inline Pagefind search (query → render result cards → restore).
 - **Modify** `package.json` — add `pagefind` devDep; build becomes
   `astro build && pagefind --site dist`.
+- **Modify** `scripts/prepare-content.mjs` — set each game page's `section` from
+  `game-categories.json` (fallback `Other` + warn on unmapped slugs).
 - **Modify** `scripts/prepare-liquipedia.mjs` — title-year correction (+ a unit test
   for the correction helper).
-- **Modify** `src/data/pages.json` — regenerated after the title fix.
+- **Modify** `src/data/pages.json` — regenerated after categorisation + the title fix
+  (game pages gain a `section` field).
 
 Mobile: the existing outer collapsible "Browse Pages" (`<details>`) is preserved; the
 new sections live inside it.
@@ -101,9 +128,10 @@ new sections live inside it.
 - Unit tests (`node:test`) for the grouping helpers and the title-year corrector.
 - Static build succeeds (`npm run build && pagefind --site dist`), pure static.
 - Screenshot-verify (per `CLAUDE.md`) desktop + mobile (390×844): default collapsed
-  state, an expanded section with letter dividers, the Masters sub-groups, and a
-  search with result cards. No console errors; `/` focuses search; state persists
-  across a navigation.
+  state, the Game Wiki category sub-groups, the Masters sub-groups, and a search with
+  result cards. No console errors; `/` focuses search; state persists across a
+  navigation.
+- Confirm every game page has a `section` (0 unexpected `Other`) after the scan.
 - Confirm no two sidebar entries share an identical label.
 
 ## Decisions (resolved)
@@ -111,7 +139,8 @@ new sections live inside it.
 - **Navigation model:** sectioned collapsible browse + inline search (both).
 - **Default state:** all sections **collapsed**.
 - **Search UX:** inline in the sidebar (results replace the browse list).
-- **Game grouping:** A–Z with letter dividers (game pages lack categories).
+- **Game grouping:** by topical category (curated map from a one-time content scan;
+  9 categories + `Other`), A–Z within each — not A–Z letter dividers.
 - **Masters grouping:** Tournaments (OFM first) / Teams / Players.
 
 ## Open risks
