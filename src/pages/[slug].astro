@@ -88,7 +88,7 @@ const isStub = (page.cats || []).some((c) => /stub/i.test(c));
 
       <div class="mt-5 h-px w-full bg-gradient-to-r from-malibu/50 via-white/10 to-transparent"></div>
 
-      <article class="wiki-content mt-6" set:html={page.html} data-pagefind-body />
+      <article class="wiki-content mt-6" set:html={page.html} data-pagefind-body data-pagefind-meta={`title:${page.title}`} />
 
       {isMastersHub && mastersGroups.length > 0 && (
         <div class="wiki-content mt-8">
