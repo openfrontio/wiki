@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import BrowseSidebar from "../components/BrowseSidebar.astro";
 import pages from "../data/pages.json";
 import { pageDescription } from "../lib/meta.js";
 
@@ -49,36 +50,9 @@ const isStub = (page.cats || []).some((c) => /stub/i.test(c));
     <aside class="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:overflow-y-auto">
       <details open>
         <summary class="mb-3 flex cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-widest text-cyan-glow lg:cursor-default">
-          Browse Pages
-          <span class="lg:hidden">▾</span>
+          Browse Pages <span class="lg:hidden">▾</span>
         </summary>
-        <input
-          id="page-filter"
-          type="search"
-          placeholder="Filter pages…"
-          autocomplete="off"
-          class="mb-3 w-full rounded-lg border border-white/10 bg-navy-700/70 px-3 py-2 text-sm text-white placeholder:text-dawn/40 focus:border-malibu/60 focus:outline-none"
-        />
-        <ul id="page-list" class="space-y-0.5 text-sm">
-          {
-            allPages.map((p) => (
-              <li>
-                <a
-                  href={`/${p.slug}`}
-                  data-title={p.title.toLowerCase()}
-                  class:list={[
-                    "block rounded-md px-2.5 py-1.5 transition-colors hover:bg-white/5 hover:text-white",
-                    p.slug === page.slug
-                      ? "bg-malibu/15 font-semibold text-aquarius"
-                      : "text-dawn/80",
-                  ]}
-                >
-                  {p.title}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
+        <BrowseSidebar currentSlug={page.slug} />
       </details>
     </aside>
 
@@ -188,17 +162,6 @@ const isStub = (page.cats || []).some((c) => /stub/i.test(c));
 </Layout>
 
 <script>
-  // Client-side filter for the browse sidebar.
-  const input = document.getElementById("page-filter") as HTMLInputElement | null;
-  const list = document.getElementById("page-list");
-  input?.addEventListener("input", () => {
-    const q = input.value.trim().toLowerCase();
-    list?.querySelectorAll("li").forEach((li) => {
-      const t = li.querySelector("a")?.dataset.title ?? "";
-      (li as HTMLElement).style.display = t.includes(q) ? "" : "none";
-    });
-  });
-
   // Liquipedia toggle-areas (group/bracket view switchers): Liquipedia shows one
   // view and switches via JS; without it every view stacks. Re-implement the
   // switch so only the active view shows and the pills work. No-op on pages

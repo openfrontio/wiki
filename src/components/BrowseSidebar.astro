@@ -1,0 +1,85 @@
+---
+import pages from "../data/pages.json";
+import { groupGamePages, groupMastersPages } from "../lib/sidebar.js";
+const { currentSlug } = Astro.props;
+const game = groupGamePages(pages);
+const masters = groupMastersPages(pages);
+const gameCount = game.reduce((n, g) => n + g.items.length, 0);
+const mastersCount = masters.tournaments.length + masters.teams.length + masters.players.length;
+const linkCls = (slug) =>
+  "block rounded-md px-2.5 py-1.5 text-sm transition-colors hover:bg-white/5 hover:text-white " +
+  (slug === currentSlug ? "bg-malibu/15 font-semibold text-aquarius" : "text-dawn/80");
+const mastersSub = [
+  { label: "Tournaments", items: masters.tournaments },
+  { label: "Teams", items: masters.teams },
+  { label: "Players", items: masters.players },
+].filter((s) => s.items.length);
+---
+<div id="wiki-sidebar">
+  <input
+    id="wiki-search"
+    type="search"
+    placeholder="Search the wiki…"
+    autocomplete="off"
+    aria-label="Search the wiki"
+    class="mb-3 w-full rounded-lg border border-white/10 bg-navy-700/70 px-3 py-2 text-sm text-white placeholder:text-dawn/40 focus:border-malibu/60 focus:outline-none"
+  />
+
+  <div id="wiki-results" hidden class="space-y-1.5"></div>
+
+  <div id="wiki-browse" class="space-y-1">
+    <details class="wiki-section" data-key="game">
+      <summary class="wiki-summary">
+        <span>Game Wiki</span><span class="wiki-count">{gameCount}</span>
+      </summary>
+      {game.map((grp) => (
+        <details class="wiki-subsection" data-key={`game:${grp.category}`}>
+          <summary class="wiki-subsummary"><span>{grp.category}</span><span class="wiki-count">{grp.items.length}</span></summary>
+          <ul>{grp.items.map((p) => (<li><a href={`/${p.slug}`} data-title={p.title.toLowerCase()} class={linkCls(p.slug)}>{p.title}</a></li>))}</ul>
+        </details>
+      ))}
+    </details>
+
+    <details class="wiki-section" data-key="masters">
+      <summary class="wiki-summary">
+        <span>OpenFront Masters</span><span class="wiki-count">{mastersCount}</span>
+      </summary>
+      {mastersSub.map((s) => (
+        <details class="wiki-subsection" data-key={`masters:${s.label}`}>
+          <summary class="wiki-subsummary"><span>{s.label}</span><span class="wiki-count">{s.items.length}</span></summary>
+          <ul>{s.items.map((p) => (<li><a href={`/${p.slug}`} data-title={p.title.toLowerCase()} class={linkCls(p.slug)}>{p.title}</a></li>))}</ul>
+        </details>
+      ))}
+    </details>
+  </div>
+</div>
+
+<style>
+  .wiki-summary, .wiki-subsummary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; user-select: none; }
+  .wiki-summary::-webkit-details-marker, .wiki-subsummary::-webkit-details-marker { display: none; }
+  .wiki-summary { padding: 0.4rem 0.25rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-cyan-glow); }
+  .wiki-subsummary { padding: 0.35rem 0.5rem; font-size: 0.8rem; color: var(--color-dawn); }
+  .wiki-summary::before, .wiki-subsummary::before { content: "▸"; color: var(--color-aquarius); transition: transform 0.15s; }
+  details[open] > .wiki-summary::before, details[open] > .wiki-subsummary::before { transform: rotate(90deg); }
+  .wiki-count { margin-left: auto; font-size: 0.7rem; color: var(--color-dawn); opacity: 0.55; }
+  .wiki-subsection { padding-left: 0.5rem; }
+  #wiki-results a { display: block; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; padding: 0.5rem 0.7rem; }
+  #wiki-results a:hover { background: rgb(255 255 255 / 0.04); }
+  .wiki-result-title { display: block; font-size: 0.85rem; font-weight: 600; color: var(--color-aquarius); }
+  .wiki-result-excerpt { display: block; font-size: 0.78rem; color: var(--color-dawn); opacity: 0.8; line-height: 1.4; margin-top: 2px; }
+  .wiki-result-excerpt mark { background: rgb(255 215 0 / 0.18); color: #fff; padding: 0 2px; border-radius: 2px; }
+</style>
+
+<script>
+  // Persist section open/closed state across navigations.
+  const KEY = "wiki-sidebar-open";
+  const openSet = new Set(JSON.parse(localStorage.getItem(KEY) || "[]"));
+  document.querySelectorAll("#wiki-browse details").forEach((d) => {
+    const k = d.getAttribute("data-key");
+    if (openSet.has(k)) d.open = true;
+    d.addEventListener("toggle", () => {
+      if (d.open) openSet.add(k); else openSet.delete(k);
+      localStorage.setItem(KEY, JSON.stringify([...openSet]));
+    });
+  });
+</script>
