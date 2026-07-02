@@ -83,3 +83,28 @@ const mastersSub = [
     });
   });
 </script>
+
+<script is:inline>
+  (() => {
+    const input = document.getElementById("wiki-search");
+    const browse = document.getElementById("wiki-browse");
+    const results = document.getElementById("wiki-results");
+    if (!input) return;
+    let pf, timer;
+    async function run(q) {
+      if (!q) { results.hidden = true; results.innerHTML = ""; browse.hidden = false; return; }
+      try { pf ||= await import("/pagefind/pagefind.js"); }
+      catch { results.innerHTML = '<p style="font-size:.8rem;opacity:.7">Search runs on the built site.</p>'; results.hidden = false; browse.hidden = true; return; }
+      const search = await pf.search(q);
+      const cards = await Promise.all(search.results.slice(0, 12).map((r) => r.data()));
+      results.innerHTML = cards.length
+        ? cards.map((c) => `<a href="${c.url}"><span class="wiki-result-title">${c.meta?.title || ""}</span><span class="wiki-result-excerpt">${c.excerpt}</span></a>`).join("")
+        : '<p style="font-size:.8rem;opacity:.7">No results.</p>';
+      browse.hidden = true; results.hidden = false;
+    }
+    input.addEventListener("input", (e) => { clearTimeout(timer); const q = e.target.value.trim(); timer = setTimeout(() => run(q), 150); });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "/" && document.activeElement !== input && !/input|textarea/i.test(document.activeElement?.tagName || "")) { e.preventDefault(); input.focus(); }
+    });
+  })();
+</script>
