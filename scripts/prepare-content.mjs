@@ -181,6 +181,18 @@ for (const p of pages) {
 }
 if (deadFixed) console.log(`de-linked ${deadFixed} dead internal links`);
 
+// stamp a browse category (section) on every page from the curated map;
+// unmapped slugs fall to "Other" and are surfaced for categorising.
+const CAT_MAP = path.join(root, "scripts", "game-categories.json");
+const gameCats = fs.existsSync(CAT_MAP) ? JSON.parse(fs.readFileSync(CAT_MAP, "utf8")) : {};
+const uncategorised = [];
+for (const p of pages) {
+  p.section = gameCats[p.slug] || "Other";
+  if (!gameCats[p.slug]) uncategorised.push(p.slug);
+}
+if (uncategorised.length)
+  console.warn(`WARN ${uncategorised.length} game page(s) uncategorised (-> Other): ${uncategorised.join(", ")}\n  add them to scripts/game-categories.json`);
+
 pages.sort((a, b) => a.title.localeCompare(b.title));
 
 // copy images
