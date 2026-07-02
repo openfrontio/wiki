@@ -23,6 +23,8 @@ const DROP = new Set([
   "List_of_heads_of_state_of_India",
   "List_of_heads_of_state_of_India_1857",
   "Timurid_Empire_Flag_SVG",
+  // satirical/off-topic clan page with real-world violence references
+  "FLOAT",
 ]);
 
 const raw = JSON.parse(fs.readFileSync(path.join(CRAWL, "pages.json"), "utf8"));
