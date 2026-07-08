@@ -190,6 +190,15 @@ body {
 }
 .wiki-content .scrollable-math { overflow-x: auto; max-width: 100%; }
 .wiki-content .mwe-math-element { color: #fff; }
+/* MediaWiki math: the fallback <img> points at a dynamic Special:MathShowImage
+   URL that 404s on a static export. Hide it and render the native MathML that
+   ships alongside it (browsers render <math>; MediaWiki normally hides the a11y
+   MathML in favour of the image — we do the opposite). */
+.wiki-content .mwe-math-fallback-image-inline,
+.wiki-content .mwe-math-fallback-image-display { display: none; }
+.wiki-content .mwe-math-mathml-inline { display: inline-block; }
+.wiki-content .mwe-math-mathml-display { display: block; margin: 0.6rem 0; overflow-x: auto; }
+.wiki-content math { color: #fff; font-size: 1.05em; }
 
 /* ===================================================================
    Liquipedia (OpenFront Masters) widgets — themed to the site's card /

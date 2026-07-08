@@ -108,6 +108,18 @@ function clean(html) {
     }
   });
 
+  // MediaWiki math: the fallback <img> points at a dynamic Special:MathShowImage
+  // URL that 404s on a static export, and the real MathML alongside it ships with
+  // inline display:none (MW favours the image). Drop the img and un-hide the MathML
+  // so the equation renders natively.
+  $(".mwe-math-fallback-image-inline, .mwe-math-fallback-image-display").remove();
+  $(".mwe-math-mathml-inline, .mwe-math-mathml-display").each((_, el) => {
+    const $el = $(el);
+    const style = ($el.attr("style") || "").replace(/display\s*:\s*none\s*;?/i, "").trim();
+    if (style) $el.attr("style", style);
+    else $el.removeAttr("style");
+  });
+
   return $.html().trim();
 }
 
