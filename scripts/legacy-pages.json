@@ -686,5 +686,1121 @@
       }
     ],
     "html": "<p><b>Las Vegas Strip</b> is a North American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Skinny long map with roads as water and casinos as nations.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Las_Vegas_Strip_map.webp\" decoding=\"async\" width=\"640\" height=\"1393\" class=\"mw-file-element\" data-file-width=\"2036\" data-file-height=\"4431\"><figcaption>The Las Vegas Strip map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 34 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Sphere, Las Vegas Premium Outlets, World Market Center, Fremont Street, Las Vegas Downtown and Arts District.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 34</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/lasvegasstrip\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>"
+  },
+  {
+    "slug": "Achiran",
+    "title": "Achiran",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Achiran</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Achiran_map.webp\" decoding=\"async\" width=\"640\" height=\"544\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1700\"><figcaption>The Achiran map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/achiran\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 4 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Inishmore, Inishmann, Inisheer and Achill.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional, Europe</li>\n<li><b>Nations:</b> 4</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Aegean",
+    "title": "Aegean",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Aegean</b> is a European and Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Aegean_map.webp\" decoding=\"async\" width=\"640\" height=\"753\" class=\"mw-file-element\" data-file-width=\"1700\" data-file-height=\"2000\"><figcaption>The Aegean map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/aegean\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 29 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Crete, Rhodes, Lesbos, Chios, Samos and Troy.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Asia</li>\n<li><b>Nations:</b> 29</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Alps",
+    "title": "Alps",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Alps</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Alps_map.webp\" decoding=\"async\" width=\"640\" height=\"588\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1837\"><figcaption>The Alps map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/alps\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 8 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Savoy, Switzerland, Tyrol, Lombardy, Veneto and Bavaria.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 8</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Amazon_River",
+    "title": "Amazon River",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Amazon River</b> is a South American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Amazon_River_map.webp\" decoding=\"async\" width=\"640\" height=\"32\" class=\"mw-file-element\" data-file-width=\"5537\" data-file-height=\"279\"><figcaption>The Amazon River map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/amazonriver\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 21 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Boa Esperança, Santa Rosa, Paraíso, Bom Futuro, São Paulo de Olivença and São João.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> South America</li>\n<li><b>Nations:</b> 21</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Antarctica",
+    "title": "Antarctica",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Antarctica</b> is an Antarctic map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Antarctica_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"2215\" data-file-height=\"2215\"><figcaption>The Antarctica map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/antarctica\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 30 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Ross Dependency, Adelie Land, Australian Territory, Queen Maud Land, British Antarctic Territory and Argentine Territory.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Antarctica, Continental</li>\n<li><b>Nations:</b> 30</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "ArchipelagoSea",
+    "title": "ArchipelagoSea",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>ArchipelagoSea</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/ArchipelagoSea_map.webp\" decoding=\"async\" width=\"640\" height=\"312\" class=\"mw-file-element\" data-file-width=\"3100\" data-file-height=\"1511\"><figcaption>The ArchipelagoSea map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/archipelagosea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 20 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Kökar, Jurmo, Utö, Trunsö, Borstö and Aspö.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 20</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Arctic",
+    "title": "Arctic",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Arctic</b> is a cross-continental map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Arctic_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1830\" data-file-height=\"1830\"><figcaption>The Arctic map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/arctic\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 44 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Greenland, Iceland, Quebec, Alaska, Nunavut and Northwest Territories.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, North America, Asia</li>\n<li><b>Nations:</b> 44</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Baikal",
+    "title": "Baikal",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Baikal</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Baikal_map.webp\" decoding=\"async\" width=\"640\" height=\"401\" class=\"mw-file-element\" data-file-width=\"2500\" data-file-height=\"1565\"><figcaption>The Baikal map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/baikal\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 11 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Irkutsk Oblast, Republic of Buryatia, Olkhon Island, Cape Khoboy, Ogoi Island and Bolshoy Ushkan Island.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 11</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Baja_California",
+    "title": "Baja California",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Baja California</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Baja_California_map.webp\" decoding=\"async\" width=\"640\" height=\"754\" class=\"mw-file-element\" data-file-width=\"1800\" data-file-height=\"2120\"><figcaption>The Baja California map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/bajacalifornia\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 8 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including California, Baja California, Baja California Sur, Sonora, Sinaloa and Chihuahua.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 8</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Balkans",
+    "title": "Balkans",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Balkans</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Balkans_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"2050\" data-file-height=\"2050\"><figcaption>The Balkans map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/balkans\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 23 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Slovenia, Austria, Hungary, Croatia, Malta and Bosnia and Herzegovina.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 23</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Bering_Sea",
+    "title": "Bering Sea",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Bering Sea</b> is an Asian and North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Bering_Sea_map.webp\" decoding=\"async\" width=\"640\" height=\"410\" class=\"mw-file-element\" data-file-width=\"2500\" data-file-height=\"1600\"><figcaption>The Bering Sea map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/beringsea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 24 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Polar Bears, Utqiagvik, Prudhoe Bay, Anchorage, Juneau and Whitehorse.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia, North America</li>\n<li><b>Nations:</b> 24</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Bering_Strait",
+    "title": "Bering Strait",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Bering Strait</b> is an Asian and North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Bering_Strait_map.webp\" decoding=\"async\" width=\"640\" height=\"392\" class=\"mw-file-element\" data-file-width=\"1500\" data-file-height=\"918\"><figcaption>The Bering Strait map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/beringstrait\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 2 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Alaska and Russia.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia, North America</li>\n<li><b>Nations:</b> 2</li>\n<li><b>Public rotation frequency:</b> 2</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Bosphorus_Straits",
+    "title": "Bosphorus Straits",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Bosphorus Straits</b> is a European and Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Bosphorus_Straits_map.webp\" decoding=\"async\" width=\"640\" height=\"392\" class=\"mw-file-element\" data-file-width=\"1000\" data-file-height=\"612\"><figcaption>The Bosphorus Straits map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/bosphorusstraits\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 22 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Beykoz, Sile, Çekmeköy, Pendik, Tuzla and Üsküdar.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Asia</li>\n<li><b>Nations:</b> 22</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Britannia_Classic",
+    "title": "Britannia Classic",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Britannia Classic</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Britannia_Classic_map.webp\" decoding=\"async\" width=\"640\" height=\"447\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1397\"><figcaption>The Britannia Classic map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/britanniaclassic\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 23 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Dumnonia, Dyfed, Gwent, Gwynedd, Powys and Strathclyde.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 23</li>\n<li><b>Public rotation frequency:</b> 0</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Caribbean",
+    "title": "Caribbean",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Caribbean</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Caribbean_map.webp\" decoding=\"async\" width=\"640\" height=\"362\" class=\"mw-file-element\" data-file-width=\"3200\" data-file-height=\"1810\"><figcaption>The Caribbean map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/caribbean\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 34 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Florida, Mexico, Belize, Honduras, Cuba and Guantanamo Bay.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 34</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Caucasus",
+    "title": "Caucasus",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Caucasus</b> is a European and Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Caucasus_map.webp\" decoding=\"async\" width=\"640\" height=\"512\" class=\"mw-file-element\" data-file-width=\"1250\" data-file-height=\"1000\"><figcaption>The Caucasus map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/caucasus\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 21 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Georgia, Abkhazia, South Ossetia, North Ossetia, Azerbaijan and Armenia.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Asia</li>\n<li><b>Nations:</b> 21</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Chopping_Block",
+    "title": "Chopping Block",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Chopping Block</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Chopping_Block_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1616\" data-file-height=\"1616\"><figcaption>The Chopping Block map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/choppingblock\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 32 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Boxey, Gridsly, Blocko, Squarm, Boximilian and Rectanglo.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 32</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Conakry",
+    "title": "Conakry",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Conakry</b> is an African map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Conakry_map.webp\" decoding=\"async\" width=\"640\" height=\"260\" class=\"mw-file-element\" data-file-width=\"2457\" data-file-height=\"1000\"><figcaption>The Conakry map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/conakry\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 20 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Koba-Tatema, Kenende, Dubreka, Tamouta, Ratoma and Coyah.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Africa</li>\n<li><b>Nations:</b> 20</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Danish_Straits",
+    "title": "Danish Straits",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Danish Straits</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Danish_Straits_map.webp\" decoding=\"async\" width=\"640\" height=\"896\" class=\"mw-file-element\" data-file-width=\"875\" data-file-height=\"1225\"><figcaption>The Danish Straits map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/danishstraits\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 26 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Agder, Østlandet, Skåne, Halland, Småland and Västergötland.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 26</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Didier",
+    "title": "Didier",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Didier</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Didier_map.webp\" decoding=\"async\" width=\"640\" height=\"576\" class=\"mw-file-element\" data-file-width=\"1500\" data-file-height=\"1350\"><figcaption>The Didier map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/didier\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 12 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Aywen Enclave, Kumiz Confederation, MyBios Station, Blazzy Tribe, Xederma Enclave and PinPin Confederation.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 12</li>\n<li><b>Public rotation frequency:</b> 1</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Didier_France",
+    "title": "Didier France",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Didier France</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Didier_France_map.webp\" decoding=\"async\" width=\"640\" height=\"686\" class=\"mw-file-element\" data-file-width=\"2100\" data-file-height=\"2250\"><figcaption>The Didier France map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/didierfrance\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 42 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Brest, Rennes, Caen, Le Mans, Le Havre and Rouen.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 42</li>\n<li><b>Public rotation frequency:</b> 1</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Dyslexdria",
+    "title": "Dyslexdria",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Dyslexdria</b> is a world map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Dyslexdria_map.webp\" decoding=\"async\" width=\"640\" height=\"279\" class=\"mw-file-element\" data-file-width=\"3308\" data-file-height=\"1442\"><figcaption>The Dyslexdria map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/dyslexdria\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 82 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including ZOMIBES, The Plack Plaque, Globel Warnimg, Globel Coologne, sdrawkcaB and Chad.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> World, Fictional</li>\n<li><b>Nations:</b> 82</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Four_Islands",
+    "title": "Four Islands",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Four Islands</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Four_Islands_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1500\" data-file-height=\"1500\"><figcaption>The Four Islands map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/fourislands\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 4 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Korinthal, Lunareth, Sylvoria and Myrkwind.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional</li>\n<li><b>Nations:</b> 4</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Great_Lakes",
+    "title": "Great Lakes",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Great Lakes</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Great_Lakes_map.webp\" decoding=\"async\" width=\"640\" height=\"416\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1300\"><figcaption>The Great Lakes map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/greatlakes\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 34 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Duluth, Thunder Bay, Marathon, Wawa, Sault Ste. Marie and Parry Sound.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 34</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Gulf_of_St_Lawrence",
+    "title": "Gulf of St. Lawrence",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Gulf of St. Lawrence</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Gulf_of_St_Lawrence_map.webp\" decoding=\"async\" width=\"640\" height=\"533\" class=\"mw-file-element\" data-file-width=\"1620\" data-file-height=\"1350\"><figcaption>The Gulf of St. Lawrence map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/gulfofstlawrence\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 26 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Quebec, Nitassinan, Anticosti Island, Gaspesia, Manicouagan and Mingan.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 26</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Hawaii",
+    "title": "Hawaii",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Hawaii</b> is an Oceanian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Hawaii_map.webp\" decoding=\"async\" width=\"640\" height=\"415\" class=\"mw-file-element\" data-file-width=\"3200\" data-file-height=\"2076\"><figcaption>The Hawaii map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/hawaii\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 9 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Niihau, Kauai, Oahu, Molokai, Lanai and Kahoolawe.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Oceania</li>\n<li><b>Nations:</b> 9</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Hong_Kong",
+    "title": "Hong Kong",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Hong Kong</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Hong_Kong_map.webp\" decoding=\"async\" width=\"640\" height=\"460\" class=\"mw-file-element\" data-file-width=\"2781\" data-file-height=\"1997\"><figcaption>The Hong Kong map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/hongkong\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 71 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Tsim Sha Tsui, Mong Kok, Kowloon, Yau Ma Tei, Sham Shui Po and Tsing Yi.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 71</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Indian_Subcontinent",
+    "title": "Indian Subcontinent",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Indian Subcontinent</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Indian_Subcontinent_map.webp\" decoding=\"async\" width=\"640\" height=\"711\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"2222\"><figcaption>The Indian Subcontinent map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/indiansubcontinent\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 52 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Bangladesh, Myanmar, Bhutan, Nepal, Afghanistan and Tibet.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 52</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Juan_De_Fuca_Strait",
+    "title": "Juan De Fuca Strait",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Juan De Fuca Strait</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Juan_De_Fuca_Strait_map.webp\" decoding=\"async\" width=\"640\" height=\"235\" class=\"mw-file-element\" data-file-width=\"3000\" data-file-height=\"1100\"><figcaption>The Juan De Fuca Strait map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/juandefucastrait\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 16 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Victoria, Sooke, Port Renfrew, Bamfield, Sidney and Friday Harbor.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 16</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Korea",
+    "title": "Korea",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Korea</b> is an Asian country map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Korea_map.webp\" decoding=\"async\" width=\"640\" height=\"1286\" class=\"mw-file-element\" data-file-width=\"1089\" data-file-height=\"2189\"><figcaption>The Korea map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/korea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 32 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Ulsan, Busan, Jeju, Nagasaki, Fukuoka and Daegu.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia, Countries</li>\n<li><b>Nations:</b> 32</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Labyrinth",
+    "title": "Labyrinth",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Labyrinth</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Labyrinth_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1361\" data-file-height=\"1360\"><figcaption>The Labyrinth map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/labyrinth\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 26 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Alpha, Bravo, Charlie, Delta, Echo and Foxtrot.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 26</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Lemnos",
+    "title": "Lemnos",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Lemnos</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Lemnos_map.webp\" decoding=\"async\" width=\"640\" height=\"520\" class=\"mw-file-element\" data-file-width=\"1750\" data-file-height=\"1421\"><figcaption>The Lemnos map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/lemnos\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 9 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Gomati, Zematas, Kotsinas, Evgatis, Kavala and Atsiki.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 9</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Lisbon",
+    "title": "Lisbon",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Lisbon</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Lisbon_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1600\" data-file-height=\"1600\"><figcaption>The Lisbon map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/lisbon\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 15 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Lisbon, Amadora, Cascais, Pero Pinheiro, Ericeira and Alverca do Ribatejo.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 15</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Los_Angeles",
+    "title": "Los Angeles",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Los Angeles</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Los_Angeles_map.webp\" decoding=\"async\" width=\"640\" height=\"810\" class=\"mw-file-element\" data-file-width=\"1800\" data-file-height=\"2278\"><figcaption>The Los Angeles map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/losangeles\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 26 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Santa Clarita, Glendale, Pasadena, Anaheim, Walnut and Santa Ana.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 26</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Luna",
+    "title": "Luna",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Luna</b> is a cosmic map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Luna_map.webp\" decoding=\"async\" width=\"640\" height=\"1715\" class=\"mw-file-element\" data-file-width=\"1310\" data-file-height=\"3510\"><figcaption>The Luna map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/luna\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 25 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Apollo 12, Apollo 14, Apollo 15, Apollo 11, Apollo 16 and Apollo 17.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Cosmic</li>\n<li><b>Nations:</b> 25</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Manicouagan",
+    "title": "Manicouagan",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Manicouagan</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Manicouagan_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1600\" data-file-height=\"1600\"><figcaption>The Manicouagan map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/manicouagan\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 11 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Rene Levasseur Island, Caniapiscau, Lelukuau Mountains, Mount Roland, Kaupashkueiat and Manicouagan Island.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 11</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Mare_Nostrum",
+    "title": "Mare Nostrum",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Mare Nostrum</b> is a cross-continental map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Mare_Nostrum_map.webp\" decoding=\"async\" width=\"640\" height=\"326\" class=\"mw-file-element\" data-file-width=\"2850\" data-file-height=\"1450\"><figcaption>The Mare Nostrum map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/marenostrum\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 38 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Lusitania, Terraconensis, Baetica, Narbonensis, Aquitania and Alpes.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Asia, Africa</li>\n<li><b>Nations:</b> 38</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Middle_East",
+    "title": "Middle East",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Middle East</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Middle_East_map.webp\" decoding=\"async\" width=\"640\" height=\"599\" class=\"mw-file-element\" data-file-width=\"2200\" data-file-height=\"2060\"><figcaption>The Middle East map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/middleeast\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 27 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Ottoman Empire, Qajar Dynasty, Emirate of Kuwait, Sultanate of Muscat, Imamate of Oman and Trucial States.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 27</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "MilkyWay",
+    "title": "MilkyWay",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>MilkyWay</b> is a cosmic map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/MilkyWay_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1750\" data-file-height=\"1750\"><figcaption>The MilkyWay map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/milkyway\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 6 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Sagittarius A*, Perseus Arm, Centaurus Arm, Empire of Mankind, Aliens and The Void.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Cosmic</li>\n<li><b>Nations:</b> 6</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Mississippi_River",
+    "title": "Mississippi River",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Mississippi River</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Mississippi_River_map.webp\" decoding=\"async\" width=\"400\" height=\"4200\" class=\"mw-file-element\" data-file-width=\"400\" data-file-height=\"4200\"><figcaption>The Mississippi River map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/mississippiriver\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 11 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Memphis, Marion, Helena-West Helena, Rosedale, Arkansas City and Elaine.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 11</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Montreal",
+    "title": "Montreal",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Montreal</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Montreal_map.webp\" decoding=\"async\" width=\"640\" height=\"627\" class=\"mw-file-element\" data-file-width=\"1530\" data-file-height=\"1500\"><figcaption>The Montreal map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/montreal\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 12 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Laval, Royal Mount park, Hochelaga Archipelago, Westmount, Saint-Lambert and Blainville.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 12</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Nile_Delta",
+    "title": "Nile Delta",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Nile Delta</b> is an African map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Nile_Delta_map.webp\" decoding=\"async\" width=\"640\" height=\"526\" class=\"mw-file-element\" data-file-width=\"1556\" data-file-height=\"1280\"><figcaption>The Nile Delta map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/niledelta\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 11 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Alexandria, Damietta, Faraskur, Sheremsah, El Senbellawein and Aga.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Africa</li>\n<li><b>Nations:</b> 11</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Northwest_Passage",
+    "title": "Northwest Passage",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Northwest Passage</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Northwest_Passage_map.webp\" decoding=\"async\" width=\"640\" height=\"426\" class=\"mw-file-element\" data-file-width=\"2500\" data-file-height=\"1666\"><figcaption>The Northwest Passage map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/northwestpassage\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 21 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Qaanaaq, Jan Mayen, Reykjavik, Nuuk, Qaqortoq and Tasiilaq.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 21</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Onion",
+    "title": "Onion",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Onion</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Onion_map.webp\" decoding=\"async\" width=\"512\" height=\"512\" class=\"mw-file-element\" data-file-width=\"512\" data-file-height=\"512\"><figcaption>The Onion map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/onion\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 3 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Leafer Confederation, Outer Enclave and Inner Tribe.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 3</li>\n<li><b>Public rotation frequency:</b> 2</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Passage",
+    "title": "Passage",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Passage</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Passage_map.webp\" decoding=\"async\" width=\"640\" height=\"43\" class=\"mw-file-element\" data-file-width=\"6000\" data-file-height=\"400\"><figcaption>The Passage map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/passage\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 16 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Weston, Ellach, Prina, Aros, Elos and Eban.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional</li>\n<li><b>Nations:</b> 16</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "San_Francisco",
+    "title": "San Francisco",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>San Francisco</b> is a North American map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/San_Francisco_map.webp\" decoding=\"async\" width=\"640\" height=\"544\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1700\"><figcaption>The San Francisco map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/sanfrancisco\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 21 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including San Francisco, San Mateo, Palo Alto, San Jose, Fremont and Hayward.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 21</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Sierpinski",
+    "title": "Sierpinski",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Sierpinski</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Sierpinski_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1400\" data-file-height=\"1400\"><figcaption>The Sierpinski map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/sierpinski\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 9 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including West, North West, North, North East, East and South East.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 9</li>\n<li><b>Public rotation frequency:</b> 10</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "SoutheastAsia",
+    "title": "SoutheastAsia",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>SoutheastAsia</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/SoutheastAsia_map.webp\" decoding=\"async\" width=\"640\" height=\"381\" class=\"mw-file-element\" data-file-width=\"2815\" data-file-height=\"1675\"><figcaption>The SoutheastAsia map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/southeastasia\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 31 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Taiwan, China, Hong Kong, Macau, Myanmar and Guam.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 31</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Strait_of_Hormuz",
+    "title": "Strait of Hormuz",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Strait of Hormuz</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Strait_of_Hormuz_map.webp\" decoding=\"async\" width=\"640\" height=\"427\" class=\"mw-file-element\" data-file-width=\"1800\" data-file-height=\"1202\"><figcaption>The Strait of Hormuz map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/straitofhormuz\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 21 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Hormozgan, Fars, Ash Sharqiyah, Sistan and Baluchestan, Abu Dhabi and Kerman.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 21</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Strait_Of_Malacca",
+    "title": "Strait Of Malacca",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Strait Of Malacca</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Strait_Of_Malacca_map.webp\" decoding=\"async\" width=\"640\" height=\"574\" class=\"mw-file-element\" data-file-width=\"1832\" data-file-height=\"1644\"><figcaption>The Strait Of Malacca map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/straitofmalacca\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 13 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Singapore, Thailand, Aceh, Malaysia, North Sumatra and West Sumatra.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 13</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Surrounded",
+    "title": "Surrounded",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Surrounded</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Surrounded_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1978\" data-file-height=\"1978\"><figcaption>The Surrounded map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/surrounded\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 8 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Endangered Islander, North Islander, Isolated Islander, Volcano Islander, Resilient Islander and Vulnerable Islander.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional</li>\n<li><b>Nations:</b> 8</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Svalmel",
+    "title": "Svalmel",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Svalmel</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Svalmel_map.webp\" decoding=\"async\" width=\"640\" height=\"595\" class=\"mw-file-element\" data-file-width=\"1700\" data-file-height=\"1580\"><figcaption>The Svalmel map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/svalmel\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 5 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Santa Claus, Svalbard, Melville, Bathurst and Nordaustlandet.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional, Europe, North America</li>\n<li><b>Nations:</b> 5</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Taiwan_Strait",
+    "title": "Taiwan Strait",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Taiwan Strait</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Taiwan_Strait_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1600\" data-file-height=\"1600\"><figcaption>The Taiwan Strait map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/taiwanstrait\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 25 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Fuzhou, Putian, Quanzhou, Xiamen, Zhangzhou and Longyan.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 25</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "The_Box",
+    "title": "The Box",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>The Box</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/The_Box_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"2048\" data-file-height=\"2048\"><figcaption>The The Box map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/thebox\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 13 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including King of the Corner, Suspicious Ally, Evan The Dev, Middle Defender, Punch Merchant and Nuke Thrower.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 13</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Titan",
+    "title": "Titan",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Titan</b> is a cosmic map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Titan_map.webp\" decoding=\"async\" width=\"640\" height=\"1122\" class=\"mw-file-element\" data-file-width=\"1234\" data-file-height=\"2163\"><figcaption>The Titan map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/titan\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 28 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Stone-Keeping Purple Aliens, European Space Agency, UKSA, CNSA, NASA and Roscosmos.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Cosmic</li>\n<li><b>Nations:</b> 28</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Traders_Dream",
+    "title": "Traders Dream",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Traders Dream</b> is a fictional map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Traders_Dream_map.webp\" decoding=\"async\" width=\"640\" height=\"559\" class=\"mw-file-element\" data-file-width=\"2200\" data-file-height=\"1920\"><figcaption>The Traders Dream map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/tradersdream\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 13 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Fort Profit, Taxhaven, Markup Mesa, Ledgerland, Isle of Margins and Port Folio.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Fictional</li>\n<li><b>Nations:</b> 13</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Two_Lakes",
+    "title": "Two Lakes",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Two Lakes</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Two_Lakes_map.webp\" decoding=\"async\" width=\"640\" height=\"561\" class=\"mw-file-element\" data-file-width=\"2100\" data-file-height=\"1840\"><figcaption>The Two Lakes map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/twolakes\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 5 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Galicica, Pelister, Podgorie, Valamara and Prespa.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 5</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Venice",
+    "title": "Venice",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Venice</b> is a European map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Venice_map.webp\" decoding=\"async\" width=\"640\" height=\"480\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"1500\"><figcaption>The Venice map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/venice\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 15 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Cannaregio, San Polo, San Marco, Santa Croce, Dorsoduro and Giudecca.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 15</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Warship_Warship",
+    "title": "Warship Warship",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Warship Warship</b> is an arcade map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Warship_Warship_map.webp\" decoding=\"async\" width=\"640\" height=\"298\" class=\"mw-file-element\" data-file-width=\"3000\" data-file-height=\"1396\"><figcaption>The Warship Warship map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/warshipwarship\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 10 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Isle of Infestation, Poort, Battleship Bay, Piracity, Robbery Rock and Warship Wastelands.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 10</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "World_Inverted",
+    "title": "World Inverted",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>World Inverted</b> is a world map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/World_Inverted_map.webp\" decoding=\"async\" width=\"640\" height=\"320\" class=\"mw-file-element\" data-file-width=\"2500\" data-file-height=\"1250\"><figcaption>The World Inverted map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/worldinverted\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 93 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Titan Submersible, HMS K5, MV Dali, Ever Given, Rouse Simmons and Flying Dutchman.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> World, Fictional</li>\n<li><b>Nations:</b> 93</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Yellow_Sea",
+    "title": "Yellow Sea",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Yellow Sea</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Yellow_Sea_map.webp\" decoding=\"async\" width=\"640\" height=\"492\" class=\"mw-file-element\" data-file-width=\"1500\" data-file-height=\"1152\"><figcaption>The Yellow Sea map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/yellowsea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 8 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including North Korea, South Korea, Liaoning, Shandong, Beijing and Tianjin.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 8</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
+  },
+  {
+    "slug": "Yenisei",
+    "title": "Yenisei",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Yenisei</b> is an Asian map in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Yenisei_map.webp\" decoding=\"async\" width=\"640\" height=\"800\" class=\"mw-file-element\" data-file-width=\"1200\" data-file-height=\"1500\"><figcaption>The Yenisei map, from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/yenisei\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 6 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Baikalovsk, Mungui, Polykarpovsk, Central Island, West Coast and Northern Island.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 6</li>\n<li><b>Public rotation frequency:</b> 6</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li></ul>"
   }
 ]
