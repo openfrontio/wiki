@@ -290,5 +290,335 @@
       }
     ],
     "html": "<p>An <b>account</b> lets you play OpenFront under a persistent identity. <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> added account-level usernames, a verified badge and Login with Google.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Usernames_and_verified_badge\">Usernames and verified badge</h2></div>\n<ul>\n<li>You can claim an account-level username in the form <code>base.suffix</code> (subscribers can claim a bare name with no suffix).</li>\n<li>A verified badge is shown next to your account name on player-facing lists.</li>\n<li>A verified-name toggle lets you choose to play under your account name.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Login_with_Google\">Login with Google</h2></div>\n<p>You can sign in with a Google account and link it to an existing account; once linked, the account shows \"Linked to Google\".</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Profiles_and_stats\">Profiles and stats</h2></div>\n<ul>\n<li>A shareable player profile shows your game history and includes a <a href=\"/Clan\" title=\"Clan\">Clans</a> tab, and can be linked to directly.</li>\n<li>The account modal has a Games tab, and stats now live in a dedicated stats modal (previously called \"ranking\").</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Clan\" title=\"Clan\">Clan</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Sol",
+    "title": "Sol",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Sol</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Massive map of the Solar System.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Russia",
+    "title": "Russia",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Russia</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Big-map treatment of Russia.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "United_States",
+    "title": "United States",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>United States</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Large country map built for the new impassable terrain feature.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Germany",
+    "title": "Germany",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Germany</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>SpeakIsntThere</b>.</p>\n<p>With state flags.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "China",
+    "title": "China",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>China</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Qing-China themed country map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "France",
+    "title": "France",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>France</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Large country map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Vietnam",
+    "title": "Vietnam",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Vietnam</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Skinny country map based on Vietnam War.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Scandinavia",
+    "title": "Scandinavia",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Scandinavia</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Massive European regional map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Baltics",
+    "title": "Baltics",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Baltics</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Regional map with multiple islands on edges.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Caspian_Sea",
+    "title": "Caspian Sea",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Caspian Sea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Medium sized vertical lake in Central Asia, gameplay similar to Black Sea.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Crimea",
+    "title": "Crimea",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Crimea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Disputed region between Ukraine and Russia.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Finger_Lakes",
+    "title": "Finger Lakes",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Finger Lakes</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Six skinny lakes connecting to a river; located in upstate New York.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Gulf_of_Guinea",
+    "title": "Gulf of Guinea",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Gulf of Guinea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>African map with central Bioko Island.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Hecate_Strait",
+    "title": "Hecate Strait",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Hecate Strait</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Liam Langford</b>.</p>\n<p>Strait located in British Columbia; full of fjords.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Irish_Sea",
+    "title": "Irish Sea",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Irish Sea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Three landmasses surrounding the Isle of Man in the center.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Levant",
+    "title": "Levant",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Levant</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Three landmasses surrounding Cyprus in the middle.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Tierra_del_Fuego",
+    "title": "Tierra del Fuego",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Tierra del Fuego</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Featuring impassable terrain.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Branching_Paths",
+    "title": "Branching Paths",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Branching Paths</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>NotRocketfish</b>.</p>\n<p>Branching fractals form waterways.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "More_than_Luck",
+    "title": "More than Luck",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>More than Luck</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Patrick Plays Badly</b>.</p>\n<p>Five-leafed clover shaped map inspired by nuke trajectories.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Balkhash",
+    "title": "Balkhash",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Balkhash</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Pipe shaped lake in Kazakhstan.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Clearwater_Lakes",
+    "title": "Clearwater Lakes",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Clearwater Lakes</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Double impact crater lakes in Canada.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
+  },
+  {
+    "slug": "Las_Vegas_Strip",
+    "title": "Las Vegas Strip",
+    "cats": [
+      "Stubs"
+    ],
+    "headings": [
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Las Vegas Strip</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Skinny long map with roads as water and casinos as nations.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>"
   }
 ]
