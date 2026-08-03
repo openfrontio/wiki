@@ -125,6 +125,35 @@
     "sourceUrl": "https://liquipedia.net/lab/Openfront/2026%20World%20Cup"
   },
   {
+    "slug": "Accounts",
+    "title": "Accounts",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Usernames_and_verified_badge",
+        "text": "Usernames and verified badge",
+        "level": 2
+      },
+      {
+        "id": "Login_with_Google",
+        "text": "Login with Google",
+        "level": 2
+      },
+      {
+        "id": "Profiles_and_stats",
+        "text": "Profiles and stats",
+        "level": 2
+      },
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p>An <b>account</b> lets you play OpenFront under a persistent identity. <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> added account-level usernames, a verified badge and Login with Google.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Usernames_and_verified_badge\">Usernames and verified badge</h2></div>\n<ul>\n<li>You can claim an account-level username in the form <code>base.suffix</code> (subscribers can claim a bare name with no suffix).</li>\n<li>A verified badge is shown next to your account name on player-facing lists.</li>\n<li>A verified-name toggle lets you choose to play under your account name.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Login_with_Google\">Login with Google</h2></div>\n<p>You can sign in with a Google account and link it to an existing account; once linked, the account shows \"Linked to Google\".</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Profiles_and_stats\">Profiles and stats</h2></div>\n<ul>\n<li>A shareable player profile shows your game history and includes a <a href=\"/Clan\" title=\"Clan\">Clans</a> tab, and can be linked to directly.</li>\n<li>The account modal has a Games tab, and stats now live in a dedicated stats modal (previously called \"ranking\").</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Clan\" title=\"Clan\">Clan</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "section": "Meta & community"
+  },
+  {
     "slug": "Africa",
     "title": "Africa",
     "cats": [],
@@ -991,6 +1020,30 @@
     ],
     "html": "<div class=\"mw-heading mw-heading2\"><h2 id=\"Description\">Description</h2></div>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/300px-Bottom_Footer.png\" decoding=\"async\" width=\"300\" height=\"15\" class=\"mw-file-element\" data-file-width=\"941\" data-file-height=\"46\"><figcaption>Footer of <a href=\"/OpenFront.io\" title=\"OpenFront.io\">OpenFront.io</a></figcaption></figure>\n<p><span class=\"wiki-deadlink\">Discord</span> is the main communication channel chosen by the developers and community.\n</p><p>At the bottom footer on <a href=\"/OpenFront.io\" title=\"OpenFront.io\">OpenFront.io</a> you will find a link to join the official <a href=\"/OpenFront.io\" class=\"\" title=\"OpenFront\">OpenFront</a> <span class=\"wiki-deadlink\">Discord</span> server.\n</p><p><br>\nThere is a separate <span class=\"wiki-deadlink\">Discord</span> for developers. You can find it through the GitHub page for <a href=\"/OpenFront.io\" class=\"\" title=\"OpenFront\">OpenFront</a>.\n</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/OpenFront.io\" class=\"\" title=\"OpenFront\">OpenFront</a></li></ul>\n<!-- \nNewPP limit report\nParsed by mw201\nCached time: 20260627220030\nCache expiry: 1296000\nReduced expiry: false\nComplications: []\nCPU time usage: 0.010 seconds\nReal time usage: 0.012 seconds\nPreprocessor visited node count: 12/1000000\nRevision size: 423/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/99\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in parser cache with key openfrontwiki:pcache:1087:|#|:idhash:canonical and timestamp 20260627220030 and revision id 2801. Rendering was triggered because: page_view\n -->",
     "section": "Meta & community"
+  },
+  {
+    "slug": "Doomsday_Clock",
+    "title": "Doomsday Clock",
+    "cats": [],
+    "headings": [
+      {
+        "id": "How_it_works",
+        "text": "How it works",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
+        "level": 2
+      },
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p>The <b>Doomsday Clock</b> is a battle-royale style zone game modifier added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a>. It is part of the public modifier rotation, so it can turn up in public games.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"How_it_works\">How it works</h2></div>\n<p>A shrinking doom zone closes in over the course of a match, and the sides judged to be <i>doomed</i> steadily lose <a href=\"/Troops\" title=\"Troops\">troops</a> — and their <a href=\"/Warship\" title=\"Warship\">warships</a>. A 10-minute grace period holds the clock off at the start of the game, and a wave-based squeeze ramps up later on to break late-game stalemates.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li>The troop drain is floored at 5% of a side's maximum rather than wiping it straight to zero, so being doomed cripples a side without instantly deleting it.</li>\n<li><a href=\"/Warship\" title=\"Warship\">Warships</a> decay alongside troops for doomed sides, at a gentler-but-steeper rate of attrition.</li>\n<li>Doomed warships stay out on patrol instead of idling at their <a href=\"/Port\" title=\"Port\">ports</a>.</li>\n<li>In team games, teams are judged against the same bar as solo sides.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Free_for_All\" title=\"Free for All\">Free for All</a></li><li><a href=\"/Teams\" title=\"Teams\">Teams</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "section": "Game modes"
   },
   {
     "slug": "EagleEye",
@@ -2762,6 +2815,35 @@
     "section": "Buildings"
   },
   {
+    "slug": "Ranked",
+    "title": "Ranked",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Ranked_2v2",
+        "text": "Ranked 2v2",
+        "level": 2
+      },
+      {
+        "id": "Matchmaking",
+        "text": "Matchmaking",
+        "level": 2
+      },
+      {
+        "id": "Leaderboards",
+        "text": "Leaderboards",
+        "level": 2
+      },
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Ranked</b> matchmaking pits players against each other in rated games that feed a competitive leaderboard ladder. Ranked <b>1v1</b> has been available for some time; <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> added ranked <b>2v2</b> alongside it, with its own ladder.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Ranked_2v2\">Ranked 2v2</h2></div>\n<ul>\n<li>2v2 has its own leaderboard ladder, shown as a separate leaderboard tab.</li>\n<li>Matchmaking prefers to pair <a href=\"/Clan\" title=\"Clan\">clanmates</a> as teammates.</li>\n<li>PvP spawn immunity lasts 1 minute.</li>\n<li>Games use compact maps only 50% of the time.</li>\n<li>A game ends early when a full team is dead or disconnected.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Matchmaking\">Matchmaking</h2></div>\n<ul>\n<li>The live queue size is shown while you wait, and the client reconnects on silent disconnects.</li>\n<li>Matches that do not fill, or that start short-handed or fail to fully spawn, are cancelled.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Leaderboards\">Leaderboards</h2></div>\n<p>The 1v1 ranked leaderboard is an individual ladder and no longer shows <a href=\"/Clan\" title=\"Clan\">clan</a> tags in the rank column; the clan tag is a separate, filterable column.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Teams\" title=\"Teams\">Teams</a></li><li><a href=\"/Clan\" title=\"Clan\">Clan</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "section": "Game modes"
+  },
+  {
     "slug": "Ry",
     "title": "Ry",
     "cats": [
@@ -2993,6 +3075,30 @@
     "headings": [],
     "html": "<figure typeof=\"mw:File/Thumb\"><img src=\"/images/146px-Transport_Ship.png\" decoding=\"async\" width=\"146\" height=\"146\" class=\"mw-file-element\" data-file-width=\"147\" data-file-height=\"147\"><figcaption>A <b>Transport Ship</b>.</figcaption></figure>\n\n\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Description\">Description</h1></div>\n<p><b>Transport Ships</b> are a type of boat that contains a defined number of troops. They have no weaponry and are pretty weak. In terms of appearance, they have a dark outline with a bright center and leave a trail behind them.\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"How_to_Spawn\">How to Spawn</h1></div>\n<p>To spawn a <b>Transport Ship</b>, simply left click on a <a href=\"/Terrain\" title=\"Terrain\">terrain</a> that isn't yours. It will appear on your nearest claimed <a href=\"/Terrain\" title=\"Terrain\">terrain</a> and will travel to the targeted zone.\n</p><p>Once arrived, the <b>Transport Ship</b> will release all the troops it contains on the zone and will capture it.\n</p>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"Properties\">Properties</h1></div>\n<ul><li><b>Hit Points</b>: 1 HP</li>\n<li><b>Cost</b>: Free</li>\n<li><b>Movement</b>: Can move one tile per tick (100ms), so 10 tiles per second</li>\n<li><b>Troop Capacity</b>: Determined by the&nbsp;% of troops engaged by the player</li>\n<li><b>Territory Bound</b>: No (can move freely in water)</li></ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Port\" title=\"Port\">Port</a></li>\n<li><a href=\"/Warship\" title=\"Warship\">Warship</a></li>\n<li><a href=\"/Trade_Ship\" title=\"Trade Ship\">Trade Ship</a></li></ul>\n<!-- \nNewPP limit report\nParsed by mw171\nCached time: 20260623131503\nCache expiry: 1296000\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.012 seconds\nReal time usage: 0.014 seconds\nPreprocessor visited node count: 14/1000000\nRevision size: 947/2097152 bytes\nPost‐expand include size: 0/2097152 bytes\nTemplate argument size: 0/2097152 bytes\nHighest expansion depth: 2/100\nExpensive parser function count: 0/99\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/5000000 bytes\n-->\n<!--\nTransclusion expansion time report (%,ms,calls,template)\n100.00%    0.000      1 -total\n-->\n\n<!-- Saved in parser cache with key openfrontwiki:pcache:1031:|#|:idhash:canonical and timestamp 20260623131503 and revision id 2954. Rendering was triggered because: page_view\n -->",
     "section": "Units"
+  },
+  {
+    "slug": "Tribes",
+    "title": "Tribes",
+    "cats": [],
+    "headings": [
+      {
+        "id": "Custom_tribe_names",
+        "text": "Custom tribe names",
+        "level": 2
+      },
+      {
+        "id": "Tribe_name_themes",
+        "text": "Tribe name themes",
+        "level": 2
+      },
+      {
+        "id": "See_also",
+        "text": "See also",
+        "level": 2
+      }
+    ],
+    "html": "<p><b>Tribes</b> are the named bot factions that fill out public games (see <a href=\"/Bots\" title=\"Bots\">Bots</a>). <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> added <b>custom tribe names</b>, letting players buy a tribe name that can appear on bot tribes in public games.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Custom_tribe_names\">Custom tribe names</h2></div>\n<ul>\n<li>Custom tribe names are bought and managed from the new <b>Tribes</b> tab in the store.</li>\n<li>A purchased tribe name can appear on <a href=\"/Bots\" title=\"Bots\">bot</a> tribes in public games.</li>\n<li><b>Boosts</b>, also bought in the store, make your tribe appear more often; the store shows when your next boost expires.</li>\n<li>A public tribe-name leaderboard tracks how tribes are doing, including their active boost counts.</li>\n</ul>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Tribe_name_themes\">Tribe name themes</h2></div>\n<p>Update 33.0 also added a tribe name themes system for <a href=\"/Maps\" title=\"Maps\">maps</a>. Real-world maps ship with themed tribe names, and mappers can define custom tribes — including custom tribe spawn coordinates — in a map's <code>info.json</code>.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Bots\" title=\"Bots\">Bots</a></li><li><a href=\"/Nations\" title=\"Nations\">Nations</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "section": "Meta & community"
   },
   {
     "slug": "Troops",
