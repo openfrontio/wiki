@@ -482,33 +482,39 @@
   {
     "slug": "Balkhash",
     "title": "Balkhash",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Balkhash</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Pipe shaped lake in Kazakhstan.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Balkhash</b> is an Asian map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Pipe shaped lake in Kazakhstan.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Balkhash_map.webp\" decoding=\"async\" width=\"640\" height=\"291\" class=\"mw-file-element\" data-file-width=\"3300\" data-file-height=\"1500\"><figcaption>The Balkhash map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 26 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Balkhash, Gulshat, Tasaral, Priosersk, Kashkanteniz and Mynaral.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 26</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/balkhash\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
     "slug": "Baltics",
     "title": "Baltics",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Baltics</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Regional map with multiple islands on edges.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Baltics</b> is a European map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Regional map with multiple islands on edges.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Baltics_map.webp\" decoding=\"async\" width=\"640\" height=\"621\" class=\"mw-file-element\" data-file-width=\"1365\" data-file-height=\"1324\"><figcaption>The Baltics map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 35 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Stockholm, Aland, Helsinki, Saint Petersburg, Pskov and Tallinn.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 35</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/baltics\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -677,17 +683,20 @@
   {
     "slug": "Branching_Paths",
     "title": "Branching Paths",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Branching Paths</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>NotRocketfish</b>.</p>\n<p>Branching fractals form waterways.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Branching Paths</b> is an arcade map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>NotRocketfish</b> — Branching fractals form waterways.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Branching_Paths_map.webp\" decoding=\"async\" width=\"640\" height=\"555\" class=\"mw-file-element\" data-file-width=\"2480\" data-file-height=\"2150\"><figcaption>The Branching Paths map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 19 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Last Hold, First Wall, Second Wall, Third Wall, Scorching Rays and Frozen Winds.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 19</li>\n<li><b>Public rotation frequency:</b> 7</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/branchingpaths\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -779,33 +788,39 @@
   {
     "slug": "Caspian_Sea",
     "title": "Caspian Sea",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Caspian Sea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Medium sized vertical lake in Central Asia, gameplay similar to Black Sea.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Caspian Sea</b> is an Asian map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Medium sized vertical lake in Central Asia, gameplay similar to Black Sea.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Caspian_Sea_map.webp\" decoding=\"async\" width=\"640\" height=\"1097\" class=\"mw-file-element\" data-file-width=\"1008\" data-file-height=\"1728\"><figcaption>The Caspian Sea map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 12 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Mangystau, Turkmenistan, Atyrau, Aktau, Tehran and Gilan.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 12</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/caspiansea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
     "slug": "China",
     "title": "China",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>China</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Qing-China themed country map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>China</b> is an Asian country map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Qing-China themed country map.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/China_map.webp\" decoding=\"async\" width=\"640\" height=\"583\" class=\"mw-file-element\" data-file-width=\"2082\" data-file-height=\"1895\"><figcaption>The China map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 32 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including British Hong Kong, Guangdong, Tannu Tuva, Boxer Rebellion, Taiping Heavenly Kingdom and Sichuan.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia, Countries</li>\n<li><b>Nations:</b> 32</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/china\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -890,17 +905,20 @@
   {
     "slug": "Clearwater_Lakes",
     "title": "Clearwater Lakes",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Clearwater Lakes</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Double impact crater lakes in Canada.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Clearwater Lakes</b> is a North American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Double impact crater lakes in Canada.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Clearwater_Lakes_map.webp\" decoding=\"async\" width=\"640\" height=\"566\" class=\"mw-file-element\" data-file-width=\"1873\" data-file-height=\"1656\"><figcaption>The Clearwater Lakes map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 13 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Atkinson Island, Kamiskutanikaw Island, Lepage Island, Mantunikw Island, Lake Donat and Lake Ichikami.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 13</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/clearwaterlakes\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1024,17 +1042,20 @@
   {
     "slug": "Crimea",
     "title": "Crimea",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Crimea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Disputed region between Ukraine and Russia.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Crimea</b> is a European map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Disputed region between Ukraine and Russia.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Crimea_map.webp\" decoding=\"async\" width=\"640\" height=\"413\" class=\"mw-file-element\" data-file-width=\"2042\" data-file-height=\"1317\"><figcaption>The Crimea map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 9 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Sevastopol, Yevpatoria, Kerch, Simferopol, Dzhankoi and Feodosia.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 9</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/crimea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1300,17 +1321,20 @@
   {
     "slug": "Finger_Lakes",
     "title": "Finger Lakes",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Finger Lakes</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Six skinny lakes connecting to a river; located in upstate New York.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Finger Lakes</b> is a North American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Six skinny lakes connecting to a river; located in upstate New York.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Finger_Lakes_map.webp\" decoding=\"async\" width=\"640\" height=\"600\" class=\"mw-file-element\" data-file-width=\"1470\" data-file-height=\"1379\"><figcaption>The Finger Lakes map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 10 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Ithaca, Penn Yan, Watkins Glen, Geneva, Seneca Falls and Lyons.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 10</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/fingerlakes\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1330,17 +1354,20 @@
   {
     "slug": "France",
     "title": "France",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>France</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Large country map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>France</b> is a European country map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Large country map.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/France_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"2424\" data-file-height=\"2424\"><figcaption>The France map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 25 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Nord-Pas-de-Calais, Picardy, Haute-Normandie, Basse-Normandie, Brittany and Île-de-France.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Countries</li>\n<li><b>Nations:</b> 25</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/france\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1476,17 +1503,20 @@
   {
     "slug": "Germany",
     "title": "Germany",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Germany</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>SpeakIsntThere</b>.</p>\n<p>With state flags.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Germany</b> is a European map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>SpeakIsntThere</b> — With state flags.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Germany_map.webp\" decoding=\"async\" width=\"640\" height=\"628\" class=\"mw-file-element\" data-file-width=\"1548\" data-file-height=\"1519\"><figcaption>The Germany map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 16 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Hamburg, Schleswig-Holstein, Bremen, Lower Saxony, North Rhine-Westphalia and Saarland.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 16</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/germany\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1560,17 +1590,20 @@
   {
     "slug": "Gulf_of_Guinea",
     "title": "Gulf of Guinea",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Gulf of Guinea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>African map with central Bioko Island.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Gulf Of Guinea</b> is an African map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — African map with central Bioko Island.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Gulf_of_Guinea_map.webp\" decoding=\"async\" width=\"640\" height=\"563\" class=\"mw-file-element\" data-file-width=\"2500\" data-file-height=\"2200\"><figcaption>The Gulf Of Guinea map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 22 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Malabo, Principe, Sao Tome, Annobon, Libreville and Yaounde.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Africa</li>\n<li><b>Nations:</b> 22</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/gulfofguinea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1590,17 +1623,20 @@
   {
     "slug": "Hecate_Strait",
     "title": "Hecate Strait",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Hecate Strait</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Liam Langford</b>.</p>\n<p>Strait located in British Columbia; full of fjords.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Hecate Strait</b> is a North American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Liam Langford</b> — Strait located in British Columbia; full of fjords.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Hecate_Strait_map.webp\" decoding=\"async\" width=\"640\" height=\"551\" class=\"mw-file-element\" data-file-width=\"2248\" data-file-height=\"1935\"><figcaption>The Hecate Strait map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 28 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Old Massett Village, Skidegate, Cape Ball, Cumshewa, Dadens and Haina.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 28</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/hecatestrait\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1665,17 +1701,20 @@
   {
     "slug": "Irish_Sea",
     "title": "Irish Sea",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Irish Sea</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Three landmasses surrounding the Isle of Man in the center.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Irish Sea</b> is a European map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Three landmasses surrounding the Isle of Man in the center.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Irish_Sea_map.webp\" decoding=\"async\" width=\"640\" height=\"686\" class=\"mw-file-element\" data-file-width=\"1400\" data-file-height=\"1500\"><figcaption>The Irish Sea map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 19 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Isle of Man, Preston, Dundalk, Dublin, Wicklow and Carlisle.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 19</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/irishsea\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -1762,33 +1801,39 @@
   {
     "slug": "Las_Vegas_Strip",
     "title": "Las Vegas Strip",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Las Vegas Strip</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Skinny long map with roads as water and casinos as nations.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Las Vegas Strip</b> is a North American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Skinny long map with roads as water and casinos as nations.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Las_Vegas_Strip_map.webp\" decoding=\"async\" width=\"640\" height=\"1393\" class=\"mw-file-element\" data-file-width=\"2036\" data-file-height=\"4431\"><figcaption>The Las Vegas Strip map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 34 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Sphere, Las Vegas Premium Outlets, World Market Center, Fremont Street, Las Vegas Downtown and Arts District.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America</li>\n<li><b>Nations:</b> 34</li>\n<li><b>Public rotation frequency:</b> 3</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/lasvegasstrip\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
     "slug": "Levant",
     "title": "Levant",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Levant</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Three landmasses surrounding Cyprus in the middle.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Levant</b> is an Asian map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Three landmasses surrounding Cyprus in the middle.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Levant_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"2000\" data-file-height=\"2000\"><figcaption>The Levant map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 15 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Fatimid Caliphate, Kingdom of Jerusalem, County of Tripoli, Principality of Antioch, County of Edessa and Kingdom of Cyprus.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Asia</li>\n<li><b>Nations:</b> 15</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/levant\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -2375,17 +2420,20 @@
   {
     "slug": "More_than_Luck",
     "title": "More than Luck",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>More than Luck</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Patrick Plays Badly</b>.</p>\n<p>Five-leafed clover shaped map inspired by nuke trajectories.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>More Than Luck</b> is an arcade map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>Patrick Plays Badly</b> — Five-leafed clover shaped map inspired by nuke trajectories.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/More_than_Luck_map.webp\" decoding=\"async\" width=\"640\" height=\"640\" class=\"mw-file-element\" data-file-width=\"1348\" data-file-height=\"1347\"><figcaption>The More Than Luck map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 35 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including 1-2-3-4, 1-1-1-1, 0-0-0-0, 1-2-1-2, 7-7-7-7 and 1-0-0-4.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Arcade</li>\n<li><b>Nations:</b> 35</li>\n<li><b>Public rotation frequency:</b> 7</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/morethanluck\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -3102,17 +3150,20 @@
   {
     "slug": "Russia",
     "title": "Russia",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Russia</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Big-map treatment of Russia.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Russia</b> is a European and Asian country map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Big-map treatment of Russia.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Russia_map.webp\" decoding=\"async\" width=\"640\" height=\"338\" class=\"mw-file-element\" data-file-width=\"3200\" data-file-height=\"1688\"><figcaption>The Russia map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 82 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Murmansk, Karelia, Arkhangelsk, Vologda, Komi Republic and Nenets Autonomous Okrug.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe, Asia, Countries</li>\n<li><b>Nations:</b> 82</li>\n<li><b>Public rotation frequency:</b> 8</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/russia\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -3180,17 +3231,20 @@
   {
     "slug": "Scandinavia",
     "title": "Scandinavia",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Scandinavia</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Massive European regional map.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Scandinavia</b> is a European map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Massive European regional map.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Scandinavia_map.webp\" decoding=\"async\" width=\"640\" height=\"716\" class=\"mw-file-element\" data-file-width=\"2006\" data-file-height=\"2243\"><figcaption>The Scandinavia map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 24 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Norway, Sweden, Denmark, Germany, Netherlands and Finland.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Europe</li>\n<li><b>Nations:</b> 24</li>\n<li><b>Public rotation frequency:</b> 7</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/scandinavia\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -3204,17 +3258,20 @@
   {
     "slug": "Sol",
     "title": "Sol",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Sol</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Massive map of the Solar System.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Sol</b> is a cosmic map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Massive map of the Solar System.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Sol_map.webp\" decoding=\"async\" width=\"640\" height=\"365\" class=\"mw-file-element\" data-file-width=\"4435\" data-file-height=\"2531\"><figcaption>The Sol map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 46 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Sol, Terra, Luna, Mercury, Venus and Mars.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Cosmic</li>\n<li><b>Nations:</b> 46</li>\n<li><b>Public rotation frequency:</b> 10</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/sol\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -3272,17 +3329,20 @@
   {
     "slug": "Tierra_del_Fuego",
     "title": "Tierra del Fuego",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Tierra del Fuego</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Featuring impassable terrain.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Tierra Del Fuego</b> is a South American map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Featuring impassable terrain.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Tierra_del_Fuego_map.webp\" decoding=\"async\" width=\"640\" height=\"425\" class=\"mw-file-element\" data-file-width=\"2505\" data-file-height=\"1665\"><figcaption>The Tierra Del Fuego map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 20 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Rio Grande, Ushuaia, Tolhuin, Falkland Islands, Rio Gallegos and Puerto Santa Cruz.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> South America</li>\n<li><b>Nations:</b> 20</li>\n<li><b>Public rotation frequency:</b> 5</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/tierradelfuego\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -3595,17 +3655,20 @@
   {
     "slug": "United_States",
     "title": "United States",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>United States</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b>.</p>\n<p>Large country map built for the new impassable terrain feature.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>United States</b> is a North American country map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>RickD004</b> — Large country map built for the new impassable terrain feature.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/United_States_map.webp\" decoding=\"async\" width=\"640\" height=\"354\" class=\"mw-file-element\" data-file-width=\"2800\" data-file-height=\"1550\"><figcaption>The United States map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 49 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including California, Oregon, Washington, Idaho, Nevada and Arizona.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> North America, Countries</li>\n<li><b>Nations:</b> 49</li>\n<li><b>Public rotation frequency:</b> 9</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/unitedstates\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
@@ -4448,17 +4511,20 @@
   {
     "slug": "Vietnam",
     "title": "Vietnam",
-    "cats": [
-      "Stubs"
-    ],
+    "cats": [],
     "headings": [
       {
-        "id": "See_also",
-        "text": "See also",
+        "id": "Nations",
+        "text": "Nations",
+        "level": 2
+      },
+      {
+        "id": "Details",
+        "text": "Details",
         "level": 2
       }
     ],
-    "html": "<p><b>Vietnam</b> is a <a href=\"/Maps\" title=\"Maps\">map</a> in <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a>, added in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b>.</p>\n<p>Skinny country map based on Vietnam War.</p>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">This article is a stub carrying only the map's release description. You can help by adding its terrain, layout, strategy and screenshots.</div>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"See_also\">See also</h2></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>",
+    "html": "<p><b>Vietnam</b> is an Asian country map added to <a href=\"/OpenFront.io\" title=\"OpenFront\">OpenFront</a> in <a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a> by <b>crunchybbb</b> — Skinny country map based on Vietnam War.</p>\n<figure class=\"mw-default-size\" typeof=\"mw:File/Thumb\"><img src=\"/images/Vietnam_map.webp\" decoding=\"async\" width=\"640\" height=\"1152\" class=\"mw-file-element\" data-file-width=\"1979\" data-file-height=\"3563\"><figcaption>The Vietnam map.</figcaption></figure>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Nations\">Nations</h2></div>\n<p>The map features 15 named <a href=\"/Nations\" title=\"Nations\">nations</a>, including Saigon, Can Tho, Dak Lak, Da Nang, Lam Dong and Hue.</p>\n<div class=\"mw-heading mw-heading2\"><h2 id=\"Details\">Details</h2></div>\n<ul>\n<li><b>Categories:</b> Countries, Asia</li>\n<li><b>Nations:</b> 15</li>\n<li><b>Public rotation frequency:</b> 4</li>\n</ul>\n<div class=\"mw-heading mw-heading1\"><h1 id=\"See_also\">See also</h1></div>\n<ul><li><a href=\"/Maps\" title=\"Maps\">Maps</a></li><li><a href=\"/Update_33.0\" title=\"Update 33.0\">Update 33.0</a></li></ul>\n<div role=\"note\" class=\"hatnote navigation-not-searchable\">Map preview from the <a href=\"https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/vietnam\" target=\"_blank\" rel=\"noopener noreferrer\">OpenFront game files</a>.</div>",
     "section": "Maps"
   },
   {
