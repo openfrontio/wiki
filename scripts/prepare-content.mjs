@@ -1,3 +1,8 @@
+// ⚠️ DEPRECATED / RETIRED (2026-08-03). The Miraheze crawl is no longer used;
+// src/data/pages.json is now the hand-maintained source of truth. Running this
+// against a fresh crawl would OVERWRITE hand-authored content (v33 pages,
+// enriched maps, fixes). Kept for historical reference only — see README "Content".
+//
 // Clean the raw crawl output into the site's content manifest.
 //   node scripts/prepare-content.mjs <crawlDir>
 // Reads <crawlDir>/pages.json + <crawlDir>/images, writes src/data/pages.json

@@ -27,20 +27,23 @@ Every commit to the connected branch triggers a deploy.
 
 ## Content
 
-The wiki articles are a self-contained snapshot of the live wiki — there are no
-links back to `openfront.wiki`. Content lives in `src/data/pages.json` (rendered
-by `src/pages/[slug].astro`) with images in `public/images`. To refresh it from
-the live wiki:
+Content lives in `src/data/pages.json` (rendered by `src/pages/[slug].astro`)
+with images in `public/images`. **`pages.json` is the source of truth and is
+maintained directly in this repo** — edit it, and add images to `public/images`,
+as needed.
 
-```bash
-# 1. crawl every page (passes the Cloudflare challenge with headless Chromium)
-node .claude/skills/run-openfront/crawl-wiki.mjs /tmp/wiki-crawl
-# 2. clean the HTML + rewrite links/images into the site manifest
-node scripts/prepare-content.mjs /tmp/wiki-crawl
-```
+### Miraheze crawl (retired)
 
-`crawl-wiki.mjs` requires the one-time headless-Chromium setup in
-`.claude/skills/run-openfront/` (`bash setup.sh`).
+The wiki was originally seeded by crawling the live Miraheze wiki
+(`openfront.miraheze.org`) and cleaning the HTML into `pages.json`. That import
+was **last run on 1 July 2026 and is no longer used** — the site has since
+diverged (v33 content, new and enriched pages, fixes) and is hand-maintained.
+
+The old pipeline — `scripts/prepare-content.mjs` plus
+`.claude/skills/run-openfront/crawl-wiki.mjs` — is kept for historical reference
+only. **Do not re-run it: it would overwrite the hand-authored content.** Durable
+repo-authored pages live in `scripts/legacy-pages.json` and their browse
+categories in `scripts/game-categories.json`.
 
 ## Brand assets
 
