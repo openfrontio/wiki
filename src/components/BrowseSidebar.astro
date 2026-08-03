@@ -63,6 +63,10 @@ const mastersSub = [
   details[open] > .wiki-summary::before, details[open] > .wiki-subsummary::before { transform: rotate(90deg); }
   .wiki-count { margin-left: auto; font-size: 0.7rem; color: var(--color-dawn); opacity: 0.55; }
   .wiki-subsection { padding-left: 0.5rem; }
+  /* nested page list: indent under its category with a tree line, and keep the
+     item font smaller than the category label so the hierarchy reads correctly */
+  .wiki-subsection > ul { margin: 0.1rem 0 0.4rem 1.15rem; padding-left: 0.6rem; border-left: 1px solid rgb(255 255 255 / 0.08); list-style: none; }
+  .wiki-subsection > ul a { font-size: 0.78rem; padding-top: 0.28rem; padding-bottom: 0.28rem; }
   /* result cards are injected at runtime by the search script, so they never
      carry Astro's scoped attribute — these rules must be :global to apply */
   :global(#wiki-results a) { display: block; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; padding: 0.5rem 0.7rem; margin-bottom: 0.4rem; }
