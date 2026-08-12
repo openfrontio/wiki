@@ -2,8 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
-import pages from "../data/pages.json";
+import { allPages } from "../lib/pages.js";
 
+const pages = await allPages();
 const sorted = [...pages].sort((a, b) => a.title.localeCompare(b.title));
 const groups = new Map<string, { slug: string; title: string }[]>();
 for (const p of sorted) {

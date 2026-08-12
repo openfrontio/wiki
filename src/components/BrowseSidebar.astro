@@ -1,7 +1,8 @@
 ---
-import pages from "../data/pages.json";
+import { allPages } from "../lib/pages.js";
 import { groupGamePages, groupMastersPages } from "../lib/sidebar.js";
 const { currentSlug } = Astro.props;
+const pages = await allPages();
 const game = groupGamePages(pages);
 const masters = groupMastersPages(pages);
 const gameCount = game.reduce((n, g) => n + g.items.length, 0);

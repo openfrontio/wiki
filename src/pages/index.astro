@@ -2,7 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
-import pages from "../data/pages.json";
+import { allPages } from "../lib/pages.js";
+
+const pages = await allPages();
 
 const topics = [
   { name: "Settings", href: "/Game_Settings", icon: "⚙️" },
