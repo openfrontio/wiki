@@ -55,6 +55,17 @@ test("descriptionFromMarkdown skips a leading heading and a raw HTML table", () 
   assert.match(d, /Warships are a type of naval unit/);
 });
 
+test("descriptionFromMarkdown skips a leading raw-HTML block even when its text exceeds 40 chars (stub/ambox notice)", () => {
+  const body = [
+    '<div role="note" class="asbox">This article is a stub. You can help the wiki by expanding it further today.</div>',
+    "",
+    "The Atom Bomb is the cheapest and least powerful nuclear weapon in OpenFront.",
+  ].join("\n");
+  const d = descriptionFromMarkdown(body);
+  assert.match(d, /^The Atom Bomb is the cheapest/);
+  assert.doesNotMatch(d, /stub/);
+});
+
 test("descriptionFromMarkdown truncates at a word boundary with an ellipsis", () => {
   const long = "word ".repeat(60).trim();
   const d = descriptionFromMarkdown(long, 40);

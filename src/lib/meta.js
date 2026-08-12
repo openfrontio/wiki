@@ -33,6 +33,8 @@ export function descriptionFromMarkdown(body, max = 155) {
   const blocks = text.split(/\n\s*\n/);
 
   for (const rawBlock of blocks) {
+    if (/^\s*</.test(rawBlock)) continue; // raw HTML block (table/figure/ambox/hatnote) — not prose
+
     let block = rawBlock;
     block = block.replace(/<[^>]+>/g, " "); // raw HTML tags
     block = block.replace(/!\[[^\]]*\]\([^)]*\)/g, ""); // images dropped
