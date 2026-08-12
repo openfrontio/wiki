@@ -1,7 +1,7 @@
 import * as cheerio from "cheerio";
 
 // Tags/selectors whose subtree is emitted verbatim as raw HTML (fidelity kept).
-const RAW = "table, figure, pre, .hatnote, .mw-references-wrap, .gallery, .mwe-math-element, .mwe-math-mathml-inline, .mwe-math-mathml-display";
+const RAW = "table, figure, pre, .hatnote, .mw-references-wrap, ol.references, .gallery, .mwe-math-element, .mwe-math-mathml-inline, .mwe-math-mathml-display";
 
 function inline($, el) {
   const $el = $(el);
@@ -20,6 +20,7 @@ function inline($, el) {
         return `[${inline($, n).trim()}](${href})`;
       }
       if (tag === "sup" && $n.hasClass("reference")) return $.html(n); // keep refs raw
+      if ($n.is(".mwe-math-element, .mwe-math-mathml-inline, .mwe-math-mathml-display")) return $.html(n); // keep inline math raw
       if (tag === "br") return "\n";
       return inline($, n);
     })
@@ -58,6 +59,10 @@ export function htmlToMarkdown(html) {
       }
       const $node = $(node);
       const tag = node.tagName;
+      if ($node.is(RAW)) {
+        blocks.push($.html(node).trim());
+        return;
+      }
       if (/^h[1-6]$/.test(tag)) {
         const level = Number(tag[1]);
         const id = $node.attr("id");
@@ -72,10 +77,6 @@ export function htmlToMarkdown(html) {
       }
       if (tag === "ul" || tag === "ol") {
         blocks.push(listMarkdown($, node, tag === "ol"));
-        return;
-      }
-      if ($node.is(RAW)) {
-        blocks.push($.html(node).trim());
         return;
       }
       // fallback: keep unknown block as raw html so nothing is lost

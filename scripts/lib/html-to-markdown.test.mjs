@@ -38,3 +38,27 @@ test("external links get plain markdown link", () => {
   const md = htmlToMarkdown('<p><a href="https://github.com/openfrontio" target="_blank" rel="noopener noreferrer">GitHub</a></p>');
   assert.equal(md.trim(), "[GitHub](https://github.com/openfrontio)");
 });
+
+test("inline math inside a paragraph is preserved as raw html", () => {
+  const html = '<p>speed is <span class="mwe-math-element"><span class="mwe-math-mathml-inline"><math>x</math></span></span> here</p>';
+  const md = htmlToMarkdown(html);
+  assert.ok(md.includes('class="mwe-math-element"'));
+});
+
+test("bare ol.references without mw-references-wrap is preserved as raw html", () => {
+  const html = '<ol class="references"><li id="cite_note-1">src</li></ol>';
+  const md = htmlToMarkdown(html);
+  assert.ok(md.includes('class="references"') && md.includes('id="cite_note-1"'));
+});
+
+test("pre block is preserved as raw html", () => {
+  const html = "<pre>foo()</pre>";
+  const md = htmlToMarkdown(html);
+  assert.ok(md.includes("<pre>foo()</pre>"));
+});
+
+test("hatnote div is preserved as raw html", () => {
+  const html = '<div role="note" class="hatnote">See also X</div>';
+  const md = htmlToMarkdown(html);
+  assert.ok(md.includes('class="hatnote"'));
+});
