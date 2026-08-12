@@ -5,7 +5,7 @@ import { lineDiff } from "../lib/diff.js";
 // Swap a rendered article for an inline EasyMDE editor. Saving is a Phase-2 STUB:
 // it shows a line diff + Copy Markdown + a note. Phase 3 replaces the save handler
 // with a real submit (edited Markdown + slug -> backend).
-export function mountEditor({ article, root, source, title }) {
+export function mountEditor({ article, root, source, title, onClose }) {
   article.hidden = true;
   root.hidden = false;
   root.innerHTML = `
@@ -34,6 +34,7 @@ export function mountEditor({ article, root, source, title }) {
     root.hidden = true;
     root.innerHTML = "";
     article.hidden = false;
+    onClose?.();
   };
   root.querySelector("[data-edit-cancel]").addEventListener("click", close);
   root.querySelector("[data-edit-save]").addEventListener("click", () => {

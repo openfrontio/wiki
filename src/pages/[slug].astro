@@ -268,6 +268,7 @@ const pageSource = isWiki ? encodePageSource(entry.body) : null;
           root,
           source: decodePageSource(srcEl.textContent || "\"\""),
           title: btn.getAttribute("data-title") || document.title,
+          onClose: () => { btn.disabled = false; },
         });
       } catch (err) {
         btn.disabled = false;
