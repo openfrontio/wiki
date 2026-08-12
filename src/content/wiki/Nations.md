@@ -463,8 +463,8 @@ While the nation's gold is below their target, the perceived cost of a structure
   </semantics>
 </math></span></span> is a type-specific inflation rate:
 
-- Most structures use <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle k=1}}">
-- SAM launchers use <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle k=0.3}}">
+- Most structures use <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle k=1}}"> <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle displaystyle="true" scriptlevel="0"> <mrow class="MJX-TeXAtom-ORD"> <mstyle displaystyle="true" scriptlevel="0"> <mi>k</mi> <mo>=</mo> <mn>1</mn> </mstyle> </mrow> </mstyle> </mrow> <annotation encoding="application/x-tex">{\displaystyle {\displaystyle k=1}}</annotation> </semantics> </math></span></span> meaning each existing city effectively doubles the marginal cost of building another.
+- SAM launchers use <span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle k=0.3}}"> <semantics> <mrow class="MJX-TeXAtom-ORD"> <mstyle displaystyle="true" scriptlevel="0"> <mrow class="MJX-TeXAtom-ORD"> <mstyle displaystyle="true" scriptlevel="0"> <mi>k</mi> <mo>=</mo> <mn>0.3</mn> </mstyle> </mrow> </mstyle> </mrow> <annotation encoding="application/x-tex">{\displaystyle {\displaystyle k=0.3}}</annotation> </semantics> </math></span></span>.
 
 Once gold reaches the save-up target, perceived cost equals real cost, and the nation can build at normal prices. After a large purchase depletes the bank, inflation returns.
 

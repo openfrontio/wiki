@@ -62,3 +62,20 @@ test("hatnote div is preserved as raw html", () => {
   const md = htmlToMarkdown(html);
   assert.ok(md.includes('class="hatnote"'));
 });
+
+test("list item text after a <br> is not dropped", () => {
+  const html =
+    '<ul><li>A strategy uses <a href="/Bots" title="Bots">bots</a>. <br> However, this needs care due to X.</li></ul>';
+  const md = htmlToMarkdown(html);
+  assert.equal(md.trim(), "- A strategy uses [bots](/Bots). However, this needs care due to X.");
+});
+
+test("list item with a nested list keeps the parent text intact and renders the sub-list separately, without duplicating it", () => {
+  const html =
+    '<ul><li>Top level text, so:\n<ul><li>Sub item one.</li>\n<li>Sub item two.</li></ul></li>\n<li>Second top item.</li></ul>';
+  const md = htmlToMarkdown(html);
+  assert.equal(
+    md.trim(),
+    "- Top level text, so:\n  - Sub item one.\n  - Sub item two.\n- Second top item.",
+  );
+});

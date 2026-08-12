@@ -35,7 +35,14 @@ function listMarkdown($, el, ordered, depth = 0) {
     .map((li, i) => {
       const marker = ordered ? `${i + 1}.` : "-";
       const nested = $(li).children("ul, ol").toArray();
-      const text = inline($, li).trim().split("\n")[0];
+      // Exclude nested lists from the inline text (rendered separately below),
+      // then collapse any remaining line breaks (e.g. from <br>) to spaces
+      // instead of truncating — a <br> mid-item should not drop trailing text.
+      const $li = $(li).clone();
+      $li.children("ul, ol").remove();
+      const text = inline($, $li.get(0))
+        .trim()
+        .replace(/\s*\n\s*/g, " ");
       let out = `${pad}${marker} ${text}`;
       for (const n of nested) out += "\n" + listMarkdown($, n, n.tagName === "ol", depth + 1);
       return out;

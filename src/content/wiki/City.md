@@ -15,7 +15,7 @@ Like other [buildings](/Buildings), cities can be captured by other nations when
 
 # Strategy {#Strategy}
 
-- A commonly used strategy is to build cities near an expanding [bot](/Bots). While the [bot](/Bots) is capturing your cities, you can continue building them for 125k [gold](/Gold), at least if you don't have any other cities elsewhere. When you're ready, you can retake the land and overall spend a fraction of the [gold](/Gold). 
+- A commonly used strategy is to build cities near an expanding [bot](/Bots). While the [bot](/Bots) is capturing your cities, you can continue building them for 125k [gold](/Gold), at least if you don't have any other cities elsewhere. When you're ready, you can retake the land and overall spend a fraction of the [gold](/Gold). However, this strategy isn’t easy to execute and often requires a corner spot on the map due to the ability of other players to attack the [bot](/Bots) you're messing with.
 
 # See also {#See_also}
 
