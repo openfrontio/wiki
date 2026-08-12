@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.6.0"
+    "astro": "^5.6.0",
+    "remark-custom-heading-id": "^2.0.0"
   },
   "devDependencies": {
     "@astrojs/sitemap": "^3.7.3",
