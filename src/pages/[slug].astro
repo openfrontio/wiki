@@ -6,6 +6,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 import BrowseSidebar from "../components/BrowseSidebar.astro";
 import masters from "../data/pages.json";
 import { pageDescription, descriptionFromMarkdown } from "../lib/meta.js";
+import { encodePageSource } from "../lib/edit-source.js";
 
 // Two sources merge into one route:
 //   - editable game/maps/guides pages come from the `wiki` Markdown collection
@@ -72,6 +73,9 @@ const mastersGroups = isMastersHub
 const MAINT = /stub|broken file|hatnote|disambiguation|^all |^pages with|^articles with/i;
 const topicalCats = cats.filter((c) => !MAINT.test(c));
 const isStub = cats.some((c) => /stub/i.test(c));
+
+// Phase 2: embed the raw Markdown so the inline editor can load it (wiki pages only).
+const pageSource = isWiki ? encodePageSource(entry.body) : null;
 ---
 
 <Layout title={`${title} — OpenFront Wiki`} description={metaDescription}>
@@ -109,6 +113,13 @@ const isStub = cats.some((c) => /stub/i.test(c));
             </span>
           )
         }
+        {
+          isWiki && (
+            <button id="edit-page-btn" type="button" class="edit-page-btn ml-auto" data-title={title}>
+              ✎ Edit this page
+            </button>
+          )
+        }
       </div>
 
       {
@@ -126,9 +137,13 @@ const isStub = cats.some((c) => /stub/i.test(c));
       <div class="mt-5 h-px w-full bg-gradient-to-r from-malibu/50 via-white/10 to-transparent"></div>
 
       {isWiki ? (
-        <article class="wiki-content mt-6" data-pagefind-body data-pagefind-meta={`title:${title}`}>
-          <Content />
-        </article>
+        <>
+          <article id="wiki-article" class="wiki-content mt-6" data-pagefind-body data-pagefind-meta={`title:${title}`}>
+            <Content />
+          </article>
+          <div id="wiki-editor-root" class="mt-6" hidden></div>
+          <script type="application/json" id="wiki-page-source" set:html={pageSource}></script>
+        </>
       ) : (
         <article class="wiki-content mt-6" set:html={contentHtml} data-pagefind-body data-pagefind-meta={`title:${title}`} />
       )}
@@ -233,4 +248,32 @@ const isStub = cats.some((c) => /stub/i.test(c));
     );
     apply();
   });
+</script>
+
+<script>
+  // Phase 2: lazy-load the inline editor only when "Edit this page" is clicked,
+  // so EasyMDE never ships in the reading bundle. No-op on Masters pages.
+  import { decodePageSource } from "../lib/edit-source.js";
+  const btn = document.getElementById("edit-page-btn");
+  const article = document.getElementById("wiki-article");
+  const root = document.getElementById("wiki-editor-root");
+  const srcEl = document.getElementById("wiki-page-source");
+  if (btn && article && root && srcEl) {
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      try {
+        const { mountEditor } = await import("../scripts/editor.js");
+        mountEditor({
+          article,
+          root,
+          source: decodePageSource(srcEl.textContent || "\"\""),
+          title: btn.getAttribute("data-title") || document.title,
+        });
+      } catch (err) {
+        btn.disabled = false;
+        btn.textContent = "Editor failed to load";
+        console.error(err);
+      }
+    });
+  }
 </script>
