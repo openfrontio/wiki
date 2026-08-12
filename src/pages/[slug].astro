@@ -5,7 +5,7 @@ import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import BrowseSidebar from "../components/BrowseSidebar.astro";
 import masters from "../data/pages.json";
-import { pageDescription } from "../lib/meta.js";
+import { pageDescription, descriptionFromMarkdown } from "../lib/meta.js";
 
 // Two sources merge into one route:
 //   - editable game/maps/guides pages come from the `wiki` Markdown collection
@@ -37,6 +37,7 @@ if (isWiki) {
   cats = entry.data.cats || [];
   source = entry.data.source; // community pages have no source
   sourceUrl = entry.data.sourceUrl;
+  metaDescription = descriptionFromMarkdown(entry.body);
   // Match the original TOC (extracted h2/h3 only); skip the h1 section headers.
   toc = rendered.headings
     .filter((h) => h.depth === 2 || h.depth === 3)

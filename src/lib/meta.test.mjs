@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { pageDescription } from "./meta.js";
+import { pageDescription, descriptionFromMarkdown } from "./meta.js";
 
 test("pageDescription returns the first substantive paragraph as plain text", () => {
   const d = pageDescription("<p>Short.</p><p>Warships are a type of naval unit used to control sea routes.</p>");
@@ -29,4 +29,35 @@ test("pageDescription falls back to body text when there is no <p>", () => {
 test("pageDescription keeps inline de-linked/dropped-image text (no mid-sentence gaps)", () => {
   const d = pageDescription('<p>The empire of <span class="wiki-deadlink">Timur</span> conquered vast territory across the region.</p>');
   assert.match(d, /empire of Timur conquered/);
+});
+
+test("descriptionFromMarkdown strips bold and link syntax from the first paragraph", () => {
+  const body = "The **Missile Silo** is a [weaponry building](/Buildings) used to launch nukes.";
+  const d = descriptionFromMarkdown(body);
+  assert.equal(d, "The Missile Silo is a weaponry building used to launch nukes.");
+  assert.doesNotMatch(d, /\*\*/);
+  assert.doesNotMatch(d, /\[.*\]\(.*\)/);
+  assert.doesNotMatch(d, /#/);
+});
+
+test("descriptionFromMarkdown skips a leading heading and a raw HTML table", () => {
+  const body = [
+    "## Heading {#Id}",
+    "",
+    "<table><tr><td>Cost 250</td></tr></table>",
+    "",
+    "Warships are a type of naval unit used to control sea routes and escort convoys.",
+  ].join("\n");
+  const d = descriptionFromMarkdown(body);
+  assert.doesNotMatch(d, /Heading/);
+  assert.doesNotMatch(d, /Cost 250/);
+  assert.doesNotMatch(d, /<table>/);
+  assert.match(d, /Warships are a type of naval unit/);
+});
+
+test("descriptionFromMarkdown truncates at a word boundary with an ellipsis", () => {
+  const long = "word ".repeat(60).trim();
+  const d = descriptionFromMarkdown(long, 40);
+  assert.ok(d.length <= 41, `len ${d.length}`);
+  assert.match(d, /…$/);
 });
