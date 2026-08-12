@@ -508,3 +508,33 @@ body {
 .wiki-content .flag svg { height: 0.9em; display: inline; vertical-align: baseline; }
 .wiki-content .liq-icon { display: inline-block; vertical-align: -0.15em; margin-right: 0.35em; color: var(--color-dawn); opacity: 0.9; }
 .wiki-content .liq-noimg { color: var(--color-dawn); font-style: italic; }
+
+/* --- Inline editor (EasyMDE) — lazy-loaded on "Edit this page" --- */
+.edit-page-btn,
+.edit-btn {
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: 0.45rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  color: #fff;
+  background: rgb(255 255 255 / 0.05);
+  cursor: pointer;
+}
+.edit-page-btn:hover,
+.edit-btn:hover { background: rgb(255 255 255 / 0.1); }
+.edit-btn-primary { background: var(--color-malibu); border-color: transparent; }
+.edit-bar { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; margin: 1rem 0 0.5rem; }
+.edit-actions { display: inline-flex; gap: 0.5rem; }
+.edit-note { font-size: 0.85rem; color: var(--color-dawn); margin: 0.75rem 0 0.5rem; }
+.edit-diff { overflow-x: auto; background: var(--color-navy-700); border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; padding: 0.6rem 0.8rem; font-size: 0.8rem; line-height: 1.5; }
+.edit-diff .diff-add { display: block; color: #7ee787; }
+.edit-diff .diff-del { display: block; color: #ff9492; }
+.edit-diff .diff-same { display: block; color: var(--color-dawn); opacity: 0.55; }
+/* EasyMDE dark theme + preview uses the site's article look */
+.EasyMDEContainer .CodeMirror { background: var(--color-navy-700); color: #e8eef7; border-color: rgb(255 255 255 / 0.12); }
+.EasyMDEContainer .CodeMirror-cursor { border-color: #fff; }
+.EasyMDEContainer .editor-toolbar { background: var(--color-navy-600); border-color: rgb(255 255 255 / 0.12); opacity: 1; }
+.EasyMDEContainer .editor-toolbar button { color: #cdd7e6 !important; }
+.EasyMDEContainer .editor-toolbar button.active,
+.EasyMDEContainer .editor-toolbar button:hover { background: rgb(255 255 255 / 0.08); border-color: transparent; }
+.EasyMDEContainer .editor-preview.wiki-content { background: var(--color-navy); padding: 1rem; }
