@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import BrowseSidebar from "../../components/BrowseSidebar.astro";
+import { GITHUB_GAME_DATA } from "../../data/github-game-data.js";
+
+const source = `https://github.com/openfrontio/OpenFrontIO/blob/${GITHUB_GAME_DATA.revision}/src/core/configuration/Config.ts`;
+---
+
+<Layout title="Attacking Effectively — OpenFront Wiki" description="A practical OpenFront guide to attack sizing, troop capacity, regeneration, and reading defender density.">
+  <SiteHeader />
+  <div class="mx-auto grid max-w-7xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[230px_minmax(0,1fr)] xl:grid-cols-[230px_minmax(0,1fr)_200px]">
+    <aside class="lg:sticky lg:top-20 lg:h-[calc(100vh-6rem)] lg:overflow-y-auto" data-pagefind-ignore>
+      <details open><summary class="mb-3 flex cursor-pointer list-none items-center justify-between text-xs font-semibold uppercase tracking-widest text-cyan-glow lg:cursor-default">Browse Pages <span class="lg:hidden">▾</span></summary><BrowseSidebar /></details>
+    </aside>
+    <main class="min-w-0">
+      <nav class="mb-6 flex items-center gap-2 text-xs text-dawn/50" data-pagefind-ignore><a href="/" class="hover:text-aquarius">Home</a><span>/</span><a href="/category/getting-started" class="hover:text-aquarius">Getting Started</a><span>/</span><span class="text-dawn">Attacking effectively</span></nav>
+      <header class="border-b border-white/10 pb-8">
+        <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Player guide</p>
+        <h1 class="mt-2 font-display text-3xl font-bold tracking-wide text-white sm:text-4xl">Attacking effectively</h1>
+        <p class="mt-3 max-w-3xl text-base leading-relaxed text-dawn/80">Win attacks by managing the relationship between your attack stack, the defender's troop density, and your regeneration headroom. Raw troop count is only half the picture.</p>
+        <div class="mt-4 flex flex-wrap gap-2 text-xs"><span class="rounded-full border border-cyan-glow/30 bg-cyan-glow/10 px-2.5 py-1 text-cyan-glow">New players</span><span class="rounded-full border border-white/10 bg-navy-700/60 px-2.5 py-1 text-dawn/80">Data-oriented players</span></div>
+      </header>
+
+      <article class="wiki-content mt-8" data-pagefind-body>
+        <section class="guide-callout"><strong>Short version</strong><p>Attack when you can spend troops without leaving your capacity nearly full or your front unsupported. Start with a controlled stack, watch whether the defender's troops per tile are falling, and reinforce only when the attack is converting territory rather than feeding a stalled front.</p></section>
+
+        <h2>1. Read capacity before choosing an attack size</h2>
+        <p>The live game calculates human troop capacity from territory and completed City levels:</p>
+        <p class="equation"><code>maxTroops = 2 × (tilesOwned<sup>0.6</sup> × 1,000 + 50,000) + completedCityLevels × 250,000</code></p>
+        <p>That means two players with the same troop count can be in very different situations. A player at 80,000 troops and 60% capacity has more recovery room than a player at 80,000 troops and 95% capacity.</p>
+        <div class="guide-example"><strong>Example: same army, different headroom</strong><p>With 100 tiles and no City levels, capacity is about 131,698. At 50,000 troops you are at 38% capacity; at 120,000 troops you are at 91%. The first player can absorb a failed push and regenerate quickly. The second should avoid spending the entire army unless the target is decisive.</p></div>
+
+        <h2>2. Regeneration is driven by empty capacity</h2>
+        <p>For a human player, the current source uses this shape:</p>
+        <p class="equation"><code>troopGain = (10 + troops<sup>0.73</sup> ÷ 4) × (1 − troops ÷ maxTroops)</code></p>
+        <p>The final factor is the important practical rule: the closer you are to capacity, the smaller each tick's gain becomes. Losing troops can temporarily increase your regeneration rate because it creates empty capacity, but losing territory also lowers capacity.</p>
+        <div class="guide-callout"><strong>The ~42% rule is real, with an important caveat.</strong><p>For the current human regeneration equation, the maximum occurs at roughly 42% of capacity across ordinary capacity sizes. With 131,698 capacity, the peak is about 55,100 troops. Treat 35–50% as a useful recovery band, not a commandment: combat, territory loss, cities, and incoming pressure matter more than holding an exact number.</p></div>
+        <div class="guide-example"><strong>Example: regeneration by percentage of capacity</strong><ul><li>At 50,000 of 131,698 capacity, the source formula gives roughly <strong>424 troops per tick</strong>.</li><li>At 100,000 of the same capacity, it gives roughly <strong>271 troops per tick</strong>.</li><li>At 120,000 of the same capacity, it gives roughly <strong>114 troops per tick</strong>.</li></ul><p>These are examples from the audited formula, not universal match constants. Cities, territory, player type, difficulty, and future balance changes matter.</p></div>
+
+        <h2>3. Size an attack using the defender ratio</h2>
+        <p>Human attack orders are currently formed from <code>troops ÷ 5</code>. The attack resolver then compares the defender's troops with the attack stack and also accounts for defender troops per tile, terrain, Defense Posts, fallout, territory size, and status effects.</p>
+        <p class="equation"><code>troopRatio = defenderTroops ÷ attackStack</code></p>
+        <p>Do not read this as “always attack with five times the defender.” It is a diagnostic ratio: a high ratio means the stack is badly outnumbered, so the attack costs more and progresses more slowly; a low ratio means the push is more favorable, but you still need enough reserve to defend and regenerate afterward.</p>
+        <div class="guide-example"><strong>Example: controlled push</strong><p>A defender has 60,000 troops. A 15,000 stack produces a ratio of 4.0 and is likely to be a slow, expensive probe. A 40,000 stack produces 1.5, a much healthier starting ratio, but may be reckless if it leaves your own borders empty. Start with the largest stack you can send while retaining a reserve for the nearest threat, then reassess after the first border exchange.</p></div>
+
+        <h2>4. A practical attack loop</h2>
+        <ol><li><strong>Check capacity percentage.</strong> If you are near full capacity, spending troops is less costly to your regeneration than sitting capped, but do not confuse that with permission to empty your borders.</li><li><strong>Check defender density.</strong> Compare the defender's total troops with its territory size. Dense territory is expensive to grind; thin territory is more vulnerable to a measured push.</li><li><strong>Send a controlled first stack.</strong> Use the normal attack control, observe the front, and avoid committing every reserve before you know whether the target is defended.</li><li><strong>Reinforce by result.</strong> Continue only if the border is converting and your reserve remains able to answer a counterattack. Retreat or redirect when the front stalls.</li><li><strong>Recover after capture.</strong> Recalculate your capacity after gaining or losing territory, then let regeneration refill the army before the next major commitment.</li></ol>
+
+        <h2>5. What this guide does not claim</h2>
+        <p>There is no single percentage of troops that is optimal in every fight. Attack outcomes depend on terrain, Defense Posts, fallout, territory size, defender density, alliances, bot modifiers, and the current source revision. The existing <a href="/Attacking_Guide">Attacking Guide</a> contains broader strategy; this page adds the source-backed capacity and regeneration model.</p>
+        <p class="source-note">Verified against <a href={source} target="_blank" rel="noopener noreferrer">OpenFrontIO Config.ts at revision {GITHUB_GAME_DATA.revision.slice(0, 7)} ↗</a>. Recheck the source when the automated refresh reports a new revision.</p>
+      </article>
+    </main>
+    <aside class="hidden xl:block" data-pagefind-ignore><div class="sticky top-20"><p class="mb-3 text-xs font-semibold uppercase tracking-widest text-cyan-glow">On this page</p><ul class="space-y-1.5 border-l border-white/10 text-sm"><li><a href="#" class="block border-l-2 border-malibu py-0.5 pl-3 text-white">Attacking effectively</a></li><li><a href="#" class="block border-l-2 border-transparent py-0.5 pl-3 text-dawn/70 hover:text-white">Regeneration examples</a></li></ul></div></aside>
+  </div>
+  <SiteFooter />
+</Layout>

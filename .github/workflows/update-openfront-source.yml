@@ -1,0 +1,52 @@
+name: Update OpenFrontIO source references
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [openfront-release]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out wiki
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Refresh pinned OpenFrontIO revision
+        run: node scripts/update-openfront-source.mjs
+
+      - name: Build and test
+        run: |
+          npm run build
+          node --test src/lib/sidebar.test.mjs src/lib/categories.test.mjs
+
+      - name: Open refresh pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: refresh OpenFrontIO source reference"
+          title: "chore: refresh OpenFrontIO source reference"
+          body: |
+            This automated PR updates the pinned OpenFrontIO source revision used by the wiki.
+
+            The static build and focused tests have passed. Review any changed game values or newly surfaced source entities before merging.
+          branch: automation/openfront-source-refresh
+          delete-branch: true
+          labels: |
+            automated
+            documentation
+            source-refresh

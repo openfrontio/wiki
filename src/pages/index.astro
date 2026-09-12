@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
 import pages from "../data/pages.json";
+import { WIKI_CATEGORIES } from "../lib/categories.js";
+import { REFERENCE_PAGES } from "../data/reference-pages.js";
 
 const topics = [
   { name: "Settings", href: "/Game_Settings", icon: "⚙️" },
@@ -165,7 +167,7 @@ const links = [
     </div>
   </section>
 
-  <main class="mx-auto max-w-7xl px-4 py-14 sm:px-6">
+  <main class="mx-auto flex max-w-7xl flex-col px-4 py-14 sm:px-6">
     <!-- ===== Featured major update ===== -->
     <section class="mb-12">
       <a
@@ -211,8 +213,62 @@ const links = [
       </a>
     </section>
 
+    <!-- ===== Documentation architecture ===== -->
+    <section class="order-1 mb-14">
+      <div class="mb-7 max-w-2xl">
+        <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Find your route</p>
+        <h2 class="mt-2 font-display text-2xl font-bold tracking-wide text-white sm:text-3xl">
+          Browse the Wiki by purpose
+        </h2>
+        <p class="mt-1 text-sm text-dawn/70">
+          Start with the kind of answer you need, then move from the overview into the source articles.
+        </p>
+      </div>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {WIKI_CATEGORIES.map((category) => (
+          <a
+            href={`/category/${category.slug}`}
+            class="group flex items-start gap-4 rounded-xl border border-white/10 bg-navy-700/50 p-4 transition-all hover:-translate-y-0.5 hover:border-malibu/60 hover:bg-navy-600/70"
+          >
+            <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-malibu/30 bg-malibu/10 font-display text-xl text-cyan-glow" aria-hidden="true">
+              {category.icon}
+            </span>
+            <span>
+              <span class="block font-display text-lg font-semibold text-white group-hover:text-aquarius">{category.title}</span>
+              <span class="mt-1 block text-sm leading-relaxed text-dawn/70">{category.description}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+      <a href="/reference/game-data" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-aquarius hover:text-white">
+        View source-backed game data <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
+    <section class="order-4 mb-14 border-t border-white/10 pt-10">
+      <div class="mb-5 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Reference library</p>
+          <h2 class="mt-2 font-display text-2xl font-bold tracking-wide text-white sm:text-3xl">Go deeper</h2>
+        </div>
+        <a href="/all" class="text-sm font-semibold text-aquarius hover:text-white">Browse all pages →</a>
+      </div>
+      <div class="flex flex-wrap gap-2">
+        {REFERENCE_PAGES.map((page) => <a href={`/reference/${page.slug}`} class="rounded-lg border border-white/10 bg-navy-700/50 px-3 py-2 text-sm text-dawn/80 transition-colors hover:border-malibu/50 hover:text-white">{page.title}</a>)}
+      </div>
+    </section>
+
+    <section class="order-3 mb-14 rounded-2xl border border-malibu/35 bg-malibu/10 p-6 sm:p-8">
+      <p class="text-xs font-semibold uppercase tracking-widest text-cyan-glow">Start playing smarter</p>
+      <h2 class="mt-2 font-display text-2xl font-bold tracking-wide text-white sm:text-3xl">Need a practical answer?</h2>
+      <p class="mt-2 max-w-2xl text-sm leading-relaxed text-dawn/80">Start with practical, source-backed guides before diving into technical references.</p>
+      <div class="mt-5 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        {[{ title: "Attacking effectively", href: "/guides/attacking-effectively" }, { title: "Defense & recovery", href: "/guides/defense-and-recovery" }, { title: "Economy & logistics", href: "/guides/economy-and-logistics" }, { title: "Nuclear defense", href: "/guides/nuclear-defense" }].map((guide) => <a href={guide.href} class="rounded-lg border border-white/15 bg-white/5 px-3 py-3 text-sm font-semibold text-white transition-colors hover:border-cyan-glow/50 hover:bg-white/10">{guide.title} <span class="text-cyan-glow">→</span></a>)}
+      </div>
+    </section>
+
     <!-- ===== Explore topics ===== -->
-    <section id="explore" class="scroll-mt-20">
+    <section id="explore" class="order-2 scroll-mt-20">
       <div class="mb-7 flex items-end justify-between gap-4">
         <div>
           <h2 class="font-display text-2xl font-bold tracking-wide text-white sm:text-3xl">
@@ -247,7 +303,7 @@ const links = [
     </section>
 
     <!-- ===== Updates + sidebar ===== -->
-    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+    <div class="order-5 mt-14 grid gap-6 lg:grid-cols-3">
       <!-- Updates -->
       <section class="lg:col-span-2">
         <div class="mb-6 flex items-center gap-3">

@@ -1,0 +1,7 @@
+{
+  "repository": "openfrontio/OpenFrontIO",
+  "revision": "1b086cb59cb1d702eb3de3e8706a9b303ac064a6",
+  "commitUrl": "https://github.com/openfrontio/OpenFrontIO/commit/1b086cb59cb1d702eb3de3e8706a9b303ac064a6",
+  "checkedAt": "2026-09-12",
+  "commitMessage": "Add tests locking in kick-player, replay-speed and events-display paths (#5376)"
+}

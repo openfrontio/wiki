@@ -1,0 +1,1385 @@
+{
+  "repository": "openfrontio/OpenFrontIO",
+  "revision": "1b086cb59cb1d702eb3de3e8706a9b303ac064a6",
+  "checkedAt": "2026-09-12",
+  "maps": [
+    {
+      "id": "Achiran",
+      "title": "Achiran",
+      "categories": [
+        "fictional",
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 4
+    },
+    {
+      "id": "Aegean",
+      "title": "Aegean",
+      "categories": [
+        "europe",
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 29
+    },
+    {
+      "id": "Africa",
+      "title": "Africa",
+      "categories": [
+        "featured",
+        "continental",
+        "africa"
+      ],
+      "multiplayerFrequency": 7,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 44
+    },
+    {
+      "id": "Alps",
+      "title": "Alps",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 30
+    },
+    {
+      "id": "AmazonRiver",
+      "title": "Amazon River",
+      "categories": [
+        "south_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 21
+    },
+    {
+      "id": "Antarctica",
+      "title": "Antarctica",
+      "categories": [
+        "antarctica",
+        "continental"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 30
+    },
+    {
+      "id": "ArchipelagoSea",
+      "title": "ArchipelagoSea",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 1,
+      "ffaFrequency": 0,
+      "teamFrequency": 0,
+      "nations": 20
+    },
+    {
+      "id": "Arctic",
+      "title": "Arctic",
+      "categories": [
+        "europe",
+        "north_america",
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 44
+    },
+    {
+      "id": "Asia",
+      "title": "Asia",
+      "categories": [
+        "featured",
+        "continental",
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 25
+    },
+    {
+      "id": "Australia",
+      "title": "Australia",
+      "categories": [
+        "oceania"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 7
+    },
+    {
+      "id": "Baikal",
+      "title": "Baikal",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": 5,
+      "teamFrequency": -1,
+      "nations": 11
+    },
+    {
+      "id": "BaikalNukeWars",
+      "title": "Baikal Nuke Wars",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": 30,
+      "nations": 0
+    },
+    {
+      "id": "BajaCalifornia",
+      "title": "Baja California",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 8
+    },
+    {
+      "id": "Balkans",
+      "title": "Balkans",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 23
+    },
+    {
+      "id": "Balkhash",
+      "title": "Balkhash",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 26
+    },
+    {
+      "id": "Baltics",
+      "title": "Baltics",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 35
+    },
+    {
+      "id": "BeringSea",
+      "title": "Bering Sea",
+      "categories": [
+        "asia",
+        "north_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 24
+    },
+    {
+      "id": "BeringStrait",
+      "title": "Bering Strait",
+      "categories": [
+        "asia",
+        "north_america"
+      ],
+      "multiplayerFrequency": 2,
+      "ffaFrequency": -1,
+      "teamFrequency": 5,
+      "nations": 2
+    },
+    {
+      "id": "BetweenTwoSeas",
+      "title": "Between Two Seas",
+      "categories": [
+        "europe",
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 15
+    },
+    {
+      "id": "BlackSea",
+      "title": "Black Sea",
+      "categories": [
+        "europe",
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "BosphorusStraits",
+      "title": "Bosphorus Straits",
+      "categories": [
+        "europe",
+        "asia"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 22
+    },
+    {
+      "id": "BranchingPaths",
+      "title": "Branching Paths",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 7,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 19
+    },
+    {
+      "id": "Britannia",
+      "title": "Britannia",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 20
+    },
+    {
+      "id": "BritanniaClassic",
+      "title": "Britannia Classic",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 23
+    },
+    {
+      "id": "CapeCod",
+      "title": "Cape Cod",
+      "categories": [
+        "north_america",
+        "new"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 31
+    },
+    {
+      "id": "Caribbean",
+      "title": "Caribbean",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 34
+    },
+    {
+      "id": "CaspianSea",
+      "title": "Caspian Sea",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 12
+    },
+    {
+      "id": "Caucasus",
+      "title": "Caucasus",
+      "categories": [
+        "europe",
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 21
+    },
+    {
+      "id": "CentralAmerica",
+      "title": "Central America",
+      "categories": [
+        "new",
+        "north_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 22
+    },
+    {
+      "id": "China",
+      "title": "China",
+      "categories": [
+        "countries",
+        "asia",
+        "new"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 34
+    },
+    {
+      "id": "ChoppingBlock",
+      "title": "Chopping Block",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 32
+    },
+    {
+      "id": "ClearwaterLakes",
+      "title": "Clearwater Lakes",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 13
+    },
+    {
+      "id": "Conakry",
+      "title": "Conakry",
+      "categories": [
+        "africa"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": 6,
+      "nations": 20
+    },
+    {
+      "id": "Crimea",
+      "title": "Crimea",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "DanishStraits",
+      "title": "Danish Straits",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 26
+    },
+    {
+      "id": "DeglaciatedAntarctica",
+      "title": "Deglaciated Antarctica",
+      "categories": [
+        "antarctica",
+        "fictional"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "Didier",
+      "title": "Didier",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 1,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 12
+    },
+    {
+      "id": "DidierFrance",
+      "title": "Didier France",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 1,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 42
+    },
+    {
+      "id": "Dyslexdria",
+      "title": "Dyslexdria",
+      "categories": [
+        "world",
+        "fictional"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 82
+    },
+    {
+      "id": "EastAsia",
+      "title": "East Asia",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 22
+    },
+    {
+      "id": "Europe",
+      "title": "Europe",
+      "categories": [
+        "featured",
+        "continental",
+        "europe"
+      ],
+      "multiplayerFrequency": 7,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 52
+    },
+    {
+      "id": "EuropeClassic",
+      "title": "Europe Classic",
+      "categories": [
+        "europe",
+        "continental"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 37
+    },
+    {
+      "id": "FalklandIslands",
+      "title": "Falkland Islands",
+      "categories": [
+        "south_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 12
+    },
+    {
+      "id": "FaroeIslands",
+      "title": "Faroe Islands",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 6
+    },
+    {
+      "id": "FingerLakes",
+      "title": "Finger Lakes",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 10
+    },
+    {
+      "id": "FourIslands",
+      "title": "Four Islands",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 30,
+      "nations": 4
+    },
+    {
+      "id": "France",
+      "title": "France",
+      "categories": [
+        "europe",
+        "countries"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 25
+    },
+    {
+      "id": "GatewayToTheAtlantic",
+      "title": "Gateway to the Atlantic",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 27
+    },
+    {
+      "id": "Germany",
+      "title": "Germany",
+      "categories": [
+        "europe",
+        "countries"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 16
+    },
+    {
+      "id": "GiantWorldMap",
+      "title": "Giant World Map",
+      "categories": [
+        "world"
+      ],
+      "multiplayerFrequency": 15,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 107
+    },
+    {
+      "id": "GreatLakes",
+      "title": "Great Lakes",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 34
+    },
+    {
+      "id": "GulfOfGuinea",
+      "title": "Gulf Of Guinea",
+      "categories": [
+        "africa"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 22
+    },
+    {
+      "id": "GulfOfStLawrence",
+      "title": "Gulf of St. Lawrence",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 26
+    },
+    {
+      "id": "Halkidiki",
+      "title": "Halkidiki",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 8
+    },
+    {
+      "id": "Hawaii",
+      "title": "Hawaii",
+      "categories": [
+        "oceania"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "Hecatestrait",
+      "title": "Hecate Strait",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 28
+    },
+    {
+      "id": "HongKong",
+      "title": "Hong Kong",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 71
+    },
+    {
+      "id": "Iceland",
+      "title": "Iceland",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 8
+    },
+    {
+      "id": "IndianSubcontinent",
+      "title": "Indian Subcontinent",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 52
+    },
+    {
+      "id": "IrishSea",
+      "title": "Irish Sea",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 19
+    },
+    {
+      "id": "Italia",
+      "title": "Italia",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 15
+    },
+    {
+      "id": "Japan",
+      "title": "Japan",
+      "categories": [
+        "countries",
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 12
+    },
+    {
+      "id": "JuanDeFucaStrait",
+      "title": "Juan De Fuca Strait",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 16
+    },
+    {
+      "id": "Korea",
+      "title": "Korea",
+      "categories": [
+        "asia",
+        "countries"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 32
+    },
+    {
+      "id": "Labyrinth",
+      "title": "Labyrinth",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 2,
+      "ffaFrequency": -1,
+      "teamFrequency": 4,
+      "nations": 26
+    },
+    {
+      "id": "LasVegasStrip",
+      "title": "Las Vegas Strip",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 34
+    },
+    {
+      "id": "Lemnos",
+      "title": "Lemnos",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "Levant",
+      "title": "Levant",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 15
+    },
+    {
+      "id": "Lisbon",
+      "title": "Lisbon",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 15
+    },
+    {
+      "id": "LosAngeles",
+      "title": "Los Angeles",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 26
+    },
+    {
+      "id": "Luna",
+      "title": "Luna",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": 15,
+      "nations": 25
+    },
+    {
+      "id": "Manicouagan",
+      "title": "Manicouagan",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 11
+    },
+    {
+      "id": "MareNostrum",
+      "title": "Mare Nostrum",
+      "categories": [
+        "europe",
+        "asia",
+        "africa"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 38
+    },
+    {
+      "id": "Mars",
+      "title": "Mars",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 6
+    },
+    {
+      "id": "Mena",
+      "title": "Mena",
+      "categories": [
+        "asia",
+        "africa"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 35
+    },
+    {
+      "id": "MiddleEast",
+      "title": "Middle East",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 27
+    },
+    {
+      "id": "MilkyWay",
+      "title": "MilkyWay",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 18
+    },
+    {
+      "id": "MississippiRiver",
+      "title": "Mississippi River",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 11
+    },
+    {
+      "id": "Montreal",
+      "title": "Montreal",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 12
+    },
+    {
+      "id": "MoreThanLuck",
+      "title": "More Than Luck",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 7,
+      "ffaFrequency": -1,
+      "teamFrequency": 14,
+      "nations": 35
+    },
+    {
+      "id": "NewYorkCity",
+      "title": "New York City",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 20
+    },
+    {
+      "id": "NileDelta",
+      "title": "Nile Delta",
+      "categories": [
+        "africa"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 11
+    },
+    {
+      "id": "NorthAmerica",
+      "title": "North America",
+      "categories": [
+        "featured",
+        "continental",
+        "north_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 71
+    },
+    {
+      "id": "NorthwestPassage",
+      "title": "Northwest Passage",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 21
+    },
+    {
+      "id": "Oceania",
+      "title": "Oceania",
+      "categories": [
+        "oceania",
+        "continental"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 22
+    },
+    {
+      "id": "Onion",
+      "title": "Onion",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 2,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 3
+    },
+    {
+      "id": "Pangaea",
+      "title": "Pangaea",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 29
+    },
+    {
+      "id": "Passage",
+      "title": "Passage",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 16
+    },
+    {
+      "id": "Pluto",
+      "title": "Pluto",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": 12,
+      "nations": 16
+    },
+    {
+      "id": "QingChina",
+      "title": "Qing China",
+      "categories": [
+        "asia",
+        "countries"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 32
+    },
+    {
+      "id": "Russia",
+      "title": "Russia",
+      "categories": [
+        "europe",
+        "asia",
+        "countries"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 82
+    },
+    {
+      "id": "SanFrancisco",
+      "title": "San Francisco",
+      "categories": [
+        "north_america"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 21
+    },
+    {
+      "id": "Scandinavia",
+      "title": "Scandinavia",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 7,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 24
+    },
+    {
+      "id": "Sierpinski",
+      "title": "Sierpinski",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 10,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "Sol",
+      "title": "Sol",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 20,
+      "ffaFrequency": 0,
+      "teamFrequency": 0,
+      "nations": 53
+    },
+    {
+      "id": "SouthAmerica",
+      "title": "South America",
+      "categories": [
+        "featured",
+        "continental",
+        "south_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 25
+    },
+    {
+      "id": "SoutheastAsia",
+      "title": "SoutheastAsia",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 31
+    },
+    {
+      "id": "StraitOfGibraltar",
+      "title": "Strait of Gibraltar",
+      "categories": [
+        "europe",
+        "africa"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 16
+    },
+    {
+      "id": "StraitOfHormuz",
+      "title": "Strait of Hormuz",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 21
+    },
+    {
+      "id": "StraitOfMalacca",
+      "title": "Strait Of Malacca",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 13
+    },
+    {
+      "id": "Surrounded",
+      "title": "Surrounded",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 8
+    },
+    {
+      "id": "Svalmel",
+      "title": "Svalmel",
+      "categories": [
+        "fictional",
+        "europe",
+        "north_america"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 5
+    },
+    {
+      "id": "TaiwanStrait",
+      "title": "Taiwan Strait",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": 10,
+      "nations": 25
+    },
+    {
+      "id": "TheBox",
+      "title": "The Box",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 13
+    },
+    {
+      "id": "TierraDelFuego",
+      "title": "Tierra Del Fuego",
+      "categories": [
+        "south_america"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 20
+    },
+    {
+      "id": "Titan",
+      "title": "Titan",
+      "categories": [
+        "cosmic"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 28
+    },
+    {
+      "id": "Tourney1",
+      "title": "Tourney 2 Teams",
+      "categories": [
+        "tournament"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 2
+    },
+    {
+      "id": "Tourney2",
+      "title": "Tourney 3 Teams",
+      "categories": [
+        "tournament"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 3
+    },
+    {
+      "id": "Tourney3",
+      "title": "Tourney 4 Teams",
+      "categories": [
+        "tournament"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 4
+    },
+    {
+      "id": "Tourney4",
+      "title": "Tourney 8 Teams",
+      "categories": [
+        "tournament"
+      ],
+      "multiplayerFrequency": 0,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 8
+    },
+    {
+      "id": "TradersDream",
+      "title": "Traders Dream",
+      "categories": [
+        "fictional"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 13
+    },
+    {
+      "id": "TwoLakes",
+      "title": "Two Lakes",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 5
+    },
+    {
+      "id": "UnitedStates",
+      "title": "United States",
+      "categories": [
+        "north_america",
+        "countries"
+      ],
+      "multiplayerFrequency": 9,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 49
+    },
+    {
+      "id": "Venice",
+      "title": "Venice",
+      "categories": [
+        "europe"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 15
+    },
+    {
+      "id": "Vietnam",
+      "title": "Vietnam",
+      "categories": [
+        "countries",
+        "asia"
+      ],
+      "multiplayerFrequency": 4,
+      "ffaFrequency": -1,
+      "teamFrequency": 8,
+      "nations": 15
+    },
+    {
+      "id": "WarshipWarship",
+      "title": "Warship Warship",
+      "categories": [
+        "arcade"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": 6,
+      "nations": 10
+    },
+    {
+      "id": "World",
+      "title": "World",
+      "categories": [
+        "featured",
+        "world"
+      ],
+      "multiplayerFrequency": 30,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 72
+    },
+    {
+      "id": "WorldInverted",
+      "title": "World Inverted",
+      "categories": [
+        "world",
+        "fictional"
+      ],
+      "multiplayerFrequency": 8,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 93
+    },
+    {
+      "id": "YangtzeRiver",
+      "title": "Yangtze River",
+      "categories": [
+        "new",
+        "asia"
+      ],
+      "multiplayerFrequency": 3,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 9
+    },
+    {
+      "id": "YellowSea",
+      "title": "Yellow Sea",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 5,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 8
+    },
+    {
+      "id": "Yenisei",
+      "title": "Yenisei",
+      "categories": [
+        "asia"
+      ],
+      "multiplayerFrequency": 6,
+      "ffaFrequency": -1,
+      "teamFrequency": -1,
+      "nations": 6
+    }
+  ]
+}

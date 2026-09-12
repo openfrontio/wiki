@@ -25,6 +25,21 @@ The build is fully static, so Cloudflare Pages serves `dist/` directly. Set:
 
 Every commit to the connected branch triggers a deploy.
 
+## OpenFrontIO source refresh
+
+The source-backed reference pages are pinned to a commit in the public
+`openfrontio/OpenFrontIO` repository. `.github/workflows/update-openfront-source.yml`
+checks the upstream `main` branch hourly, and can also be triggered manually or
+by an upstream release webhook. When the revision changes, it updates the pinned
+source metadata, runs the static build and focused tests, and opens a pull request
+for review. Merging that pull request updates the static site through Cloudflare
+Pages. The workflow never deploys unreviewed game-data changes directly.
+
+The same refresh generates a [source tree audit](https://openfront.wiki/reference/source-tree/) for
+relevant game, configuration, schema, and map-generator files. It lists source
+files that are not yet mapped to wiki references, which catches new mechanics
+that do not arrive as a simple unit, map, or numeric configuration change.
+
 ## Content
 
 Content lives in `src/data/pages.json` (rendered by `src/pages/[slug].astro`)

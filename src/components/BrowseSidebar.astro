@@ -1,6 +1,9 @@
 ---
 import pages from "../data/pages.json";
 import { groupGamePages, groupMastersPages } from "../lib/sidebar.js";
+import { WIKI_CATEGORIES } from "../lib/categories.js";
+import { MISSING_LIVE_MAPS } from "../data/live-game-registry.js";
+import { REFERENCE_PAGES } from "../data/reference-pages.js";
 const { currentSlug } = Astro.props;
 const game = groupGamePages(pages);
 const masters = groupMastersPages(pages);
@@ -28,6 +31,37 @@ const mastersSub = [
   <div id="wiki-results" hidden class="space-y-1.5"></div>
 
   <div id="wiki-browse" class="space-y-1">
+    <details class="wiki-section" data-key="categories">
+      <summary class="wiki-summary">
+        <span>Explore by topic</span><span class="wiki-count">{WIKI_CATEGORIES.length}</span>
+      </summary>
+      <ul class="wiki-category-links">
+        {WIKI_CATEGORIES.map((category) => (
+          <li><a href={`/category/${category.slug}`} class={linkCls(`/category/${category.slug}`)}>{category.title}</a></li>
+        ))}
+      </ul>
+    </details>
+
+    <details class="wiki-section" data-key="live-registry">
+      <summary class="wiki-summary"><span>Live source registry</span><span class="wiki-count">{MISSING_LIVE_MAPS.length}</span></summary>
+      <ul class="wiki-category-links">
+        <li><a href="/reference/live-registry" class={linkCls("/reference/live-registry")}>Coverage audit</a></li>
+        {MISSING_LIVE_MAPS.map((map) => <li><a href={`/maps/${map.slug}`} class={linkCls(`/maps/${map.slug}`)}>{map.title}</a></li>)}
+      </ul>
+    </details>
+
+    <details class="wiki-section" data-key="reference-hubs">
+      <summary class="wiki-summary"><span>Reference hubs</span><span class="wiki-count">{REFERENCE_PAGES.length}</span></summary>
+      <ul class="wiki-category-links">
+        {REFERENCE_PAGES.map((page) => <li><a href={`/reference/${page.slug}`} class={linkCls(`/reference/${page.slug}`)}>{page.title}</a></li>)}
+      </ul>
+    </details>
+
+    <details class="wiki-section" data-key="source-audit">
+      <summary class="wiki-summary"><span>Source coverage</span></summary>
+      <ul class="wiki-category-links"><li><a href="/reference/equations" class={linkCls("/reference/equations")}>Equation audit</a></li><li><a href="/reference/source-tree" class={linkCls("/reference/source-tree")}>Source tree audit</a></li></ul>
+    </details>
+
     <details class="wiki-section" data-key="game">
       <summary class="wiki-summary">
         <span>Game Wiki</span><span class="wiki-count">{gameCount}</span>
@@ -55,6 +89,16 @@ const mastersSub = [
 </div>
 
 <style>
+  #wiki-browse { display: flex; flex-direction: column; }
+  #wiki-browse > details[data-key="game"] { order: 1; }
+  #wiki-browse > details[data-key="categories"] { order: 2; }
+  #wiki-browse > details[data-key="masters"] { order: 3; }
+  #wiki-browse > details[data-key="reference-hubs"] { order: 4; opacity: 0.72; }
+  #wiki-browse > details[data-key="live-registry"],
+  #wiki-browse > details[data-key="source-audit"] { order: 5; opacity: 0.52; }
+  #wiki-browse > details[data-key="reference-hubs"] .wiki-summary,
+  #wiki-browse > details[data-key="live-registry"] .wiki-summary,
+  #wiki-browse > details[data-key="source-audit"] .wiki-summary { color: var(--color-dawn); }
   .wiki-summary, .wiki-subsummary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 6px; user-select: none; }
   .wiki-summary::-webkit-details-marker, .wiki-subsummary::-webkit-details-marker { display: none; }
   .wiki-summary { padding: 0.4rem 0.25rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-cyan-glow); }
@@ -63,6 +107,8 @@ const mastersSub = [
   details[open] > .wiki-summary::before, details[open] > .wiki-subsummary::before { transform: rotate(90deg); }
   .wiki-count { margin-left: auto; font-size: 0.7rem; color: var(--color-dawn); opacity: 0.55; }
   .wiki-subsection { padding-left: 0.5rem; }
+  .wiki-category-links { margin: 0.1rem 0 0.4rem 1.15rem; padding-left: 0.6rem; border-left: 1px solid rgb(255 255 255 / 0.08); list-style: none; }
+  .wiki-category-links a { font-size: 0.78rem; padding-top: 0.28rem; padding-bottom: 0.28rem; }
   /* nested page list: indent under its category with a tree line, and keep the
      item font smaller than the category label so the hierarchy reads correctly */
   .wiki-subsection > ul { margin: 0.1rem 0 0.4rem 1.15rem; padding-left: 0.6rem; border-left: 1px solid rgb(255 255 255 / 0.08); list-style: none; }

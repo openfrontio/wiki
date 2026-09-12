@@ -38,6 +38,64 @@ body {
   font-family: var(--font-sans);
 }
 
+/* Shared article orientation layer: keeps generated wiki prose approachable
+   without rewriting or flattening the source article itself. */
+.article-quick-read {
+  border: 1px solid rgb(0 200 255 / 0.18);
+  border-radius: 0.75rem;
+  background: linear-gradient(115deg, rgb(0 132 209 / 0.14), rgb(14 29 53 / 0.78));
+  padding: 1rem 1.1rem;
+}
+.article-quick-read-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.article-eyebrow { color: var(--color-cyan-glow); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-length { color: var(--color-dawn); font-size: 0.7rem; opacity: 0.6; }
+.article-quick-read p { margin: 0.55rem 0 0; color: var(--color-dawn); font-size: 0.95rem; line-height: 1.55; }
+.article-audience { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+.article-audience span { border: 1px solid rgb(255 255 255 / 0.12); border-radius: 999px; padding: 0.2rem 0.55rem; color: var(--color-dawn); font-size: 0.7rem; }
+.article-audience .article-warning { border-color: rgb(255 215 0 / 0.35); color: var(--color-masters); }
+
+.data-visual-panel { margin: 0; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.75rem; background: rgb(14 29 53 / 0.62); padding: 1rem; }
+.data-visual-panel figcaption { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; color: #fff; font-family: var(--font-display), var(--font-sans); font-size: 1.05rem; font-weight: 700; }
+.data-visual-panel figcaption small { color: var(--color-dawn); font-family: var(--font-sans); font-size: 0.7rem; font-weight: 400; opacity: 0.6; }
+.data-bar-row { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr) 5rem; align-items: center; gap: 0.6rem; color: var(--color-dawn); font-size: 0.75rem; }
+.data-bar-row strong { color: var(--color-aquarius); font-size: 0.72rem; text-align: right; }
+.data-bar-track { height: 0.45rem; overflow: hidden; border-radius: 999px; background: rgb(255 255 255 / 0.08); }
+.data-bar { display: block; height: 100%; min-width: 0.3rem; border-radius: inherit; }
+.timeline-visual { display: flex; align-items: flex-start; gap: 0; }
+.timeline-step { position: relative; flex: 1; min-width: 0; padding-top: 1.1rem; color: var(--color-dawn); font-size: 0.75rem; }
+.timeline-step:not(:last-child)::after { position: absolute; top: 0.38rem; left: 0.5rem; width: 100%; height: 1px; background: rgb(255 255 255 / 0.2); content: ""; }
+.timeline-dot { position: absolute; top: 0.15rem; left: 0; z-index: 1; width: 0.5rem; height: 0.5rem; border-radius: 999px; box-shadow: 0 0 0 4px rgb(10 22 40); }
+.timeline-step strong, .timeline-step span:last-child { display: block; }
+.timeline-step strong { color: #fff; font-family: var(--font-display), var(--font-sans); font-size: 1rem; }
+.timeline-step span:last-child { margin-top: 0.15rem; opacity: 0.7; }
+.guide-callout { margin: 1.2rem 0; border: 1px solid rgb(0 200 255 / 0.24); border-radius: 0.75rem; background: rgb(0 132 209 / 0.1); padding: 1rem 1.1rem; }
+.guide-callout p { margin: 0.45rem 0 0; }
+.guide-example { margin: 1.2rem 0; border-left: 3px solid var(--color-malibu); border-radius: 0 0.65rem 0.65rem 0; background: rgb(255 255 255 / 0.04); padding: 0.8rem 1rem; }
+.guide-example p { margin: 0.45rem 0 0; }
+.guide-example ul { margin-bottom: 0; }
+.equation { overflow-x: auto; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.5rem; background: var(--color-navy-700); padding: 0.7rem 0.9rem; }
+.equation code { white-space: nowrap; color: var(--color-cyan-glow); }
+.source-note { border-top: 1px solid rgb(255 255 255 / 0.1); color: var(--color-dawn); font-size: 0.82rem; opacity: 0.8; padding-top: 1rem; }
+.equation-review { border: 1px solid rgb(255 215 0 / 0.22); border-radius: 0.75rem; background: rgb(255 215 0 / 0.06); padding: 1rem 1.1rem; }
+.equation-audit-card { border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.75rem; background: rgb(14 29 53 / 0.62); padding: 1rem 1.1rem; }
+.equation-audit-card h2 { margin: 0; color: #fff; font-family: var(--font-display), var(--font-sans); font-size: 1.15rem; }
+.equation-audit-card p { margin: 0.7rem 0; color: var(--color-dawn); font-size: 0.9rem; line-height: 1.55; }
+.equation-audit-card .equation-audit-formula { display: block; margin-top: 0.75rem; overflow-x: auto; color: var(--color-cyan-glow); font-size: 0.82rem; white-space: nowrap; }
+.equation-status { border: 1px solid rgb(0 200 255 / 0.25); border-radius: 999px; padding: 0.2rem 0.55rem; color: var(--color-cyan-glow); font-size: 0.68rem; text-transform: uppercase; }
+.equation-audit-historical { border-color: rgb(255 215 0 / 0.22); }
+.equation-audit-historical .equation-status { border-color: rgb(255 215 0 / 0.3); color: var(--color-masters); }
+.map-article-hero { overflow: hidden; margin-bottom: 0; border: 1px solid rgb(255 255 255 / 0.12); border-radius: 0.85rem; background: var(--color-navy-700); }
+.map-article-hero img { display: block; width: 100%; max-height: 28rem; object-fit: contain; background: var(--color-navy-700); }
+.map-article-hero figcaption { padding: 0.8rem 1rem; color: var(--color-dawn); font-size: 0.85rem; line-height: 1.5; opacity: 0.8; }
+.map-preview-fallback { display: grid; min-height: 14rem; place-items: center; background: radial-gradient(circle at 30% 20%, rgb(0 200 255 / 0.22), transparent 35%), linear-gradient(135deg, var(--color-navy-600), var(--color-navy-700)); color: var(--color-cyan-glow); font-family: var(--font-display), var(--font-sans); font-size: clamp(1.5rem, 5vw, 3rem); font-weight: 700; letter-spacing: 0.04em; }
+.map-data-visual { margin: 0; border: 1px solid rgb(255 255 255 / 0.1); border-radius: 0.75rem; background: rgb(14 29 53 / 0.62); padding: 1rem; }
+.map-data-visual figcaption { display: flex; justify-content: space-between; gap: 1rem; color: #fff; font-family: var(--font-display), var(--font-sans); font-size: 1rem; font-weight: 700; }
+.map-data-visual figcaption small { color: var(--color-dawn); font-family: var(--font-sans); font-size: 0.7rem; font-weight: 400; opacity: 0.6; }
+.map-data-bars { display: grid; gap: 0.7rem; margin-top: 0.9rem; }
+.map-data-bars > div { display: grid; grid-template-columns: 8rem 4rem minmax(0, 1fr); align-items: center; gap: 0.6rem; color: var(--color-dawn); font-size: 0.75rem; }
+.map-data-bars strong { color: var(--color-aquarius); text-align: right; }
+.map-data-bars i { display: block; height: 0.45rem; min-width: 0.45rem; border-radius: 999px; background: linear-gradient(90deg, var(--color-malibu), var(--color-cyan-glow)); }
+
 /* Faint hexagonal grid motif — referenced in brand art direction. */
 .hex-grid {
   background-image: url("/assets/hex-pattern.svg");
