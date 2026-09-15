@@ -94,7 +94,9 @@ If you choose **infinite gold** in **options** (only available in [singleplayer]
 
 # Base Gold Generation {#Base_Gold_Generation}
 
-Players gain a flat rate of 100 gold per tick (1000 gold per second), whereas [bots](/Bots) gain 50 gold per tick (500 gold per second).
+Players gain a flat rate of 100 gold per tick (1000 gold per second), whereas [bots](/Bots) gain 50 gold per tick (500 gold per second). The lobby's gold multiplier setting scales this rate.
+
+This base rate did not change in [Update 34.0](/Update_34.0). The "higher early-game gold" that update describes comes from the [trade ship](/Trade_Ship) economy, which now spawns ships faster while the world's fleet is small and throttles spawning later in the game, so income ramps up quicker early on and slows down mid-late game.
 
 # Additional Gold Sources {#Additional_Gold_Sources}
 

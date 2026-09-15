@@ -13,12 +13,21 @@ In terms of appearance, they have a bright outline with a dark center.
 
 [Ports](/Port) check every 10 ticks if they should spawn a trade ship, until the cap of 150 is reached<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup>.
 
-Spawn chance is calculated based on total number of [ports](/Port) in the game:
+Spawn chance was originally calculated from the total number of [ports](/Port) in the game:
 
 <pre>tradeShipSpawnRate(numberOfPorts) = {round(10 * Math.pow(numberOfPorts, 0.6))}
 </pre>
 
-More [ports](/Port) = higher spawn rate, but with diminishing returns due to the 0.6 power
+More [ports](/Port) = higher spawn rate, but with diminishing returns due to the 0.6 power.
+
+As of [Update 34.0](/Update_34.0) the spawn chance is instead throttled by how many trade ships already exist in the world, with a pity timer for ports that keep missing their roll:
+
+<pre>spawnChance = 1 / max(1, floor(100 / (rejections + 1) / saturation(numTradeShips)))
+
+saturation(n) = (1 + 0.45 * e^(-n / 120)) * max(1 - sigmoid(n, ln2/50, 230), 0.25 * (1 - sigmoid(n, ln2/100, 800)))
+</pre>
+
+While the world fleet is small there is a mild (~1.45×) boost to the odds, so the early trading minutes ramp up faster; the boost crosses the old un-boosted curve around 110 ships. Past the ~230-ship midpoint spawning is damped, flattening onto a 0.25 plateau beyond ~310 ships (roughly half cadence per port), so heavy port investment keeps scaling income linearly until a global hard cap far beyond any normal game (~800 ships at sea). The spawn rate is recalculated on each port level roll.
 
 # Trade Route Selection {#Trade_Route_Selection}
 

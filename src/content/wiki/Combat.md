@@ -33,7 +33,37 @@ The fastest and most efficient attack would be one by an extremely large player 
 
 ### Calculation {#Calculation}
 
+#### Update 34.0 attack model {#Update_34.0_attack_model}
+
+[Update 34.0](/Update_34.0) rebuilt the per-tile attack formula around two ratios. The detailed formulas in the sections further below describe the **pre-v34** model and are kept for reference; the current model works as follows.
+
+Each [terrain](/Terrain) type gives two base values: a magnitude `mag` (how bloody the tile is — Plains 80, Highland 100, Mountain 120) and a `tileCost` (how slow the tile is to take — Plains 16.5, Highland 20, Mountain 25). Both are multiplied by the [defense post](/Defense_Post) bonus and the [fallout](/Fallout) modifier where they apply. A human or nation attacking a [bot](/Bots) pays 0.7× `mag`, and attacking a disconnected teammate costs no troops at all.
+
+Attacker and defender losses per tile:
+
+```
+troopRatio   = defenderTroops / attackTroops
+attackerLoss = mag × traitorDebuff × clamp(troopRatio, 0.6, 2)
+               × (0.463 × largeAttackerBonus × largeDefenderBonus + 0.0039 × defenderTroopsPerTile)
+defenderLoss = defenderTroops / defenderTiles
+```
+
+How outnumbered the attack is (clamped, so bigger pushes pay less per tile) scales a cost made of a base plus the defender's troop density — packed land is expensive to take, spread-thin land is cheap. A stack of about ¾ of the defender's army pays the same as before v34; bigger stacks pay less and smaller stacks pay more, so overwhelming attacks no longer pay the full "turtle tax".
+
+The **large-territory bonus** is now a smooth logistic curve in log(tiles): about 1 for small territories, halfway at 300,000 tiles, and floored at 0.3× for a huge attacker (0.7× for a huge defender). Nothing under 100,000 tiles is affected.
+
+Attack speed, as the fraction of a [tick](/Tick) each tile consumes:
+
+```
+speedCost    = clamp(troopRatio, 0.82, 7.5) × clamp(troopRatio / 20, 1, 50) / 8.55
+tickFraction = speedCost × tileCost × largeAttackerSpeedBonus × largeDefenderBonus × traitorSpeedDebuff / borderSize
+```
+
+Overwhelming stacks land about 18% faster (the 0.82 floor), and every player-vs-player attack is roughly 10% faster than in v33. The giant-empire speed bonus is smoothed and capped at roughly 3.3× a small player's rate instead of running away at 9×, so players can no longer be captured extremely fast. Unclaimed land costs `clamp(2000 × tileCost / attackTroops, 5, 100)` per tile against a budget of twice the border size, and the attacker loses `mag / 5` troops per tile there (`mag / 10` for bots).
+
 #### Attack efficiency {#Attack_efficiency}
+
+_The formula below is the pre-v34 model — see [Update 34.0 attack model](#Update_34.0_attack_model) for the current one._
 
 The amount of attacking troops lost for each [Tile](/Tile) is calculated by the following function.
 
@@ -723,6 +753,8 @@ The amount of defending troops lost for each tile is calculated by the following
 If a player has left the game (is AFK) and is on the same team as the attacker, no troops are lost by the attacker when attacking them.
 
 #### Attack speed {#Attack_speed}
+
+_The formula below is the pre-v34 model — see [Update 34.0 attack model](#Update_34.0_attack_model) for the current one._
 
 Attack speed is expressed as [Ticks](/Tick) per tile used, meaning that the lower the number, the faster the attack goes.
 

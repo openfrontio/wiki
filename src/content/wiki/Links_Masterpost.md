@@ -59,7 +59,7 @@ _Disclaimer for the two following websites: They should only be used when there'
 
 ###### Other links : {#Other_links_:}
 
-[Steam](https://store.steampowered.com/app/3560670/OpenFront/): The OpenFront Steam release is planned for 2026, make sure to have it on your wishlist.
+[Steam](https://store.steampowered.com/app/3560670/OpenFront/): OpenFront launches on Steam on **September 17th 2026** with [Update 34.0](/Update_34.0). The Steam client adds exclusive cosmetics, a free month of premium, offline play, achievements and instant trusted status — see the [Steam](/Steam) page.
 
 [https://openfront-tools.frozenpenguin.media/](https://openfront-tools.frozenpenguin.media/): Thanks to [Flopenguin](https://github.com/FloPinguin)  you can now watch the replay of any game, no matter the version it was played on (as long as you have the game url/game ID of course), it also allows you to test a solo game in any past version.
 

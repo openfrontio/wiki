@@ -13,6 +13,12 @@ There are different kinds or stages of Content Creators within the OpenFront com
 
 - In order to apply for the Content Creator role, You need 2k views on OpenFront related videos or more than 1000 followers on a streaming site. _(multiple video views can be stacked)_. Once you're eligible, feel free to open a ticket or contact a member of the staff to claim your role !
 
+## Support a Creator {#Support_a_Creator}
+
+Since [Update 34.0](/Update_34.0), players can add a creator's **code** to their [profile](/Accounts) and that creator receives a share of every purchase the player makes. Creators get their own profile panel and shareable `openfront.io/c/CODE` links; the code survives every sign-in flow.
+
+## List of creators {#List_of_creators}
+
 - Biffeur: Swiss/French **Partner** content creator, active on [Twitch](https://www.twitch.tv/biffeur_) and [Youtube](https://www.youtube.com/@biffeur), head of [BGS] clan.
 - Camera: English speaking content creator, active on [Youtube](https://www.youtube.com/@CameraPlaysOpenFront), part of [UN] clan.
 - CG: American content creator, active on [Twitch](https://www.twitch.tv/cgplayslive) and [Youtube](https://www.youtube.com/@CGPlays).

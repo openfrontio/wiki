@@ -168,12 +168,24 @@ If neither condition holds, the request is rejected.
 
 ### Betrayal {#Betrayal}
 
-Before the normal attack target search runs, nations consider whether to betray any of their current allies. The following factors are considered in this exact order, and the first match results in immediate alliance break followed by a forced attack on the former ally.
+Before the normal attack target search runs, nations consider whether to betray any of their bordering allies. The checks run in this exact order, and the first match results in an immediate alliance break followed by a forced attack on the former ally. [Update 34.0](/Update_34.0) replaced the old "weak ally" trigger with a juiciness-based one that only fires when retaliation would be small.
 
-1. **Weak Ally** (Hard and Impossible mode only): The ally's combined current and outgoing troops fall below 20% of their maximum troop capacity, and the ally has strictly fewer current troops than the nation. This is sometimes called the "MIRVed ally" trigger, since heavy nuke damage often produces these conditions.
-2. **Overwhelming Strength:** The nation has at least 10 times the ally's troops. Easy nations skip this check against human players, only checking against other nations; Medium nations apply it to humans.
-3. **Traitor Ally** (Hard and Impossible mode only): The ally currently holds the traitor flag and the ally's troops are below 1.2 times the nation's troops.
-4. **Sole Neighbor** (Hard and Impossible mode only): The nation has exactly one bordering player, that player is the ally, and the ally's troops multiplied by 3 are still less than the nation's troops.
+1. **Juiciest Ally** (Hard and Impossible mode only): The nation ranks its bordering allies by _juiciness_ (see [Attack target selection](#Attack_target_selection)) and betrays the juiciest one — typically a MIRVed or otherwise hollowed-out ally — but only if it is **safe**: the combined troops (including outgoing attacks) of the target, every non-allied bordering neighbour and the nation's other bordering allies must stay below one third of the nation's own troops. If the target is already a traitor, the other allies are not counted, since betraying a traitor does not make the nation one.
+2. **Overwhelming Strength** (Easy and Medium mode only): The nation has at least 10 times the ally's troops. Easy nations never betray human players this way.
+3. **Traitor Ally** (Medium mode and up): The ally currently holds the traitor flag and the ally's troops are below 1.2 times the nation's troops.
+4. **Sole Neighbor** (Medium mode and up): The ally is the nation's only bordering player, and the ally's troops multiplied by 3 are still less than the nation's troops.
+
+### Attack target selection {#Attack_target_selection}
+
+On each attack tick a nation walks a difficulty-ordered list of strategies and uses the first one that produces a target. The strategies are: attacking bordering [bots](/Bots), retaliating against attackers, assisting allies, betrayal (above), pushing into territory that nukes have turned to wilderness, punishing [traitors](/Traitor), picking off disconnected (AFK) players, attacking players it hates, and finally the weakest bordering enemy, the nearest enemy reachable by [transport ship](/Transport_Ship), or donating troops to an ally. In [Free for All](/Free_for_All) nations avoid targets with far more troops than themselves; in [team](/Teams) games they will attack stronger enemies, since teammates can donate.
+
+Hard and Impossible nations have three extra strategies, and [Update 34.0](/Update_34.0) added the **juicy** one:
+
+- **Very weak** — a bordering enemy with under 15% of its maximum troops (and, in FFA, less than 1.2× the nation's troops).
+- **Juicy** — the most valuable bordering enemy the nation can plausibly beat (enemy troops at most 75% of the nation's). _Juiciness_ ranks candidates by the sum of three normalized scores: the level-weighted count of their structures (ignoring [defense posts](/Defense_Post) and [missile silos](/Missile_Silo), which are not a prize worth capturing), their troop-cap headroom (how far below max troops they are), and their tile count.
+- **Victim** — a bordering enemy already under heavy attack from others (incoming attacks worth 50% or more of their troops) who is not much stronger than the nation.
+
+Impossible nations try the very-weak, betrayal and victim strategies early and the juicy strategy before AFK and hated targets; Hard nations run the very-weak and juicy strategies only after the distracting "hated" strategy, deliberately leaving them weaker than Impossible. Update 34.0 also fixed Hard and Impossible nations ignoring the troop cap when attacking wilderness or fallout.
 
 ### Embargoes and Emojis {#Embargoes_and_Emojis}
 

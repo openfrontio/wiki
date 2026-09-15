@@ -3,7 +3,7 @@ title: "Luna"
 section: "Maps"
 cats: []
 ---
-**Luna** is a cosmic map in [OpenFront](/OpenFront.io).
+**Luna** is a cosmic map in [OpenFront](/OpenFront.io). As of [Update 34.0](/Update_34.0) it is no longer part of the public game rotation, but it can still be picked for custom lobbies and [single player](/Single_Player).
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img src="/images/Luna_map.webp" decoding="async" width="640" height="1715" class="mw-file-element" data-file-width="1310" data-file-height="3510"><figcaption>The Luna map, from the <a href="https://github.com/openfrontio/OpenFrontIO/tree/main/map-generator/assets/maps/luna" target="_blank" rel="noopener noreferrer">OpenFront game files</a>.</figcaption></figure>
 
@@ -15,7 +15,7 @@ The map features 25 named [nations](/Nations), including Apollo 12, Apollo 14, A
 
 - **Categories:** Cosmic
 - **Nations:** 25
-- **Public rotation frequency:** 6
+- **Public rotation frequency:** removed from public rotation in [Update 34.0](/Update_34.0) (was 6)
 
 # See also {#See_also}
 

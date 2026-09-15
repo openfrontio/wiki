@@ -3,7 +3,7 @@ title: "Languages"
 section: "Meta & community"
 cats: []
 ---
-The game currently supports these languages:
+The game currently supports these languages (Vietnamese was added in [Update 34.0](/Update_34.0)):
 
 - Arabic
 - Bengali
@@ -16,7 +16,7 @@ The game currently supports these languages:
 - English
 - Esperanto
 - Estonian
-- European Portugese
+- European Portuguese
 - Finnish
 - French
 - Galician
@@ -24,12 +24,12 @@ The game currently supports these languages:
 - Greek
 - Hebrew
 - Hindi
-- Hungraian
+- Hungarian
 - Indonesian
 - Italian
 - Japanese
 - Korean
-- Macidonian
+- Macedonian
 - Persian
 - Polish
 - Russian
@@ -39,10 +39,14 @@ The game currently supports these languages:
 - Slovenian
 - Spanish
 - Swedish
-- Swiss-German
+- Swiss German
 - Toki Pona
+- Traditional Chinese
 - Turkish
 - Ukrainian
+- Vietnamese
+
+On the [Steam](/Steam) client, Steam's locale is used as the default language.
 
 ## Contributing {#Contributing}
 

@@ -39,6 +39,16 @@ const wikiUpdates = Object.fromEntries(
 // exists (see wikiUpdates) and to GitHub otherwise.
 const updates = [
   {
+    version: "v0.34.0",
+    date: "September 14 2026",
+    url: "/Update_34.0",
+    notes: [
+      "OpenFront comes to Steam on September 17th",
+      "Public profiles, trusted-only lobbies and player reporting",
+      "Smarter nations, a rebuilt attack model and four new maps",
+    ],
+  },
+  {
     version: "v0.33.0",
     date: "July 31 2026",
     url: "/Update_33.0",
@@ -70,16 +80,16 @@ const featuredVideos = [
 // when the next major release ships.
 const latestMajorNN = Math.max(0, ...Object.keys(wikiUpdates).map(Number));
 const majorUpdate = {
-  title: "OpenFront v33",
-  date: "July 2026",
+  title: "OpenFront v34",
+  date: "September 2026",
   href: wikiUpdates[String(latestMajorNN)] || "/Update_History",
   blurb:
-    "The biggest update yet — a new battle-royale gamemode, ranked 2v2, 22 new maps, impassable terrain and a major performance pass.",
+    "The Steam update — OpenFront launches on Steam on September 17th, alongside public profiles, smarter nations, trusted-only lobbies, a cosmetics inventory, a full lobby browser and four new maps.",
   highlights: [
-    "Doomsday Clock — a new battle-royale zone gamemode",
-    "Ranked 2v2 matchmaking with its own ladder",
-    "22 new maps + impassable terrain",
-    "Account usernames, verified badge & Login with Google",
+    "OpenFront on Steam — exclusive cosmetics, offline play & achievements",
+    "Smarter Hard/Impossible nations and a rebuilt attack model",
+    "Trusted lobbies, player reporting & public profiles",
+    "Yangtze River, Cape Cod, Channel Islands & Gulf of Mexico",
   ],
 };
 
@@ -87,7 +97,7 @@ const links = [
   { name: "Game's Website", href: "https://openfront.io/", icon: "🌐" },
   { name: "Official Discord", href: "https://discord.com/invite/jRpxXvG42t", icon: "💬" },
   { name: "Development GitHub", href: "https://github.com/openfrontio/OpenFrontIO/", icon: "🐙" },
-  { name: "Wishlist on Steam", href: "https://store.steampowered.com/app/3560670/OpenFront/", icon: "🎮" },
+  { name: "OpenFront on Steam", href: "https://store.steampowered.com/app/3560670/OpenFront/", icon: "🎮" },
   { name: "YouTube", href: "https://www.youtube.com/@openfrontio", icon: "▶️" },
   { name: "Wiki Project Discord", href: "https://discord.com/invite/DF4ttuWSWS", icon: "📚" },
 ];
@@ -207,7 +217,7 @@ const links = [
           <span
             class="mt-6 inline-flex items-center gap-2 rounded-lg bg-malibu px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-malibu/30 transition-all group-hover:-translate-y-0.5 group-hover:bg-aquarius"
           >
-            Read the full v33 changelog →
+            Read the full v{latestMajorNN} changelog →
           </span>
         </div>
       </a>

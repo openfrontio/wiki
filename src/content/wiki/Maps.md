@@ -9,7 +9,31 @@ cats: []
 
 # List of Maps {#List_of_Maps}
 
-## New in Update 33.0 {#New_maps_in_v33}
+## New in Update 34.0 {#New_maps_in_v34}
+
+The maps below were added or reworked in [Update 34.0](/Update_34.0).
+
+### [Yangtze River](/Yangtze_River) {#Yangtze_River}
+
+Upside-down-U-shaped pipe river map of the lower Yangtze. Added by **crunchybbb**.
+
+### [Cape Cod](/Cape_Cod) {#Cape_Cod}
+
+The Massachusetts cape with Martha's Vineyard and Nantucket. Added by **truffle383-byte**.
+
+### [Channel Islands](/Channel_Islands) {#Channel_Islands}
+
+Southern California coast with the Channel Islands offshore. Added by **crunchybbb**.
+
+### [Gulf of Mexico](/Gulf_of_Mexico) {#Gulf_of_Mexico}
+
+The whole Gulf basin, from Texas round to Florida, Cuba and the Yucatán, with a large pool of nations. Added by **LounNight**.
+
+### [Qing China](/Qing_China) {#Qing_China}
+
+The classic Qing-era China map, kept under a new name after [China](/China) was redrawn with modern borders. By **crunchybbb**.
+
+## Added in Update 33.0 {#New_maps_in_v33}
 
 The 22 maps below were added in [Update 33.0](/Update_33.0).
 
@@ -31,7 +55,7 @@ With state flags. Added by **SpeakIsntThere**.
 
 ### [China](/China) {#China}
 
-Qing-China themed country map. Added by **crunchybbb**.
+Country map, originally Qing-China themed. Added by **crunchybbb**; redrawn with modern borders in [Update 34.0](/Update_34.0), with the original kept as [Qing China](/Qing_China).
 
 ### [France](/France) {#France}
 
@@ -223,7 +247,7 @@ This is a map of New York City, home to 8 million people, has 5 peices of land (
 
 ## Arcade Maps {#Arcade_Maps}
 
-As of [Update 33.0](/Update_33.0), arcade maps include **More than Luck**, **Branching Paths** and **Las Vegas Strip** (see [New in Update 33.0](#New_maps_in_v33)), and arcade maps now appear in all playlists.
+As of [Update 33.0](/Update_33.0), arcade maps include **More than Luck**, **Branching Paths** and **Las Vegas Strip** (see [Added in Update 33.0](#New_maps_in_v33)), and arcade maps now appear in all playlists. Since [Update 34.0](/Update_34.0), [Labyrinth](/Labyrinth) turns up less often in public rotation, and [Chopping Block](/Chopping_Block) and the cosmic map [Luna](/Luna) were removed from public rotation entirely.
 
 ## Other Maps {#Other_Maps}
 

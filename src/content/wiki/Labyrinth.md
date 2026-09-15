@@ -15,7 +15,7 @@ The map features 26 named [nations](/Nations), including Alpha, Bravo, Charlie, 
 
 - **Categories:** Arcade
 - **Nations:** 26
-- **Public rotation frequency:** 6
+- **Public rotation frequency:** 2 (reduced from 6 in [Update 34.0](/Update_34.0))
 
 # See also {#See_also}
 

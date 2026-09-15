@@ -15,6 +15,7 @@ A shrinking doom zone closes in over the course of a match, and the sides judged
 - [Warships](/Warship) decay alongside troops for doomed sides, at a gentler-but-steeper rate of attrition.
 - Doomed warships stay out on patrol instead of idling at their [ports](/Port).
 - In team games, teams are judged against the same bar as solo sides.
+- As of [Update 34.0](/Update_34.0), the clock is deactivated once the game has a winner.
 
 ## See also {#See_also}
 

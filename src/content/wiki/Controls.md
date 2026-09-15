@@ -5,7 +5,7 @@ cats: ["All stub articles","Stubs","Gameplay"]
 ---
 <div role="note" class="metadata plainlinks asbox stub"><table role="presentation"><tbody><tr class="noresize"><td><p class="asbox-body">This article is a stub. You can help the wiki by <a rel="nofollow" class="external text" href="/Controls">expanding it</a>.</p></td></tr></tbody></table><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><abbr title="View this template">v</abbr></li><li class="nv-talk"><span class="wiki-deadlink"><abbr title="Discuss this template">t</abbr></span></li><li class="nv-edit"><span class="wiki-deadlink"><abbr title="Edit this template">e</abbr></span></li></ul></div></div>
 
-The **controls** for OpenFront use a combination of keyboard and mouse actions. They can be rebound by going into Settings → Keybinds.
+The **controls** for OpenFront use a combination of keyboard and mouse actions. They can be rebound by going into Settings → Keybinds. As of [Update 34.0](/Update_34.0), the `F` boat-attack key, `R` and box-selecting [warships](/Warship) are also rebindable, and `F` or `Escape` cancels a warship selection.
 
 ## PC {#PC}
 

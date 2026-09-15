@@ -29,12 +29,19 @@ cats: []
 </td>
 <td><a href="/Update_26.0" class="" title="Update 0.26.0">Update 0.26.0</a>
 </td>
-<td style="background-color: rgba(0, 255, 0, 0.2);"><a href="/Update_33.0" class="" title="Update 33.0">Update 33.0</a>
+<td><a href="/Update_33.0" class="" title="Update 33.0">Update 33.0</a>
+</td>
+<td style="background-color: rgba(0, 255, 0, 0.2);"><a href="/Update_34.0" class="" title="Update 34.0">Update 34.0</a>
 </td></tr></tbody></table>
 
 # 📦 [OpenFront](/OpenFront.io) Version History {#📦_OpenFront_Version_History}
 
 Major updates have a full changelog on this wiki (see the table above). All releases are also available on [GitHub](https://github.com/openfrontio/OpenFrontIO/releases/)
+
+## Version 34 {#Version_34}
+
+- [Update 34.0 changelog](/Update_34.0) — full write-up on this wiki (the [Steam](/Steam) update)
+- [v34.1](https://github.com/openfrontio/OpenFrontIO/releases/tag/v0.34.1)
 
 ## Version 33 {#Version_33}
 

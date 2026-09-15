@@ -21,6 +21,8 @@ The maximum distance within which a [factory](/Factory), [city](/City) or [port]
 
 The maximum length that a single railroad connection can be is 100.
 
+As of [Update 34.0](/Update_34.0), rails can no longer cross impassable [terrain](/Terrain), and trains no longer despawn when a track splits. Railroads and trains can also be recoloured with cosmetic effects from the store.
+
 # See Also {#See_Also}
 
 - [Buildings](/Buildings)

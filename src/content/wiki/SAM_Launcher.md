@@ -7,7 +7,7 @@ cats: ["Buildings"]
 
 The SAM (Surface-to-Air Missile system) is a [Building](/Buildings) that has the ability to shoot down nearby nukes in a 75 pixel radius around the building. It can intercept [Atom Bombs](/Atom_Bomb) and [Hydrogen Bombs](/Hydrogen_Bomb). As of [Update 33.0](/Update_33.0), it also intercepts [MIRV](/MIRV) warheads, which now fly as standard nukes.
 
-It can be [upgraded](/Upgrading) as of [update 24.0](/Update_24.0), increasing it's range.
+It can be [upgraded](/Upgrading) as of [update 24.0](/Update_24.0), increasing it's range. As of [Update 34.0](/Update_34.0) the range scales dynamically with each upgrade level, and the game shows a preview of the SAM's coverage radius; SAMs can also now target warheads that spawn very close to them, and the nuke-interception indicator is correct when the target is inside SAM range.
 
 ## Launching an Intercepting Missile {#Launching_an_Intercepting_Missile}
 

@@ -15,6 +15,8 @@ Annexation is possible as long as the following conditions are met:
 
 Once all of these conditions are met, if the attacker attacks the surrounded territory, it (almost) instantly becomes parts of the attacker's territory with no troop loss.
 
+As of [Update 34.0](/Update_34.0), only territory that is genuinely enclosed is annexed. This fixed cases where a player could lose their whole empire in a single tick to a neighbour without an attack ever landing.
+
 You do not have to conquer a whole nation/player in order to conquer a smaller surrounded part of their territory.
 
 ## Strategy {#Strategy}

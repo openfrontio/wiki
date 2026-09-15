@@ -15,6 +15,8 @@ To launch a **MIRV**, first right-click onto any (non-water) surface in the map,
 
 Once spawned from a [Missile Silo](/Missile_Silo), the missile will move upwards towards the north end of the map, then splits into warheads that bomb the country. As of [Update 33.0](/Update_33.0), the released MIRV warheads fly like standard [nukes](/Nuke) (with per-type speeds) and can be intercepted normally by [SAM Launchers](/SAM_Launcher). Launching a MIRV also puts the launching [Missile Silo](/Missile_Silo) on cooldown.
 
+[Update 34.0](/Update_34.0) normalized warhead speed so the warheads arrive on a consistent schedule, and removed the advantage a MIRV used to get from being launched near the map edge. If the launcher and the target form an [alliance](/Ally) while a MIRV is in flight, the MIRV and its warheads are cancelled — and no nuke can be launched in the half-second after accepting an alliance.
+
 # Explosion {#Explosion}
 
 Once the MIRV reaches the top of the map it will send out hundreds of MIRV Warheads which spread across the nation and bomb it. These warheads completely [irradiate](/Fallout) tiles within a radius of 12 and some of those within a radius of 18. When using the MIRV, the game attempts to launch a maximum of 350 MIRV Warheads at the targeted player. The warhead's centers must be at least 25 tiles apart using Manhattan distances, meaning that they can only slightly overlap. The ones that hit each remove the targeted nation's troops using the formula 500 * (1 - e^ (-2  * (0.03 * (maxPop - type of population) / maxPop)))). Each warhead population loss impact is calculated sequentially. This typically results in a vast majority of a players population being lost. The losses affect defending troops, attacking troops and transport ships.

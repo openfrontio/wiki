@@ -16,8 +16,13 @@ cats: []
 
 Update 33.0 also added a tribe name themes system for [maps](/Maps). Real-world maps ship with themed tribe names, and mappers can define custom tribes — including custom tribe spawn coordinates — in a map's `info.json`.
 
+## Territory colour {#Territory_colour}
+
+Since [Update 34.0](/Update_34.0), tribes are visually distinct from [nations](/Nations) on the map: tribes share one near-neutral grey colour family, while nations keep their muted palette. In [Free for All](/Free_for_All), tribes get the same flat colour they have in team games.
+
 ## See also {#See_also}
 
 - [Bots](/Bots)
 - [Nations](/Nations)
 - [Update 33.0](/Update_33.0)
+- [Update 34.0](/Update_34.0)
