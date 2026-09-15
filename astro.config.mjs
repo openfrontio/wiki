@@ -8,6 +8,10 @@ import { remarkHeadingId } from "remark-custom-heading-id";
 export default defineConfig({
   site: "https://openfront.wiki",
   integrations: [sitemap()],
+  // The game repo README links to openfront.wiki/Map_Making.
+  redirects: {
+    "/Map_Making": "/Map_Making_Guide",
+  },
   markdown: {
     remarkPlugins: [remarkHeadingId],
   },

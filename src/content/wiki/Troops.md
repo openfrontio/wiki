@@ -1,184 +1,55 @@
 ---
 title: "Troops"
 section: "Units"
-cats: ["All stub articles","Stubs"]
+cats: []
 ---
-<div role="note" class="metadata plainlinks asbox stub"><table role="presentation"><tbody><tr class="noresize"><td><p class="asbox-body">This article is a stub. You can help the wiki by <a rel="nofollow" class="external text" href="/Troops">expanding it</a>.</p></td></tr></tbody></table><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><abbr title="View this template">v</abbr></li><li class="nv-talk"><span class="wiki-deadlink"><abbr title="Discuss this template">t</abbr></span></li><li class="nv-edit"><span class="wiki-deadlink"><abbr title="Edit this template">e</abbr></span></li></ul></div></div>
+**Troops** are one of the two main resources in [OpenFront](/OpenFront.io), the second being [gold](/Gold). They are used to attack and defend territory, they crew [transport ships](/Transport_Ship), and they are what [nukes](/Nuke) and the [Doomsday Clock](/Doomsday_Clock) take away from you.
 
-**Troops** are one of the two main resources in OpenFront, the second being [gold](/Gold). They are used to attack and defend territory.
+_Formulas on this page come from the game's configuration as of [Update 34.0](/Update_34.0)._
 
-## Gaining Troops {#Gaining_Troops}
+## Starting troops {#Starting_troops}
 
-Troops are gained every tick (1/10th of a second) with the formula
+Every human player spawns with **25,000** troops. [Bots](/Bots) start with 10,000, and [nations](/Nations) start with 12,500 / 18,750 / 25,000 / 31,250 on Easy / Medium / Hard / Impossible [difficulty](/Difficulty). With the **Infinite Troops** setting on, humans start with 1,000,000.
 
-<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle toAdd=(10+{\frac {currentTroops^{0.73}}{4}})*(1-{\frac {currentTroops}{maxTroops}})}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mrow class="MJX-TeXAtom-ORD">
-          <mstyle displaystyle="true" scriptlevel="0">
-            <mi>t</mi>
-            <mi>o</mi>
-            <mi>A</mi>
-            <mi>d</mi>
-            <mi>d</mi>
-            <mo>=</mo>
-            <mo stretchy="false">(</mo>
-            <mn>10</mn>
-            <mo>+</mo>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mfrac>
-                <mrow>
-                  <mi>c</mi>
-                  <mi>u</mi>
-                  <mi>r</mi>
-                  <mi>r</mi>
-                  <mi>e</mi>
-                  <mi>n</mi>
-                  <mi>t</mi>
-                  <mi>T</mi>
-                  <mi>r</mi>
-                  <mi>o</mi>
-                  <mi>o</mi>
-                  <mi>p</mi>
-                  <msup>
-                    <mi>s</mi>
-                    <mrow class="MJX-TeXAtom-ORD">
-                      <mn>0.73</mn>
-                    </mrow>
-                  </msup>
-                </mrow>
-                <mn>4</mn>
-              </mfrac>
-            </mrow>
-            <mo stretchy="false">)</mo>
-            <mo>∗<!-- ∗ --></mo>
-            <mo stretchy="false">(</mo>
-            <mn>1</mn>
-            <mo>−<!-- − --></mo>
-            <mrow class="MJX-TeXAtom-ORD">
-              <mfrac>
-                <mrow>
-                  <mi>c</mi>
-                  <mi>u</mi>
-                  <mi>r</mi>
-                  <mi>r</mi>
-                  <mi>e</mi>
-                  <mi>n</mi>
-                  <mi>t</mi>
-                  <mi>T</mi>
-                  <mi>r</mi>
-                  <mi>o</mi>
-                  <mi>o</mi>
-                  <mi>p</mi>
-                  <mi>s</mi>
-                </mrow>
-                <mrow>
-                  <mi>m</mi>
-                  <mi>a</mi>
-                  <mi>x</mi>
-                  <mi>T</mi>
-                  <mi>r</mi>
-                  <mi>o</mi>
-                  <mi>o</mi>
-                  <mi>p</mi>
-                  <mi>s</mi>
-                </mrow>
-              </mfrac>
-            </mrow>
-            <mo stretchy="false">)</mo>
-          </mstyle>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle {\displaystyle toAdd=(10+{\frac {currentTroops^{0.73}}{4}})*(1-{\frac {currentTroops}{maxTroops}})}}</annotation>
-  </semantics>
-</math></span></span>
+## Gaining troops {#Gaining_troops}
 
-If you are at max troops, you will not gain any more.
+Troops are gained every [tick](/Tick) (a tenth of a second). The amount added per tick is:
 
-Deriving this formula tells us that the maximum troop gain rate is achieved at **42%**, meaning that after this point, troop gain starts slowing down.
+```
+toAdd = (10 + currentTroops^0.73 / 4) × (1 − currentTroops / maxTroops)
+```
 
-You can see your current troop gain in the UI in brackets after your maximum troop count.
+The first factor grows with your army, the second shrinks as you approach your cap, so the gain rate rises and then falls. Working through the formula, the **fastest growth happens at about 42% of your maximum troops**: below that you are growing into your capacity, above it growth tails off, and at max troops you gain nothing. This is why experienced players keep their troop count around the middle of the bar rather than sitting at the cap, and why sending troops into an attack (which lowers your count) often _increases_ your gain rate.
 
-[Bots](/Bots) and [Nations](/Nations) modify their troop gain by a modifier based on their type and the game's difficulty.
+Your current gain per second is shown in brackets after your troop count in the UI.
 
-## Gaining Max Troops {#Gaining_Max_Troops}
+Bots gain troops at **half** this rate. Nations gain 0.9× on Easy, 0.95× on Medium, 1× on Hard and 1.05× on Impossible.
 
-Maximum troops are calculated based on territory land mass (owned tile count), and city count. And is given by the formula
+## Maximum troops {#Maximum_troops}
 
-<span class="mwe-math-element mwe-math-element-inline"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\displaystyle maxTroops=2*(numTilesOwned^{0.6}*1000+50000)+numCitiesOwned*250000}}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mrow class="MJX-TeXAtom-ORD">
-          <mstyle displaystyle="true" scriptlevel="0">
-            <mi>m</mi>
-            <mi>a</mi>
-            <mi>x</mi>
-            <mi>T</mi>
-            <mi>r</mi>
-            <mi>o</mi>
-            <mi>o</mi>
-            <mi>p</mi>
-            <mi>s</mi>
-            <mo>=</mo>
-            <mn>2</mn>
-            <mo>∗<!-- ∗ --></mo>
-            <mo stretchy="false">(</mo>
-            <mi>n</mi>
-            <mi>u</mi>
-            <mi>m</mi>
-            <mi>T</mi>
-            <mi>i</mi>
-            <mi>l</mi>
-            <mi>e</mi>
-            <mi>s</mi>
-            <mi>O</mi>
-            <mi>w</mi>
-            <mi>n</mi>
-            <mi>e</mi>
-            <msup>
-              <mi>d</mi>
-              <mrow class="MJX-TeXAtom-ORD">
-                <mn>0.6</mn>
-              </mrow>
-            </msup>
-            <mo>∗<!-- ∗ --></mo>
-            <mn>1000</mn>
-            <mo>+</mo>
-            <mn>50000</mn>
-            <mo stretchy="false">)</mo>
-            <mo>+</mo>
-            <mi>n</mi>
-            <mi>u</mi>
-            <mi>m</mi>
-            <mi>C</mi>
-            <mi>i</mi>
-            <mi>t</mi>
-            <mi>i</mi>
-            <mi>e</mi>
-            <mi>s</mi>
-            <mi>O</mi>
-            <mi>w</mi>
-            <mi>n</mi>
-            <mi>e</mi>
-            <mi>d</mi>
-            <mo>∗<!-- ∗ --></mo>
-            <mn>250000</mn>
-          </mstyle>
-        </mrow>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle {\displaystyle maxTroops=2*(numTilesOwned^{0.6}*1000+50000)+numCitiesOwned*250000}}</annotation>
-  </semantics>
-</math></span></span>
+Your troop cap depends on how much land you own and how many [city](/City) levels you have:
 
-The **Infinite Troops** setting (available in [Singleplayer](/Single_Player) and private lobbies) sets the maximum to 1000000000 (though in game, it is only shown as 100M).
+```
+maxTroops = 2 × (numTilesOwned^0.6 × 1000 + 50,000) + totalCityLevels × 250,000
+```
 
-Bots and Nations modify their max troops based on their type and the game's difficulty.
+Land gives diminishing returns (the 0.6 power), so past the early game cities are the main lever: every city level adds a flat 250,000. Cities still under construction do not count.
+
+- Bots have a third of this cap.
+- Nations have 0.5× / 0.75× / 1× / 1.25× the cap on Easy / Medium / Hard / Impossible.
+- The **Infinite Troops** setting (single player and private lobbies) sets the cap to 1,000,000,000, shown in game as 100M.
+
+## Spending troops {#Spending_troops}
+
+- **Attacks** — the Attack Ratio slider decides what share of your troops each land attack sends; the troops leave your count immediately and are consumed tile by tile according to the [combat](/Combat) formula. Bots attack with 5% of their troops, nations and humans use the slider (default 20%).
+- **Transport ships** — a boat attack carries up to 20% of your troops.
+- **Donations** — you can send troops to an [ally](/Ally).
+- **Nukes** — an [atom](/Atom_Bomb) or [hydrogen bomb](/Hydrogen_Bomb) kills troops in proportion to how densely they are spread over your land; [MIRV](/MIRV) warheads instead strip you down towards 3% of your cap.
+- **Doomsday Clock** — doomed sides bleed troops down to a 5% floor.
 
 ## See also {#See_also}
 
 - [Combat](/Combat)
+- [City](/City)
 - [Transport Ship](/Transport_Ship)
+- [Gold](/Gold)

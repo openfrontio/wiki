@@ -449,6 +449,7 @@ Further maps available in OpenFront, each with its own page:
 - [Britannia Classic](/Britannia_Classic) — European map
 - [Caribbean](/Caribbean) — North American map
 - [Caucasus](/Caucasus) — European and Asian map
+- [Central America](/Central_America) — North American map
 - [Chopping Block](/Chopping_Block) — arcade map
 - [Conakry](/Conakry) — African map
 - [Danish Straits](/Danish_Straits) — European map

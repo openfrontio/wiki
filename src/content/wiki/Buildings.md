@@ -1,277 +1,123 @@
 ---
 title: "Buildings"
 section: "Buildings"
-cats: ["All stub articles","Stubs"]
+cats: []
 ---
-<div role="note" class="metadata plainlinks asbox stub"><table role="presentation"><tbody><tr class="noresize"><td><p class="asbox-body">This article is a stub. You can help the wiki by <a rel="nofollow" class="external text" href="/Buildings">expanding it</a>.</p></td></tr></tbody></table><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><abbr title="View this template">v</abbr></li><li class="nv-talk"><span class="wiki-deadlink"><abbr title="Discuss this template">t</abbr></span></li><li class="nv-edit"><span class="wiki-deadlink"><abbr title="Edit this template">e</abbr></span></li></ul></div></div>
-
-<table class="box-Update plainlinks metadata ambox ambox-content ambox-Update" role="presentation"><tbody><tr><td class="mbox-image"><div class="mbox-image-div"><span typeof="mw:File"><span><img alt="" src="/images/Red_clock.svg" decoding="async" width="42" height="42" class="mw-file-element" data-file-width="512" data-file-height="512"></span></span></div></td><td class="mbox-text"><div class="mbox-text-span">This article needs to be <b>updated</b>.<span class="hide-when-compact"> Please help update this article to reflect recent events or newly available information.</span>  <span class="date-container"><i>(<span class="date">V26.17</span>)</i></span></div></td></tr></tbody></table>
-
 <figure typeof="mw:File/Thumb"><img src="/images/481px-Build_Menu_-_Higher_resolution.png" decoding="async" width="481" height="387" class="mw-file-element" data-file-width="677" data-file-height="544"><figcaption>The Build Menu.</figcaption></figure>
 
-# Description {#Description}
+**Buildings** (also called structures or buildables) are the things you spend [gold](/Gold) on in [OpenFront](/OpenFront.io). They are placed on individual [tiles](/Tile) of the [map](/Maps) and range from economic structures that grow your [troops](/Troops) and income, to defences, to the nukes and ships that the same build menu sells.
 
-**Buildings** are build-able items that can be built on individual pixels on the [game maps.](/Maps)
+_Prices and figures on this page come from the game's configuration as of [Update 34.0](/Update_34.0)._
 
-You can use the number keys to select a building to build. You could also use ctrl+left-click on the [map](/Maps). Some buildings have specific requirements that limit where they can be built. For example, [ports](/Port) must be built near water.
+## Building {#Building}
 
-There are four types of **Buildings/Buildables:**
+Right-click (or long-press on mobile) a tile to open the radial menu and pick a building, or use the number-key shortcuts listed on the [Controls](/Controls) page. A structure takes a few seconds to construct and shows a progress bar while it does; the **Instant Build** lobby setting removes the delay. Structures must be at least 15 tiles apart, and some have placement rules of their own — [ports](/Port) need a coastal tile, [warships](/Warship) are launched onto water.
 
-- Military Buildings[MB] (Square shaped, only on land)
-- Economic Buildings[EB](Round Shaped, only on land)
+Most structures can be [upgraded](/Upgrading) by building the same structure on top of an existing one, which raises its **level**. Higher levels make the structure more effective (bigger troop cap, larger SAM radius, more silo ammo and so on) and count towards the [nations](/Nations) AI's idea of how "juicy" a target you are.
 
-- Boats[B](Round shaped, only on sea)
+If the **Infinite Gold** setting is on (single player and private lobbies), every structure costs 0 for human players.
 
-- Missiles[MS](Triangle shaped, only on land)
+There are four broad kinds of buildable:
 
-## Buildings {#Buildings}
+- **Economic structures** (round icon, land only) — [City](/City), [Factory](/Factory), [Port](/Port)
+- **Military structures** (square icon, land only) — [Defense Post](/Defense_Post), [Missile Silo](/Missile_Silo), [SAM Launcher](/SAM_Launcher)
+- **Ships** (water only) — [Warship](/Warship); [transport ships](/Transport_Ship) and [trade ships](/Trade_Ship) are free and are not built from the menu
+- **Missiles** (triangle icon) — [Atom Bomb](/Atom_Bomb), [Hydrogen Bomb](/Hydrogen_Bomb), [MIRV](/MIRV), all launched from a [Missile Silo](/Missile_Silo)
 
-### [**City[EB]**](/City) {#City[EB]}
+## Price summary {#Price_summary}
 
-Increases maximum Population By 25,000.
-
-Used to gain more workers and troops.
-
-<table class="wikitable">
-<caption>Price
-</caption>
-<tbody><tr>
-<td>First
-</td>
-<td>125,000
-</td></tr>
-<tr>
-<td>Second
-</td>
-<td>250,000
-</td></tr>
-<tr>
-<td>Third
-</td>
-<td>500,000
-</td></tr>
-<tr>
-<td>After
-</td>
-<td>1,000,00
-</td></tr></tbody></table>
-
-### [**Factory[EB]**](/Factory) {#Factory[EB]}
-
-<figure typeof="mw:File/Thumb"><img src="/images/200px-Factory_port_trains.png" decoding="async" width="200" height="149" class="mw-file-element" data-file-width="457" data-file-height="340"><figcaption>Factories and ports connected by trains</figcaption></figure>
-
-Automatically spawns or connects to Trains and [Railroads](/Railroad) to [trade](/Trade) with other buildings. Once connected, [trains](/Train) start spawning. [Factory](/Factory) shares pricing with Port.
+Prices scale with how many of that structure you already own (counting only ones that have finished construction), so they reset when you lose structures.
 
 <table class="wikitable">
-<caption>Price
-</caption>
 <tbody><tr>
-<td>First
-</td>
-<td>125,000
-</td></tr>
-<tr>
-<td>Second
-</td>
-<td>250,000
-</td></tr>
-<tr>
-<td>Third
-</td>
-<td>500,000
-</td></tr>
-<tr>
-<td>After
-</td>
-<td>1,000,000
-</td></tr></tbody></table>
+<th>Building</th>
+<th>1st</th>
+<th>2nd</th>
+<th>3rd</th>
+<th>4th</th>
+<th>5th+</th>
+<th>Build time</th>
+<th>Upgradable</th></tr>
+<tr><td><a href="/City">City</a></td><td>125,000</td><td>250,000</td><td>500,000</td><td>1,000,000</td><td>1,000,000</td><td>2 s</td><td>Yes</td></tr>
+<tr><td><a href="/Factory">Factory</a> *</td><td>125,000</td><td>250,000</td><td>500,000</td><td>1,000,000</td><td>1,000,000</td><td>2 s</td><td>Yes</td></tr>
+<tr><td><a href="/Port">Port</a> *</td><td>125,000</td><td>250,000</td><td>500,000</td><td>1,000,000</td><td>1,000,000</td><td>5 s</td><td>Yes</td></tr>
+<tr><td><a href="/Defense_Post">Defense Post</a></td><td>50,000</td><td>100,000</td><td>150,000</td><td>200,000</td><td>250,000</td><td>5 s</td><td>No</td></tr>
+<tr><td><a href="/Missile_Silo">Missile Silo</a></td><td>1,000,000</td><td>1,000,000</td><td>1,000,000</td><td>1,000,000</td><td>1,000,000</td><td>10 s</td><td>Yes</td></tr>
+<tr><td><a href="/SAM_Launcher">SAM Launcher</a></td><td>1,500,000</td><td>3,000,000</td><td>3,000,000</td><td>3,000,000</td><td>3,000,000</td><td>~10 s</td><td>Yes</td></tr>
+<tr><td><a href="/Warship">Warship</a></td><td>250,000</td><td>500,000</td><td>750,000</td><td>1,000,000</td><td>1,000,000</td><td>—</td><td>No</td></tr>
+<tr><td><a href="/Atom_Bomb">Atom Bomb</a></td><td colspan="5">750,000</td><td>—</td><td>—</td></tr>
+<tr><td><a href="/Hydrogen_Bomb">Hydrogen Bomb</a></td><td colspan="5">5,000,000</td><td>—</td><td>—</td></tr>
+<tr><td><a href="/MIRV">MIRV</a></td><td colspan="5">25,000,000 + 15,000,000 per MIRV already launched by anyone in the game</td><td>—</td><td>—</td></tr></tbody></table>
 
-### **[Port[EB]](/Port)** {#Port[EB]}
+\* Factories and ports share one price ladder: your third port-or-factory costs 500,000 whichever it is.
 
-Spawns [trading ships](/Trade_Ship) and is necessary to build [Warships](/Warship). [Trade ships](/Trade_Ship) sent out make more [Gold](/Gold) the farther they have traveled from their [ports](/Port). Other players can steal your [trade ships](/Trade_Ship).
+## Economic structures {#Economic_structures}
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>First
-</td>
-<td>125,000
-</td></tr>
-<tr>
-<td>Second
-</td>
-<td>250,000
-</td></tr>
-<tr>
-<td>Third
-</td>
-<td>500,000
-</td></tr>
-<tr>
-<td>After
-</td>
-<td>1,000,000
-</td></tr></tbody></table>
+### [City](/City) {#City}
 
-### [**Defense Post[EB]**](/Defense_Post) {#Defense_Post[EB]}
+Raises your maximum [troops](/Troops) by **250,000 per level**. Cities are the main way to grow your army beyond what your land alone supports, and are usually the first thing to build. Cities are not counted by the nations AI as a limited "quota" structure — nations keep building them whenever they can afford to.
 
-**Strengthens borders in an area around itself.  A strengthened border is 5 times more difficult to take over in comparison to free land.**
+### [Factory](/Factory) {#Factory}
 
-<table class="wikitable">
-<caption>
-<b>Price</b>
-</caption>
-<tbody><tr>
-<td><b>First</b>
-</td>
-<td><b>50,000</b>
-</td></tr>
-<tr>
-<td><b>Second</b>
-</td>
-<td><b>100,000</b>
-</td></tr>
-<tr>
-<td><b>Third</b>
-</td>
-<td><b>150,000</b>
-</td></tr>
-<tr>
-<td><b>Fourth</b>
-</td>
-<td><b>200,000</b>
-</td></tr>
-<tr>
-<td><b>After</b>
-</td>
-<td><b>250,000</b>
-</td></tr></tbody></table>
+Connects to nearby cities and ports with [railroads](/Railroad) and spawns [trains](/Train) that carry gold between stations. Factories and ports share the same price ladder.
 
-### [**Missile Silo[MB]**](/Missile_Silo) {#Missile_Silo[MB]}
+### [Port](/Port) {#Port}
 
-Required for launching [Atom Bombs](/Atom_Bomb), [Hydrogen Bombs](/Hydrogen_Bomb) and [MIRVs](/MIRV). Launching [Atom Bombs](/Atom_Bomb) and [Hydrogen Bombs](/Hydrogen_Bomb) has a cooldown of approximately 10 seconds. Launching a [MIRV](/MIRV) has no cooldown.
+Must be built on a coastal tile. Spawns [trade ships](/Trade_Ship) that sail to other players' ports and earn gold for both sides — more the further they travel — and is required before you can build [warships](/Warship). Ports also act as rail stations for [trains](/Train). Other players' warships can capture your trade ships.
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>All
-</td>
-<td>1,000,000
-</td></tr></tbody></table>
+## Military structures {#Military_structures}
 
-### [**SAM Launcher[MB]**](/SAM_Launcher) {#SAM_Launcher[MB]}
+### [Defense Post](/Defense_Post) {#Defense_Post}
 
-Surface-to-air missile launcher, used to destroy incoming missiles.
-It will target any missile that would land in a 100 pixel radius. It has a 100% chance to destroy an [Atom Bomb](/Atom_Bomb), 80% chance to destroy a [Hydrogen Bomb](/Hydrogen_Bomb), and a 50% chance to destroy a [MIRV](/MIRV) warhead. It has a cooldown of 7.5 seconds.
+Strengthens your border within a **30-tile** radius: attackers inside that radius lose **5×** as many troops per tile and advance **3×** slower. It is the only structure that cannot be upgraded, and its price grows in 50,000 steps to a 250,000 cap.
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>First
-</td>
-<td>1,500,000
-</td></tr>
-<tr>
-<td>After
-</td>
-<td>3,000,000
-</td></tr></tbody></table>
+### [Missile Silo](/Missile_Silo) {#Missile_Silo}
 
-### **[Warship[B]](/Warship)** {#Warship[B]}
+Required to launch [Atom Bombs](/Atom_Bomb), [Hydrogen Bombs](/Hydrogen_Bomb) and [MIRVs](/MIRV). Each launch puts the silo on a cooldown of about 9 seconds (90 [ticks](/Tick)), including MIRV launches since [Update 33.0](/Update_33.0). Upgrading a silo gives it more ammunition.
 
-Attacks enemy [transports](/Transport_Ship) and enemy [Warships](/Warship). [Warships](/Warship) begin with 500HP and grows to a max of 1000HP. Used for defending your territory from, [warships](/Warship), [transport ships](/Transport_Ship), or for stealing other players' [trade ships](/Trade_Ship).
+### [SAM Launcher](/SAM_Launcher) {#SAM_Launcher}
 
-<table class="wikitable">
-<caption>Price
-</caption>
-<tbody><tr>
-<td>First
-</td>
-<td>250,000
-</td></tr>
-<tr>
-<td>Second
-</td>
-<td>500,000
-</td></tr>
-<tr>
-<td>Third
-</td>
-<td>750,000
-</td></tr>
-<tr>
-<td>After
-</td>
-<td>1,000,000
-</td></tr></tbody></table>
+Shoots down incoming nukes — atom bombs, hydrogen bombs and, since Update 33.0, MIRV warheads — that would land within its radius, with a cooldown of about 9 seconds between interceptions. The radius grows with level: **70** tiles at level 1, then roughly 81, 90, 97 and 102 at levels 2–5, approaching a cap of 150. As of [Update 34.0](/Update_34.0) the radius grows smoothly during the upgrade and the game previews it on the map.
 
-### **[Atom Bomb[MS]](/Atom_Bomb)** {#Atom_Bomb[MS]}
+## Ships {#Ships}
 
-Explodes in a small area. Used for destroying small sections with [Cities](/City), [Ports](/Port), [Defense Posts](/Defense_Post) or [Missile Silos](/Missile_Silo) of an enemy.
+### [Warship](/Warship) {#Warship}
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>All
-</td>
-<td>750,000
-</td></tr></tbody></table>
+Built from a [port](/Port) and launched onto water. Warships have **1,000 HP**, fire shells doing **250** damage, patrol an area, attack enemy [transport ships](/Transport_Ship) and warships, and capture enemy [trade ships](/Trade_Ship). They gain veterancy over their service life (Update 33.0).
 
-### **[Hydrogen Bomb[MS]](/Hydrogen_Bomb)** {#Hydrogen_Bomb[MS]}
+### [Transport Ship](/Transport_Ship) and [Trade Ship](/Trade_Ship) {#Transport_and_Trade_Ships}
 
-Explodes and destroys anything in a huge area. Great for cases where an enemy has a lot of [Cities](/City), [Ports](/Port), [Defense Posts](/Defense_Post) or [Missile Silos](/Missile_Silo) close to each other.
+Neither is bought from the build menu. Transport ships are launched by attacking across water and carry up to 20% of your troops; trade ships spawn from ports automatically.
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>All
-</td>
-<td>5,000,000
-</td></tr></tbody></table>
+## Missiles {#Missiles}
 
-### **[MIRV[MS]](/MIRV)** {#MIRV[MS]}
+### [Atom Bomb](/Atom_Bomb) {#Atom_Bomb}
 
-Many Atom Bomb sized explosions across the entirety of a selected nation and can harm any other nations.
+750,000 gold. Destroys a small area — inner radius 12, outer radius 30 — good for taking out a cluster of enemy structures or opening a hole in a defended border.
 
-<table class="wikitable">
-<caption>
-Price
-</caption>
-<tbody><tr>
-<td>1st of game
-</td>
-<td>25,000,000
-</td></tr>
-<tr>
-<td>after
-</td>
-<td>25,000,000 + 15 x number of mirvs already launched
-</td></tr></tbody></table>
+### [Hydrogen Bomb](/Hydrogen_Bomb) {#Hydrogen_Bomb}
 
-# Planned or tested {#Planned_or_tested}
+5,000,000 gold. Destroys a huge area (inner radius 80, outer radius 100) and everything in it.
+
+### [MIRV](/MIRV) {#MIRV}
+
+25,000,000 gold for the first one launched in a game, then 15,000,000 more for each MIRV any player has already launched. Flies to the top of the map and splits into up to 350 warheads that carpet the targeted player's whole territory. Since Update 33.0 the warheads fly as normal nukes and can be intercepted by SAMs.
+
+## Planned or tested {#Planned_or_tested}
 
 ### Airport {#Airport}
 
-Provides a way to [trade](/Trade) in air. Not available in either Openfront.io or Openfront.dev.
-
-It is believed to be cancelled in favor for [Factory](/Factory).
+An air-trade structure that was prototyped but never shipped; it is believed to have been dropped in favour of the [Factory](/Factory) and rail network.
 
 # See also {#See_also}
 
-- [Port](/Port)
-- [SAM Launcher](/SAM_Launcher)
+- [Upgrading](/Upgrading)
 - [City](/City)
+- [Factory](/Factory)
+- [Port](/Port)
 - [Defense Post](/Defense_Post)
 - [Missile Silo](/Missile_Silo)
-- [Factory](/Factory)
+- [SAM Launcher](/SAM_Launcher)
+- [Warship](/Warship)
 - [Trade](/Trade)
+- [Gold](/Gold)
