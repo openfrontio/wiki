@@ -103,10 +103,51 @@ The map doesn't mark sieges. You see them as a pocket shrinking.
 - Clan member lists show each member's [level](/Levels_and_XP) badge.
 - Since v0.35.1, profile cards show the clan tag from your latest game instead of your first clan alphabetically.
 
+## Requesting a clan {#Requesting_a_clan}
+
+Clans are created by the OpenFront staff on request. To qualify you must meet **all** of the following:
+
+- **Own a Discord server** — create one first if you don't have one.
+- **More than 10 active members** in that Discord at the time of the request. Real, active members only: bot-padded servers are not accepted.
+- **Verified ownership** — the Discord owner and the clan requester must be the same person. Clans cannot be set up on someone else's behalf.
+- **An active clan recruitment page.**
+
+How it works:
+
+1. Make sure your Discord meets the requirements above.
+2. Open a ticket in the support channel on the main [Discord](/Discord) to request clan setup.
+3. An admin verifies your Discord ownership and checks that your server meets the criteria.
+4. Once approved, your clan is created in game.
+5. You are asked to join the clan.
+6. Ownership is transferred to you through the clans panel.
+
+These rules exist so that every clan is backed by a genuine, engaged group of players, which keeps the clan system meaningful and prevents abuse. Looking to join one instead? Browse the recruitment threads in the official clan forums.
+
+## Clan tiers and subscriptions {#Clan_tiers_and_subscriptions}
+
+Clans can take out a paid **clan subscription** in one of three tiers. Every tier includes:
+
+- **3 cosmetic slots** (for example two clan-shop skins or patterns and one clan flag). Extra slots are a one-time $4.99 USD each.
+- **Clan flag redesign** every 3 months on an annual subscription, or every 6 months on a monthly one.
+- Full access to **The Kitchen Sink** Discord bot for clan administration, with free updates for the life of the subscription, and the **OpenFront Discord module** for hosting private games from Discord.
+- **Priority support** for clan leadership.
+
+<table class="wikitable">
+<tr><th>Tier</th><th>Monthly</th><th>Annual (−20%)</th><th>Flags / patterns pool</th><th>Plutonium pool</th></tr>
+<tr><td><b>Tier A</b></td><td>$75.99 / mo</td><td>$729.50 / yr</td><td>20 / month</td><td>1,250 / month</td></tr>
+<tr><td><b>Tier B</b></td><td>$49.99 / mo</td><td>$479.90 / yr</td><td>10 / month</td><td>750 / month</td></tr>
+<tr><td><b>Tier C</b></td><td>$24.99 / mo</td><td>$239.90 / yr</td><td>3 / month</td><td>400 / month</td></tr>
+</table>
+
+The flag/pattern and [Plutonium](/Currencies) pools are monthly allocations that clan leadership distributes to members however it sees fit. They restock at the start of each monthly billing cycle (in Tier C, once leadership has handed out 3 cosmetics it waits until the next renewal for more) and stay active for the life of the subscription.
+
+**Clan store rules:** items in a clan store sell to members at a flat rate with no rarity upcharge; adding a cosmetic to the store costs $4.99 USD and members buy it for 100 Plutonium; the creator or designer of a clan cosmetic gets it free.
+
 ## See also {#See_also}
 
 - [Free for All](/Free_for_All)
 - [Teams](/Teams)
 - [Ally](/Ally)
 - [Ranked](/Ranked)
-- List of Clans
+- [Community Rules](/Community_Rules)
+- [Currencies](/Currencies)

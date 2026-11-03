@@ -211,5 +211,10 @@
   "World": "Maps",
   "World_Inverted": "Maps",
   "Yellow_Sea": "Maps",
-  "Yenisei": "Maps"
+  "Yenisei": "Maps",
+  "Community_Rules": "Meta & community",
+  "Community_Roles": "Meta & community",
+  "Custom_Cosmetic_Testing": "Guides",
+  "Troubleshooting": "Guides",
+  "Currencies": "Meta & community"
 }

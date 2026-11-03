@@ -11,7 +11,7 @@ There are different kinds or stages of Content Creators within the OpenFront com
 2. **Affiliates** - They access the Content Creator channel and can officially cast the different [events](https://discord.com/invite/zfTj7dezUV) and [tournaments](https://discord.com/invite/WhJpgKMQa3), they also get an all skins access (_even though they're obviously not allowed to wear the custom skins, as they're meant to be used by their buyer/customer only)_
 3. **Partners** - Biggest Content Creators, they have a lot of followers and a big community, they also get the opportunity to have their own [skin shop](/Links_Masterpost)
 
-- In order to apply for the Content Creator role, You need 2k views on OpenFront related videos or more than 1000 followers on a streaming site. _(multiple video views can be stacked)_. Once you're eligible, feel free to open a ticket or contact a member of the staff to claim your role !
+- To apply for the Content Creator role you need **one** of: 2,000 views on OpenFront-related videos _(views across several videos stack)_, 1,000+ followers on an active streaming platform, or 20,000 views on YouTube Shorts. Once you're eligible, open a ticket or contact a member of the staff to claim your role. See [Community Roles](/Community_Roles) for the other Discord roles.
 
 ## Support a Creator {#Support_a_Creator}
 

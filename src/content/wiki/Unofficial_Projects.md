@@ -11,6 +11,57 @@ For Software and Tools related to maps, see [Map Making](/Map_Making_Guide).
 
 _Note that some of these projects may be work in progress, incomplete, or abandoned._
 
+# Stats and rating trackers {#Stats_and_rating_trackers}
+
+Community-built analytics platforms, rating ladders and tracking tools. None of them are official; each reads public game data through the API.
+
+## OFStats {#OFStats}
+
+[ofstats.io](https://ofstats.io/) — the community-standard statistics and game analytics hub.
+
+- Tiered FFA rating ladders and win rates, with dedicated Ranked and Team boards.
+- An in-browser replay viewer for any archived match.
+- Map analytics and spawn meta: heatmaps of the best spawn positions, map stats and fastest-win records.
+- Weekly clan leaderboards, custom achievements and speedrun tracking.
+- Never does seasonal resets: ratings and ladders are computed from your entire match history.
+
+## TrackerFront {#TrackerFront}
+
+[trackerfront.com](https://trackerfront.com/) — long-term progression tracking and a global FFA ranking built on TrueSkill.
+
+- Skill ranks from Iron to Conqueror, with global tier-distribution analytics.
+- Detailed match logs, live game feeds and personal progression curves.
+- A casual mode to join lobbies without risking your ladder standing.
+- Seasonal ladders with periodic resets.
+
+## OFRatings {#OFRatings}
+
+[ofratings.com](https://ofratings.com/) — a performance-weighted Elo ladder, tournament system and fair-play moderation.
+
+- Placement Elo computed from land capture, economy, nuke use and conquests (winners locked to 1st).
+- Skill classes from Novice to OF Super GM, seasonal profile badges and a Hall of Fame.
+- Boards for upcoming scrims, tournaments and quests.
+- A community review system for reporting teaming, scripting and spawn sniping.
+- An interactive conquest map, player comparisons and an open developer API; structured seasons are planned.
+
+## TheFrontHub {#TheFrontHub}
+
+[thefronthub.com](https://thefronthub.com/dashboard.html) — activity-driven rankings, competitive ladders and speedrun records.
+
+- Weekly and all-time activity-points boards (+10 per FFA win, +5 per Team win, +1 per Ranked win).
+- Mirrors of the official Ranked 1v1 and 2v2 top-100.
+- Verified map and game-mode speedrun leaderboards.
+- Live lobby feeds, an interactive map atlas, community power rankings and tournament brackets.
+
+## TeamStats {#TeamStats}
+
+[teamstats.pro](https://teamstats.pro/) — clan-focused analytics, competitive team seasons and creative tools.
+
+- Clan and team Elo leaderboards alongside 1v1, 2v2, FFA and speedrun boards.
+- A seasonal clan world map driven by real match outcomes.
+- Live tracking of clan-vs-clan public lobbies.
+- A creator suite: replay finder, heatmaps, a custom map builder and a custom skin designer.
+
 # Web Apps {#Web_Apps}
 
 ## OpenFront Atlas {#OpenFront_Atlas}
