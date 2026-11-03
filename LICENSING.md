@@ -21,7 +21,8 @@ The OpenFront brand assets are **NOT** covered by the MIT license. They remain
 the property of OpenFront Inc. and may not be copied, redistributed, modified, or
 used in any other project without written permission. This includes:
 
-- `public/assets/logo-white.png`, `public/assets/logo-blue.png`
+- `public/assets/logo-white.png`, `public/assets/logo-blue.png`, `public/assets/logo-short-white.png`
+- `public/assets/masters-logo.png`, `public/assets/masters-logo-short.png`, `public/assets/masters-icon-round.png`, `public/assets/masters-icon-square.png`
 - `public/assets/icon-round.png`, `public/assets/icon-square.png`
 - `public/assets/hero-bg.webp`, `public/assets/hero-bg.jpg` (signature background)
 - `public/favicon.svg`, `public/favicon.png`

@@ -102,6 +102,11 @@ const pageSource = isWiki ? encodePageSource(entry.body) : null;
         <span class="text-dawn">{title}</span>
       </nav>
 
+      {
+        isMastersHub && (
+          <img src="/assets/masters-logo.png" alt="OpenFront Masters" width="1310" height="475" class="mb-4 h-16 w-auto sm:h-20" />
+        )
+      }
       <div class="flex flex-wrap items-center gap-3">
         <h1 class="font-display text-3xl font-bold tracking-wide text-white sm:text-4xl">
           {title}

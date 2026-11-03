@@ -3,6 +3,7 @@ import { defineConfig } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 import { remarkHeadingId } from "remark-custom-heading-id";
+import rehypeTableScroll from "./src/lib/rehype-table-scroll.mjs";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,6 +15,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkHeadingId],
+    rehypePlugins: [rehypeTableScroll],
   },
   vite: {
     plugins: [tailwindcss()],

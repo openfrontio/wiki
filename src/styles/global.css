@@ -115,6 +115,10 @@ body {
 .wiki-content table.wikitable th { background: var(--color-navy-600); color: #fff; text-align: left; }
 .wiki-content table.wikitable tr:nth-child(even) td { background: rgb(255 255 255 / 0.02); }
 .wiki-content .citizen-overflow-wrapper { overflow-x: auto; }
+/* Markdown tables are wrapped by src/lib/rehype-table-scroll.mjs so wide
+   tables scroll sideways on phones instead of the whole page. */
+.wiki-content .table-scroll { overflow-x: auto; max-width: 100%; margin: 1.2rem 0; -webkit-overflow-scrolling: touch; }
+.wiki-content .table-scroll > table.wikitable { margin: 0; }
 
 /* images & figures */
 .wiki-content img { max-width: 100%; height: auto; border-radius: 0.4rem; }
