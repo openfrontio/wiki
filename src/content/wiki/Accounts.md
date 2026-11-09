@@ -23,7 +23,12 @@ An **account** lets you play OpenFront under a persistent identity. [Update 33.0
 - Every profile is **public** as of Update 34.0, so anyone can review a player's games — the same approach Lichess and Chess.com use to prevent cheating and teaming.
 - A shareable player profile shows your game history and includes a [Clans](/Clan) tab, and can be linked to directly. History cards have a game-link button and copyable game IDs.
 - The account modal has a Games tab, and stats live in a dedicated stats modal (previously called "ranking").
-- The nav has a profile dropdown menu, a bell button for news, and a mobile account icon.
+- The nav has a profile dropdown menu, a bell button and a mobile account icon.
+- Your profile shows your [FFA Rating](/Ranked) tier, rating and peak since [Update 36.0](/Update_36.0).
+
+## Friends and notifications {#Friends_and_notifications}
+
+Since [Update 36.0](/Update_36.0) you can send and accept **friend requests**. The bell in the menu opens a **notifications panel** (it used to go straight to the release notes), and friend requests show up there. In public Duos, Trios and Quads, friends are kept on the same [team](/Teams).
 
 ## Levels and progression {#Levels_and_progression}
 

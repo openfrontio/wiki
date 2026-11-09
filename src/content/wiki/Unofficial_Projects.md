@@ -17,7 +17,7 @@ Community-built analytics platforms, rating ladders and tracking tools. None of 
 
 ## OFStats {#OFStats}
 
-[ofstats.io](https://ofstats.io/) — the community-standard statistics and game analytics hub.
+[ofstats.io](https://ofstats.io/) — the community-standard statistics and game analytics hub. Since [Update 36.0](/Update_36.0) OFstats is also the game's partner for the official [FFA Rating](/Ranked).
 
 - Tiered FFA rating ladders and win rates, with dedicated Ranked and Team boards.
 - An in-browser replay viewer for any archived match.

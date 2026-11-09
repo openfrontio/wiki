@@ -33,12 +33,18 @@ cats: []
 </td>
 <td><a href="/Update_34.0" class="" title="Update 34.0">Update 34.0</a>
 </td>
-<td style="background-color: rgba(0, 255, 0, 0.2);"><a href="/Update_35.0" class="" title="Update 35.0">Update 35.0</a>
+<td><a href="/Update_35.0" class="" title="Update 35.0">Update 35.0</a>
+</td>
+<td style="background-color: rgba(0, 255, 0, 0.2);"><a href="/Update_36.0" class="" title="Update 36.0">Update 36.0</a>
 </td></tr></tbody></table>
 
 # 📦 [OpenFront](/OpenFront.io) Version History {#📦_OpenFront_Version_History}
 
 Major updates have a full changelog on this wiki (see the table above). All releases are also available on [GitHub](https://github.com/openfrontio/OpenFrontIO/releases/)
+
+## Version 36 {#Version_36}
+
+- [Update 36.0 changelog](/Update_36.0) — full write-up on this wiki (the ratings update: [FFA Rating](/Ranked) and Season 1, friends, saved singleplayer games, the new replay viewer, [London](/London) and [Mexico](/Mexico))
 
 ## Version 35 {#Version_35}
 

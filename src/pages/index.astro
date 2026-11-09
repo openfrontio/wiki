@@ -39,6 +39,16 @@ const wikiUpdates = Object.fromEntries(
 // exists (see wikiUpdates) and to GitHub otherwise.
 const updates = [
   {
+    version: "v0.36.0",
+    date: "November 9 2026",
+    url: "/Update_36.0",
+    notes: [
+      "FFA Rating and Season 1 — every signed-in public FFA game is rated",
+      "Friends and notifications, saved singleplayer games, a new replay viewer",
+      "London and Mexico maps, monthly Steam skins and big performance gains",
+    ],
+  },
+  {
     version: "v0.35.0",
     date: "October 16 2026",
     url: "/Update_35.0",
@@ -90,16 +100,16 @@ const featuredVideos = [
 // when the next major release ships.
 const latestMajorNN = Math.max(0, ...Object.keys(wikiUpdates).map(Number));
 const majorUpdate = {
-  title: "OpenFront v35",
-  date: "October 2026",
+  title: "OpenFront v36",
+  date: "November 2026",
   href: wikiUpdates[String(latestMajorNN)] || "/Update_History",
   blurb:
-    "The progression update — player levels and XP with prestige, Ranked Free For All and Clan Wars, a seekable replay viewer, smarter nations, faster quick chat and emoji, lobbies past 125 players and twelve new maps.",
+    "The ratings update — FFA Rating and Season 1 built with OFstats, friends and notifications, save and share singleplayer games, a replay viewer you can continue playing from, lobby presets, donate hotkeys, the London and Mexico maps and a 15% faster simulation.",
   highlights: [
-    "Player levels, XP and prestige up to Legend",
-    "Ranked Free For All and Ranked Clan Wars",
-    "Smarter nations and nukes that annex again",
-    "Madagascar, Horn of Africa, New Zealand, Benelux & more",
+    "FFA Rating with tiers, divisions and Season 1",
+    "Friends, notifications and saved singleplayer games",
+    "Continue any replay from where you stopped it",
+    "London and Mexico maps, plus a greener Africa",
   ],
 };
 

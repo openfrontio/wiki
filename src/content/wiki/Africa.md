@@ -11,12 +11,12 @@ cats: []
 
 ## Nations {#Map_nations}
 
-The map features 44 named [nations](/Nations), including South Africa, Sudan, Madagascar, Central African Republic, Tunisia and Egypt.
+The map features 72 named [nations](/Nations), including South Africa, Sudan, Madagascar, Central African Republic, Tunisia, Egypt, Morocco and Algeria. [Update 36.0](/Update_36.0) gave the map new, greener terrain, with green areas in the Congo basin and West Africa.
 
 ## Map data {#Map_data}
 
 - **Categories:** Featured, Continental, Africa
-- **Nations:** 44
+- **Nations:** 72
 - **Public rotation frequency:** 7
 
 ## Technical {#Technical}

@@ -26,7 +26,7 @@ cats: []
 - In privacy settings you can hide your level from other players.
 - The ranked leaderboard only shows badges for prestiged players and Legends.
 
-When you are eliminated before the game ends you see a **provisional** XP figure straight away, worked out in your browser with a copy of the server's formula. The server's figure replaces it once the game ends. Your level counts XP from games still being scored, marked provisional, and it stacks across back-to-back games until each one is confirmed.
+When you are eliminated before the game ends you see a **provisional** XP figure straight away, worked out in your browser with a copy of the server's formula. The server's figure replaces it once the game ends, and since [Update 36.0](/Update_36.0) a provisional figure that never gets scored expires after 3.5 hours. Your level counts XP from games still being scored, marked provisional, and it stacks across back-to-back games until each one is confirmed.
 
 ## How XP is calculated {#How_XP_is_calculated}
 

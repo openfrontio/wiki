@@ -19,7 +19,7 @@ As of [Update 34.0](/Update_34.0), team games use the same **80%** land win thre
 
 Since [Update 34.0](/Update_34.0), [clan](/Clan) tags can be used as team names: a team made up mostly of one clan takes that clan's tag, a team split between two clans gets a hybrid two-clan name, and other teams keep their normal names.
 
-Update 34.0 also fixed duo/trio/quad team forming so that human players are placed together instead of being scattered across bot teams, and fixed one-player teams on small public maps.
+Update 34.0 also fixed duo/trio/quad team forming so that human players are placed together instead of being scattered across bot teams, and fixed one-player teams on small public maps. Since the v35 hotfixes and [Update 36.0](/Update_36.0), **friends** (see [Accounts](/Accounts)) are kept on the same team in public Duos, Trios and Quads, and clan tags also show as team names on the team leaderboard.
 
 # See also {#See_also}
 

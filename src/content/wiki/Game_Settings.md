@@ -62,6 +62,8 @@ Other options can be toggled:
 
 The game length can be set in minutes from this menu. A custom alliance duration can also be configured (as of [Update 33.0](/Update_33.0)).
 
+Since [Update 36.0](/Update_36.0), custom games also have a **Win threshold (%)** setting next to Game length and Overtime. It is off by default, which keeps the usual 80% of the land. Host-lobby and [single player](/Single_Player) settings can be saved as named **presets** and loaded again from a button in the header.
+
 ## See also {#See_also}
 
 - [Single Player](/Single_Player)

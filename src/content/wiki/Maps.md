@@ -9,7 +9,24 @@ cats: []
 
 # List of Maps {#List_of_Maps}
 
-## New in Update 35.0 {#New_maps_in_v35}
+## New in Update 36.0 {#New_maps_in_v36}
+
+Two maps were added in [Update 36.0](/Update_36.0), which also gave the map picker an **Atlas** tab with each map's designer, description and stats, new greener terrain for [Africa](/Africa), and reworks or fixes for [Los Angeles](/Los_Angeles), [Las Vegas Strip](/Las_Vegas_Strip), [Crimea](/Crimea), [Channel Islands](/Channel_Islands), [Korea](/Korea), [China](/China), [Qing China](/Qing_China) and [Yellow Sea](/Yellow_Sea).
+
+<ul class="gallery">
+<li class="gallerybox"><a href="/London" title="London"><img src="/images/London_map_thumb.webp" alt="London map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/London">London</a></p></div></li>
+<li class="gallerybox"><a href="/Mexico" title="Mexico"><img src="/images/Mexico_map_thumb.webp" alt="Mexico map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Mexico">Mexico</a></p></div></li>
+</ul>
+
+### [London](/London) {#London}
+
+Greater London, borough by borough, with the Thames through the middle. Designed by **Tristar**, added by **RickD004**.
+
+### [Mexico](/Mexico) {#Mexico}
+
+Country map of Mexico with its states as nations. Added by **crunchybbb**.
+
+## Added in Update 35.0 {#New_maps_in_v35}
 
 The 12 maps below were added in [Update 35.0](/Update_35.0). Since v35, public lobby size comes from each map's land rather than a fixed 125-player cap.
 

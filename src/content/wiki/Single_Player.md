@@ -9,7 +9,11 @@ cats: []
 
 Single player is a game mode where there is only one human player. Unlike in a private lobby, others cannot join through a [game link](/Game_Link), which is usually pretty hard to type unless shared.
 
-The map, game mode and additional settings (for example, the number of [bots](/Bots)) can be configured. See [game settings](/Game_Settings).
+The map, game mode and additional settings (for example, the number of [bots](/Bots)) can be configured. See [game settings](/Game_Settings). Settings can be saved as named **presets** and loaded again from a button in the header ([Update 36.0](/Update_36.0)).
+
+## Saving, loading and sharing {#Saving_loading_and_sharing}
+
+Since [Update 36.0](/Update_36.0), if you are signed in to an [account](/Accounts), singleplayer games have a **Save game** option in the in-game menu. Your saves are listed in the Solo screen, where you can play, rename, share or delete them. A share link or code opens someone else's save. You can also stop any replay in the replay viewer and **continue the game from that point**.
 
 # See also {#See_also}
 

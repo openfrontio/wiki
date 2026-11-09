@@ -11,6 +11,10 @@ All nukes, except for the initial missile of a [MIRV](/MIRV), can be shot down b
 
 The speed of flight is 6 as of [Update 26.6](/Update_26.0)<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-bracket">[</span>1<span class="cite-bracket">]</span></a></sup> (meaning a nuke shot from one side of the [World](/World) map to the other over the equator will take approximately 35s). As of [Update 33.0](/Update_33.0), [MIRV](/MIRV) warheads fly as standard nukes with per-type speeds and can be intercepted by [SAM Launchers](/SAM_Launcher).
 
+## Range warnings {#Range_warnings}
+
+Since [Update 36.0](/Update_36.0) the nuke range circle warns you before you fire: it turns **yellow** when the strike would only break an [alliance](/Ally), and **flashes red** when it would mark you as a [traitor](/Traitor). The preview is cleared if you lose your last [missile silo](/Missile_Silo).
+
 ## Strategy {#Strategy}
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img alt="A screenshot of an openFront game" src="/images/300px-OpenFront_World_Map_horizontal_trajectory_difference.png" decoding="async" width="300" height="149" class="mw-file-element" data-file-width="1568" data-file-height="778"><figcaption>The difference between launching a nuke at the top and bottom of the map</figcaption></figure>
