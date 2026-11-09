@@ -5,6 +5,8 @@ cats: []
 ---
 <div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/World" title="World">World</a> or <a href="/Known_World" title="Known World">Known World</a>.</div>
 
+**Giant World Map was retired in [Update 36.0](/Update_36.0)** and replaced by [World 4000](/World_4000), a rebuild with new terrain, rivers and softer decoration layers. Giant World began as a test map that was too laggy for public play, and some major waterways were still missing when it was first released. The rest of this page describes the map as it was.
+
 This map is much like the map [World](/World). Except this is bigger.
 
 A giant map of the World. The [map](/Maps)'s [terrain](/Terrain) is comprised of an even amount of flat, hilly and mountainous terrain that is quite evenly spread through the map. However, Asia tends to be more mountainous, Africa tends to be more hilly and South America tends to be more flat.
@@ -19,9 +21,9 @@ The map features 107 named [nations](/Nations), including Türkiye, Germany, Fra
 
 ## Map data {#Map_data}
 
-- **Categories:** World
+- **Categories:** World (hidden since Update 36.0)
 - **Nations:** 107
-- **Public rotation frequency:** 10
+- **Public rotation frequency:** retired; no longer in rotation
 
 ## Technical {#Technical}
 
@@ -30,6 +32,7 @@ The size of the [map](/Maps) is 4110 x 1948.<sup id="cite_ref-1" class="referenc
 # See also {#See_also}
 
 - [Maps](/Maps)
+- [World 4000](/World_4000)
 - [World](/World)
 - [Known World](/Known_World)
 

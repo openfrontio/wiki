@@ -11,7 +11,7 @@ Mexico is primarily mountainous, with hot deserts in the north and wet jungles i
 
 ## Nations {#Nations}
 
-The map features 32 named [nations](/Nations) based on the Mexican states, including Baja California, Baja California Sur, Sonora, Chihuahua, Durango, Sinaloa, Coahuila and Tamaulipas.
+The map features 32 named [nations](/Nations) — the 31 Mexican states plus Mexico City, each with its own flag — including Baja California, Baja California Sur, Sonora, Chihuahua, Durango, Sinaloa, Coahuila and Tamaulipas.
 
 ## Details {#Details}
 

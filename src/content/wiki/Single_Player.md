@@ -13,7 +13,7 @@ The map, game mode and additional settings (for example, the number of [bots](/B
 
 ## Saving, loading and sharing {#Saving_loading_and_sharing}
 
-Since [Update 36.0](/Update_36.0), if you are signed in to an [account](/Accounts), singleplayer games have a **Save game** option in the in-game menu. Your saves are listed in the Solo screen, where you can play, rename, share or delete them. A share link or code opens someone else's save. You can also stop any replay in the replay viewer and **continue the game from that point**.
+Since [Update 36.0](/Update_36.0), if you are signed in to an [account](/Accounts), singleplayer games have a **Save game** option in the in-game menu. Your saves are listed in the Solo screen, where you can play, rename, share or delete them. A share link or code opens someone else's save (paste the code into the Saved games box), and this works on [Steam](/Steam) and the game portals too; guests can play shared saves. You can also pause any replay in the new replay viewer, press Continue, choose a surviving player and a [difficulty](/Difficulty) for the other humans, and **continue the game from that point** as a singleplayer match. The classic replay viewer is still available as a toggle in Settings.
 
 # See also {#See_also}
 

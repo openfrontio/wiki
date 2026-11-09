@@ -3,7 +3,7 @@ title: "London"
 section: "Maps"
 cats: []
 ---
-**London** is a European city map added to [OpenFront](/OpenFront.io) in [Update 36.0](/Update_36.0) — the Greater London area, borough by borough, with the Thames winding through the middle. The map was designed by **Tristar** and added to the game by **RickD004**.
+**London** is a European city map added to [OpenFront](/OpenFront.io) in [Update 36.0](/Update_36.0) — the Greater London area, borough by borough, with the Thames winding through the middle. The map was designed by **Tristar**; the release notes credit **RickD004** and **Lewis** for bringing it into the game. Its major roads are drawn as rivers, with thin bridges across the Thames.
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img src="/images/London_map.webp" decoding="async" width="640" height="544" class="mw-file-element" data-file-width="2000" data-file-height="1700"><figcaption>The London map.</figcaption></figure>
 

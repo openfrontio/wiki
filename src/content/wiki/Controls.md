@@ -7,7 +7,7 @@ cats: ["All stub articles","Stubs","Gameplay"]
 
 The **controls** for OpenFront use a combination of keyboard and mouse actions. They can be rebound by going into Settings → Keybinds. As of [Update 34.0](/Update_34.0), the `F` boat-attack key, `R` and box-selecting [warships](/Warship) are also rebindable, and `F` or `Escape` cancels a warship selection.
 
-[Update 35.0](/Update_35.0) moved several defaults: boat attack is now `B` (was `F`), `F` opens the redesigned emoji menu, `R` opens quick chat on the player under your cursor, and select-all-warships moved to `X`. `K`/`L` send or break an alliance and `N` targets a player. The arrow keys and zoom keys are now real keybinds too, so assigning them elsewhere no longer fires both actions. In the emoji menu, `Q` `W` `E` `A` `S` `D` fire your six Favorites. [Update 36.0](/Update_36.0) added donate hotkeys — `J` sends troops and `O` opens the send-gold window for the ally under your cursor — plus hold-`H` to build a separate structure instead of upgrading a nearby one, remappable modifier keys, and fixes for AZERTY and other regional layouts.
+[Update 35.0](/Update_35.0) moved several defaults: boat attack is now `B` (was `F`), `F` opens the redesigned emoji menu, `R` opens quick chat on the player under your cursor, and select-all-warships moved to `X`. `K`/`L` send or break an alliance and `N` targets a player. The arrow keys and zoom keys are now real keybinds too, so assigning them elsewhere no longer fires both actions. In the emoji menu, `Q` `W` `E` `A` `S` `D` fire your six Favorites. [Update 36.0](/Update_36.0) added donate hotkeys — `J` sends troops and `O` opens the send-gold window for the ally under your cursor — and `I` to open their player panel, plus hold-`H` to build a separate structure instead of upgrading a nearby one. Pressing a build key again on the same spot steps the amount 1 → 5 → 10 → 15 (up to 50) and `Alt`+scroll adjusts it by 1. Modifier keys (`Shift`, `Ctrl`, `Alt`) can be bound, the performance overlay key (`Shift`+`D`) can be rebound, and on AZERTY and other layouts the defaults and hints now show the keys on your own keyboard (`ZQSD` instead of `WASD`).
 
 ## PC {#PC}
 
@@ -253,11 +253,32 @@ The **controls** for OpenFront use a combination of keyboard and mouse actions. 
 <td>Open the send-gold window for the ally or teammate under the cursor (<a href="/Update_36.0" title="Update 36.0">Update 36.0</a>)
 </td></tr>
 <tr>
+<td><code>I</code>
+</td>
+<td>
+</td>
+<td>Toggle the player info panel for the player under the cursor (<a href="/Update_36.0" title="Update 36.0">Update 36.0</a>)
+</td></tr>
+<tr>
 <td>Hold <code>H</code>
 </td>
 <td>
 </td>
 <td>Build a separate structure instead of upgrading the one nearby (<a href="/Update_36.0" title="Update 36.0">Update 36.0</a>)
+</td></tr>
+<tr>
+<td>Build key again on the same spot
+</td>
+<td><code>Alt</code> + Scroll
+</td>
+<td>Steps the build amount 1 → 5 → 10 → 15, up to 50; <code>Alt</code> + scroll adjusts it by 1 (<a href="/Update_36.0" title="Update 36.0">Update 36.0</a>)
+</td></tr>
+<tr>
+<td><code>Shift</code> + <code>D</code>
+</td>
+<td>
+</td>
+<td>Toggle the performance overlay (rebindable since <a href="/Update_36.0" title="Update 36.0">Update 36.0</a>)
 </td></tr>
 <tr>
 <td><code>X</code>

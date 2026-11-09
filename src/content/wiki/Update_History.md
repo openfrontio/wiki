@@ -44,7 +44,7 @@ Major updates have a full changelog on this wiki (see the table above). All rele
 
 ## Version 36 {#Version_36}
 
-- [Update 36.0 changelog](/Update_36.0) — full write-up on this wiki (the ratings update: [FFA Rating](/Ranked) and Season 1, friends, saved singleplayer games, the new replay viewer, [London](/London) and [Mexico](/Mexico))
+- [Update 36.0 changelog](/Update_36.0) — full write-up on this wiki (the ratings update: [FFA Rating](/Ranked) and Season 1, saved singleplayer games, the new replay viewer, the Atlas map picker, eight new maps including [Paris](/Paris), [London](/London), [Mexico](/Mexico) and [Canada](/Canada), and rebuilt [World](/World) maps)
 
 ## Version 35 {#Version_35}
 

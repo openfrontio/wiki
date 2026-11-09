@@ -3,7 +3,7 @@ title: "Las Vegas Strip"
 section: "Maps"
 cats: []
 ---
-**Las Vegas Strip** is a North American map added to [OpenFront](/OpenFront.io) in [Update 33.0](/Update_33.0) by **crunchybbb** — Skinny long map with roads as water and casinos as nations.
+**Las Vegas Strip** is a North American map added to [OpenFront](/OpenFront.io) in [Update 33.0](/Update_33.0) by **crunchybbb** — Skinny long map with roads as water and casinos as nations. [Update 36.0](/Update_36.0) removed most of the northern blocks and added crosswalks.
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img src="/images/Las_Vegas_Strip_map.webp" decoding="async" width="640" height="1393" class="mw-file-element" data-file-width="2036" data-file-height="4431"><figcaption>The Las Vegas Strip map.</figcaption></figure>
 

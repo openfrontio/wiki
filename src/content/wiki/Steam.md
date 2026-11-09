@@ -13,7 +13,7 @@ OpenFront is, and will always remain, free to play in the browser, with full cro
 - **Permanent custom lobby creation** permissions (boosting and queueing a lobby still cost the usual amount).
 - **Instant Trusted account status**: Steam accounts skip the trust ladder, so you can join trusted-only lobbies straight away and play games that anonymous griefers can't drop into.
 - **One month of subscription included** (a $9.99 value). If you already have an active web subscription, the Steam month is stacked on top of your balance.
-- **Exclusive cosmetic packs**, including a new exclusive skin every month. Since [Update 36.0](/Update_36.0) Steam players get a popup at launch to claim the month's skin, equip it straight away or preview it first, and Steam exclusive cosmetics carry a corner banner in the store and inventory.
+- **Exclusive cosmetic packs**, including a new exclusive skin every month. Since [Update 36.0](/Update_36.0) a shared singleplayer save also opens from its link or code on Steam, and a subscription in its grace period shows as active in your account.
 - **Exclusive Discord rank**, linked with `/link-steam` (see [Community Roles](/Community_Roles)).
 - **Offline and local play**, and maps and assets pre-cached on disk so games start without waiting on a download.
 - **Steam achievements, trading cards and profile banners.**

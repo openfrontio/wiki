@@ -12,10 +12,10 @@ Since Update 35.0, ranked play needs a **trusted** [account](/Accounts); the Ran
 [Update 36.0](/Update_36.0) replaced the separate Ranked FFA queue (a 4–10 player, ELO-matched, last-player-standing mode added in Update 35.0) with the **FFA Rating**, built with [OFstats](/Unofficial_Projects):
 
 - **Every public [FFA](/Free_for_All) game you play while signed in is rated.** There is no queue to join; guests are not rated.
-- After **10 calibration games** you are placed in a **tier and division**, with a rating and how certain it is (for example "1613 ± 85"). Your profile and account page show your tier, rating, uncertainty and peak, or "Calibrating N/10" while you are still placing.
+- After **10 calibration games** you are placed in one of **8 ranks** — Iron, Bronze, Silver, Gold, Platinum, Diamond, Master and Grandmaster — each split into divisions III, II and I (Grandmaster has no divisions), with a rating and how certain it is (for example "1613 ± 85"). Your profile and account page show your rank, rating, uncertainty and peak, or "Calibrating N/10" while you are still placing.
 - Your rating moves on both the **result** and **where you placed**, measured against how likely you were to win.
 - After each rated game the win screen shows your rating before and after, the change, your expected win chance, the split between result and placement, and a "Promoted to…" message when you move up a tier. Game history shows the change and expected win chance for every rated game.
-- The leaderboard's FFA tab is the **FFA Rating ladder**, with tier badges, an OFstats credit and a pinned "Calibrating N/10" row for players still placing.
+- The leaderboard's FFA tab is the **FFA Rating ladder**: a tab for each of the 8 ranks listing that rank's top 250, opening on your own rank with your exact position pinned, with rank badges, an OFstats credit and a pinned "Calibrating N/10" row for players still placing.
 - Ratings run in **seasons**. Season 1 started on November 9th 2026; the season banner shows the start and end dates, days left and progress through the season, with a "Last day" warning at the end.
 
 ## Ranked Clan Wars {#Ranked_Clan_Wars}

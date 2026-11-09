@@ -3,7 +3,7 @@ title: "China"
 section: "Maps"
 cats: []
 ---
-**China** is an Asian country map in [OpenFront](/OpenFront.io) by **crunchybbb**. It was added in [Update 33.0](/Update_33.0) as a Qing-dynasty-themed map; [Update 34.0](/Update_34.0) redrew it with **modern borders** (including the Amur river mouth), and the classic Qing-era map lives on as [Qing China](/Qing_China).
+**China** is an Asian country map in [OpenFront](/OpenFront.io) by **crunchybbb**. It was added in [Update 33.0](/Update_33.0) as a Qing-dynasty-themed map; [Update 34.0](/Update_34.0) redrew it with **modern borders** (including the Amur river mouth), and the classic Qing-era map lives on as [Qing China](/Qing_China). [Update 36.0](/Update_36.0) applied a round of map fixes.
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img src="/images/China_map.webp" decoding="async" width="640" height="576" class="mw-file-element" data-file-width="2250" data-file-height="2024"><figcaption>The China map (modern borders, as of Update 34.0).</figcaption></figure>
 

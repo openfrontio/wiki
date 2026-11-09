@@ -3,7 +3,7 @@ title: "Crimea"
 section: "Maps"
 cats: []
 ---
-**Crimea** is a European map added to [OpenFront](/OpenFront.io) in [Update 33.0](/Update_33.0) by **crunchybbb** — Disputed region between Ukraine and Russia.
+**Crimea** is a European map added to [OpenFront](/OpenFront.io) in [Update 33.0](/Update_33.0) by **crunchybbb** — Disputed region between Ukraine and Russia. [Update 36.0](/Update_36.0) added the Henichesk Strait, separating the Arabat Spit from the mainland.
 
 <figure class="mw-default-size" typeof="mw:File/Thumb"><img src="/images/Crimea_map.webp" decoding="async" width="640" height="413" class="mw-file-element" data-file-width="2042" data-file-height="1317"><figcaption>The Crimea map.</figcaption></figure>
 

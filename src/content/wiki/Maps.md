@@ -11,20 +11,60 @@ cats: []
 
 ## New in Update 36.0 {#New_maps_in_v36}
 
-Two maps were added in [Update 36.0](/Update_36.0), which also gave the map picker an **Atlas** tab with each map's designer, description and stats, new greener terrain for [Africa](/Africa), and reworks or fixes for [Los Angeles](/Los_Angeles), [Las Vegas Strip](/Las_Vegas_Strip), [Crimea](/Crimea), [Channel Islands](/Channel_Islands), [Korea](/Korea), [China](/China), [Qing China](/Qing_China) and [Yellow Sea](/Yellow_Sea).
+Eight new maps were added in [Update 36.0](/Update_36.0), together with [World 10000](/World_10000) for custom games and tournaments and [World 4000](/World_4000), which replaces the retired [Giant World Map](/Giant_World_Map). The update also gave the map picker an **Atlas** tab — a world map with a pin for each real-world map — and every map card a "?" with its size, land share, nation count, expected players and designer. [World](/World) was rebuilt with new terrain and waterways, [Africa](/Africa) got new greener terrain, [Los Angeles](/Los_Angeles) a rebuilt road network, [Brain Rot](/Brain_Rot) calmer post-Halloween art, and [Las Vegas Strip](/Las_Vegas_Strip), [Crimea](/Crimea), [Korea](/Korea), [Channel Islands](/Channel_Islands), [China](/China) and [Qing China](/Qing_China) were reworked or fixed.
 
 <ul class="gallery">
+<li class="gallerybox"><a href="/Paris" title="Paris"><img src="/images/Paris_map_thumb.webp" alt="Paris map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Paris">Paris</a></p></div></li>
 <li class="gallerybox"><a href="/London" title="London"><img src="/images/London_map_thumb.webp" alt="London map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/London">London</a></p></div></li>
 <li class="gallerybox"><a href="/Mexico" title="Mexico"><img src="/images/Mexico_map_thumb.webp" alt="Mexico map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Mexico">Mexico</a></p></div></li>
+<li class="gallerybox"><a href="/Canada" title="Canada"><img src="/images/Canada_map_thumb.webp" alt="Canada map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Canada">Canada</a></p></div></li>
+<li class="gallerybox"><a href="/Turkiye" title="Türkiye"><img src="/images/Turkiye_map_thumb.webp" alt="Türkiye map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Turkiye">Türkiye</a></p></div></li>
+<li class="gallerybox"><a href="/Ottoman_Empire" title="Ottoman Empire"><img src="/images/Ottoman_Empire_map_thumb.webp" alt="Ottoman Empire map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Ottoman_Empire">Ottoman Empire</a></p></div></li>
+<li class="gallerybox"><a href="/Zealandia" title="Zealandia"><img src="/images/Zealandia_map_thumb.webp" alt="Zealandia map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Zealandia">Zealandia</a></p></div></li>
+<li class="gallerybox"><a href="/Brahmaputra" title="Brahmaputra"><img src="/images/Brahmaputra_map_thumb.webp" alt="Brahmaputra map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/Brahmaputra">Brahmaputra</a></p></div></li>
+<li class="gallerybox"><a href="/World_4000" title="World 4000"><img src="/images/World_4000_map_thumb.webp" alt="World 4000 map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/World_4000">World 4000</a></p></div></li>
+<li class="gallerybox"><a href="/World_10000" title="World 10000"><img src="/images/World_10000_map_thumb.webp" alt="World 10000 map" width="160" height="120" loading="lazy" decoding="async"></a><div class="gallerytext"><p><a href="/World_10000">World 10000</a></p></div></li>
 </ul>
+
+### [Paris](/Paris) {#Paris}
+
+The city limits of Paris, with the Seine, canals and main boulevards as waterways and 60 nations on the city's quartiers. Credited to **Théophile** and **RickD004**.
 
 ### [London](/London) {#London}
 
-Greater London, borough by borough, with the Thames through the middle. Designed by **Tristar**, added by **RickD004**.
+Greater London with its major roads as rivers, thin bridges across the Thames and 30+ borough nations. Designed by **Tristar**; credited to **RickD004** and **Lewis**.
 
 ### [Mexico](/Mexico) {#Mexico}
 
-Country map of Mexico with its states as nations. Added by **crunchybbb**.
+Country map of Mexico with its states (and Mexico City) as nations, each with its state flag. Added by **crunchybbb**.
+
+### [Canada](/Canada) {#Canada}
+
+Canada from the Great Lakes to Ellesmere Island: 13 provinces and territories at their capitals, plus First Nations, Inuit and Métis nations. Added by **cazlabIO**.
+
+### [Türkiye](/Turkiye) {#Turkiye}
+
+Real elevation, the major rivers and lakes, and the Bosphorus and Dardanelles open to ships. Credited to **halil1054** and **RickD004**.
+
+### [Ottoman Empire](/Ottoman_Empire) {#Ottoman_Empire}
+
+The empire in 1683 at its greatest extent in Europe, with 46 eyalets, sanjaks and vassal states, and no Suez Canal. Credited to **halil1054** and **RickD004**.
+
+### [Zealandia](/Zealandia) {#Zealandia}
+
+The submerged continent around New Zealand, risen from the sea. Credited to **thebananamoon** and **RickD004**.
+
+### [Brahmaputra](/Brahmaputra) {#Brahmaputra}
+
+A two-team map of the Assam valley, north bank against south bank, crossable by boat almost anywhere. Credited to **Avner** and **RickD004**.
+
+### [World 4000](/World_4000) {#World_4000}
+
+An overhaul of Giant World by **Patrick Plays Badly** with new terrain, rivers and softer decoration layers. Replaces the retired [Giant World Map](/Giant_World_Map).
+
+### [World 10000](/World_10000) {#World_10000}
+
+A 10,000-pixel-wide world with 377 nations for custom games and tournaments. Too heavy for phones. By **Patrick Plays Badly**.
 
 ## Added in Update 35.0 {#New_maps_in_v35}
 
@@ -213,11 +253,19 @@ Skinny long map with roads as water and casinos as nations. Added by **crunchybb
 
 ### [World](/World) {#World}
 
-Map of the World (sometimes referred to as the globe or Earth map) is a map that shows all of the 7 major continents of the world as well as all 5 major oceans of the world. This also included islands such as the Caribbean islands, the British isles, Iceland, New Zealand, Madagascar, Japan and others. The map's [terrain](/Terrain) is comprised of an even amount of flat, hilly and mountainous terrain that is quite evenly spread through the map. However, Asia tends to be more mountainous, Africa tends to be more hilly and South America tends to be more flat. However, it should be noted that most of the map of water and with the Panama and Suez canals being a thing, this results in this being one of the best maps for trade and [warships](/Warship).
+Map of the World (sometimes referred to as the globe or Earth map) is a map that shows all of the 7 major continents of the world as well as all 5 major oceans of the world. This also included islands such as the Caribbean islands, the British isles, Iceland, New Zealand, Madagascar, Japan and others. The map's [terrain](/Terrain) is comprised of an even amount of flat, hilly and mountainous terrain that is quite evenly spread through the map. However, Asia tends to be more mountainous, Africa tends to be more hilly and South America tends to be more flat. However, it should be noted that most of the map of water and with the Panama and Suez canals being a thing, this results in this being one of the best maps for trade and [warships](/Warship). [Update 36.0](/Update_36.0) rebuilt the map with new terrain, rivers and softer decoration layers.
 
 ### [Giant World Map](/Giant_World_Map) {#Giant_World_Map}
 
-A giant map of the World. The map's [terrain](/Terrain) is comprised of an even amount of flat, hilly and mountainous terrain that is quite evenly spread through the map. However, Asia tends to be more mountainous, Africa tends to be more hilly and South America tends to be more flat. It should be noted that most of the map is made of water and with the Panama Canal being a thing (the Suez Canal does not exist on the Giant World Map), this results in this being one of the best maps for trade and [warships](/Warship).
+**Retired in [Update 36.0](/Update_36.0)** and replaced by [World 4000](/World_4000). A giant map of the World. The map's [terrain](/Terrain) is comprised of an even amount of flat, hilly and mountainous terrain that is quite evenly spread through the map. However, Asia tends to be more mountainous, Africa tends to be more hilly and South America tends to be more flat. It should be noted that most of the map is made of water and with the Panama Canal being a thing (the Suez Canal does not exist on the Giant World Map), this results in this being one of the best maps for trade and [warships](/Warship).
+
+### [World 4000](/World_4000) {#World_4000_continental}
+
+The [Update 36.0](/Update_36.0) replacement for Giant World: the same 4,000-pixel-wide world rebuilt with new terrain, rivers and softer decoration layers, with the Panama and Suez canals and the major waterways open. 111 nations.
+
+### [World 10000](/World_10000) {#World_10000_continental}
+
+A 10,000-pixel-wide world with 377 nations, added in [Update 36.0](/Update_36.0) for custom games and tournaments. Not in public rotation and too heavy for phones.
 
 ### [North America](/North_America) {#North_America}
 
